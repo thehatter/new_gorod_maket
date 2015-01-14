@@ -1,0 +1,270 @@
+@mixin transition($time) {
+  -webkit-transition: all $time ease-in-out;
+  -moz-transition: all $time ease-in-out;
+  -ms-transition: all $time ease-in-out;
+  -o-transition: all $time ease-in-out;
+  transition: all $time ease-in-out;
+}
+
+
+.top_bar_2015 {
+  background:#00964D;
+  height: 32px;
+  font-size: 16px;
+  font-family: arial;
+  line-height: 1.42857; 
+  position: relative;
+
+  a {
+    color:#fff;
+    text-decoration: none;
+  }
+
+  .logo {
+    padding: 4px 10px 0 5px;
+    float: left;
+    img {
+      margin: -4px 5px 0 0;
+    }
+    span {
+      strong {
+        font-weight: normal;
+        font-size: 16.5px;
+      }
+    }
+  }
+
+  ul.menu_ul {
+    list-style:none;
+    position: relative;
+    margin: 0; padding: 0;
+    li {
+      list-style:none;
+      float:left;
+      position: relative;
+      height: 32px;
+      @include transition(0.3s);
+      a {
+        display: block;
+        padding: 5px 14px 4px 14px;
+        font-weight: bold;
+        color:#fff;
+      }
+
+      ul {
+        position: absolute;
+        left: 0;
+        top:32px;
+        z-index: 200;
+        background: #666;
+        padding: 5px 0; margin: 0;
+        width: 210px;
+        display: none;
+        @include transition(0.5s);
+
+        li {
+          float: none;
+          height: auto;
+
+          a {
+            display: block;
+            padding: 6px 18px 6px 18px;
+            font-weight: bold;
+            color:#fff;
+            font-size: 16px;
+          }
+        }
+
+
+      }
+    }
+
+
+    li:hover  {
+      @include transition(0.3s);
+      background:#047332;
+      li:hover {
+        background: #888;
+      }
+    }
+    li:hover ul {
+      display: block;
+      @include transition(0.5s);
+    }
+  }
+
+  .enter_button {
+    background: #f7c707;
+  }
+
+  li.cont {
+    .shevron {
+      float: left;
+      width: 11px;
+      height: 11px;
+      margin: 5px 6px 0 0;
+      background: url(img/shevron_1.png) left center no-repeat;
+
+      @include transition(0.5s);
+    }
+  }
+  li.cont:hover {
+    .shevron {
+      -moz-transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+
+      @include transition(0.5s);
+
+
+
+    }
+  }
+
+  .social_bar {
+    position: absolute;
+    right: 0px;
+    top:0px;
+      img{@include transition(0.1s);}
+      a:hover {
+        img {
+          @include transition(0.1s);
+          -moz-transform: scale(1.2);
+          -webkit-transform: scale(1.2);
+          -o-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          transform: scale(1.2);
+        }
+      }
+  }
+}
+
+
+@media screen and (max-width: 1458px) {
+  .top_bar_2015 {
+    ul.menu_ul {
+
+      li {
+        a {
+          padding: 5px 14px 4px 14px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1411px) {
+  .top_bar_2015 {
+    ul.menu_ul {
+      li {
+        a {
+          padding: 5px 10px 4px 10px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1325px) {
+  .top_bar_2015 {
+    ul.menu_ul {
+      li {
+        a {
+          padding: 6px 9px 4px 9px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1262px) {
+  .top_bar_2015 {
+    ul.menu_ul {
+      li {
+        a {
+          padding: 7px 5px 4px 5px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1095px) {
+  .top_bar_2015 {
+    height: auto;
+    background: #f2f2f2;
+
+    .social_bar {display: none;}
+
+    .logo {
+      background:#00964D;
+      padding: 10px 10px 0 5px;
+      float: none;
+      height: 42px;
+      text-align: center;
+      img {
+        margin: -4px 5px 0 0;
+      }
+      span {
+        padding: 0 17px 0 0;
+          background:url(img/shevron_1.png) right center no-repeat;
+        strong {
+          font-weight: normal;
+          font-size: 16.5px;
+        }
+      }
+    }
+    ul.menu_ul {
+      display: none;
+      li {
+        border-bottom: 1px solid #e7e7e7;
+
+        float: none;
+        height: auto;
+        a {
+          padding:10px 5px;
+          font-size: 15px;
+          text-align: center;
+          color: #333;
+        }
+
+      ul {
+        position: relative;
+        background: #cfcfcf;
+        padding: 5px 0; margin: 0;
+        width: 100%;
+        margin: 0;top:0;
+        display: none;
+        @include transition(0.5s);
+
+        li {
+          float: none;
+          height: auto;
+
+          a {
+            display: block;
+            padding: 6px 18px 6px 18px;
+            font-weight: bold;
+            color:#fff;
+            font-size: 16px;
+          }
+        }
+      }
+      li:hover {
+        background: #cdcdcd;
+      }
+
+
+
+
+      }
+    }
+  }
+}

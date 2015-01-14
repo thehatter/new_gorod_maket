@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>
+      ВИТЕБСКИЙ ГОРОДСКОЙ ИНТЕРНЕТ-ПОРТАЛ - GorodVitebsk.by - ВСЁ О ГОРОДЕ ВИТЕБСКЕ!Новости Витебска,Каталог организаций,фирмы витебска,Витебск и Витебская область,интересное,события,происшествия,афиша,погода,курсы валют,поиск лекарств,скидки и акции,новости
+    </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"><link href="css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles"><link href="css/main.css" rel="stylesheet" media="screen"><link href="css/new_gorod_top_bar.css" rel="stylesheet" media="screen"><script src="js/jquery-1.10.2.min.js"></script><script src="js/bootstrap.min.js"></script><script src="js/featherlight.min.js" type="text/javascript" charset="utf-8"></script><script src="js/new_gorod_top_bar.js"></script><script src="js/main.js"></script>
+  </head>
+  <body class="firm_page">
+    <a class="top_button" href="#top"></a>
+    <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="myModal" role="dialog" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <form role="form">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="myModalLabel">
+                Добавление организации в каталог
+              </h4>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label>Название</label><input class="form-control" placeholder="Введите название ораганизации" type="text" />
+              </div>
+              <div class="form-group">
+                <label>Сфера деятельности</label><select class="form-control"><option>Шоппинг  ---  Косметика и парфюмерия</option><option>Шоппинг  ---  Магазины алкогольных напитков</option><option>Шоппинг  ---  Косметика и парфюмерия</option><option>Шоппинг  ---  Магазины алкогольных напитков</option><option>Шоппинг  ---  Магазины алкогольных напитков</option><option>Шоппинг  ---  Магазины алкогольных напитков</option></select>
+              </div>
+              <div class="form-group">
+                <label>Краткое описание</label><textarea class="form-control"></textarea>
+              </div>
+              <div class="form-group">
+                <label>Контакты (телефон для связи и т.д.)</label><textarea class="form-control"></textarea>
+              </div>
+              <div class="form-group">
+                <label>Ссылка на сайт</label><input class="form-control" type="text" />
+              </div>
+              <div class="form-group">
+                <label>Электронная почта</label><input class="form-control" type="text" />
+              </div>
+              <div class="form-group">
+                <label>Контактное лицо</label><input class="form-control" type="text" />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-default" data-dismiss="modal" type="button">Закрыть</button><button class="btn btn-success" data-dismiss="modal" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="new_gorod_top_bar_container">
+      <div class="new_gorod_top_bar">
+        <ul class="menu_ul clearfix">
+          <li class="first clearfix">
+            <a target="_blank" href="http://gorod.vitebsk.by/index.html"><strong>gorod.vitebsk.by:</strong></a> <i class="icon_menu"></i>
+          </li>
+          <div class="hid">
+            <li>
+              <a target="_blank" href="http://gorod.vitebsk.by/index.html">Новости</a>
+            </li>
+            <li>
+              <a target="_blank" href="http://gorod.vitebsk.by/jiteli.htm">Каталог</a>
+            </li>
+            <li>
+              <a target="_blank" href="http://rabotavitebsk.by/">Работа</a>
+            </li>
+            <li>
+              <a target="_blank" href="http://gorod.vitebsk.by/afisha/index.htm">Афиша</a>
+            </li>
+            <li>
+              <a href="http://vdv-tv.by/">ТВ</a>
+            </li>
+            <li>
+              <a href="http://namvam.by/">Обьявления</a>
+            </li>
+            <li>
+              <a target="_blank" href="http://gorod.vitebsk.by/skidki/index.html">Скидки</a>
+            </li>
+            <li class="last cont">
+              <a href="#" class="cont_a"><strong>Все проекты:</strong></a>
+              <ul class="clearfix">
+                <li>
+                  <a target="_blank" href="http://m.gorodvitebsk.by/">Мобильный Витебск</a>
+                </li>
+                <li>
+                  <a target="_blank" href="http://gorod.vitebsk.by/made/index.html">Сделано в Витебске</a>
+                </li>
+                <li>
+                  <a target="_blank" href="http://gorod.vitebsk.by/turism.htm">Туризм и отдых</a>
+                </li>
+                <li>
+                  <a target="_blank" href="http://gorod.vitebsk.by/feeriya/index.html">Феерия льна</a>
+                </li>
+                <li>
+                  <a target="_blank" href="http://foto.gorodvitebsk.by/">Фотоальбом</a>
+                </li>
+                <li>
+                  <a target="_blank" href="http://forum.gorodvitebsk.by/">Форум</a>
+                </li>
+                <li>
+                  <a target="_blank" href="http://gorod.vitebsk.by/add-info.htm">Реклама на портале</a>
+                </li>
+                <li>
+                  <a target="_blank" href="http://www.prometei-design.com/rus/CorporativSitesRus.htm">Создание сайтов</a>
+                </li>
+                <li>
+                  <a target="_blank" href="http://gorod.vitebsk.by/prometei/">Компьютерное обучение</a>  
+                </li>
+                <li>
+                  <a target="_blank" href="http://gorod.vitebsk.by/news/index.html">Архив новостей</a>
+                </li>
+              </ul>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <div class="header_container gray_container">
+      <div class="container">
+        <div class="row big_row">
+          <div class="header clearfix">
+            <div class="logo col-xs-2">
+              <a href="/"><img src="img/logo.png"/></a>
+            </div>
+            <div class="header_nav col-xs-10">
+              <div class="header_nav_in clearfix">
+                <div class="header_nav_left_bar">
+                  <div class="search_bar clearfix">
+                    <form>
+                      <input type="text" class="form-control" placeholder="Я ищю салоны красоты в Витебске!"><button type="submit" class="btn btn-lg btn-warning"> <span class="glyphicon glyphicon-search"></span> Поиск</button>
+                    </form>
+                  </div>
+                  <div class="menu_container">
+                    <a href="#">Розыгрыши</a><a href="#">Скидки</a><a href="#">Интернет-магазины</a><a href="#">Лекарства</a><a href="#">Интернет-ТВ</a>
+                  </div>
+                </div>
+                <div class="header_nav_right_bar clearfix">
+                  <div class="wather_informer">
+                    <div class="title">
+                      Погода в Витебске
+                    </div>
+                    <div class="wather_info">
+                      <a href="#"><img src="img/wather_im.png" /></a>
+                    </div>
+                  </div>
+                  <div class="currency_informer clearfix">
+                    <div class="title">
+                      Курсы валют
+                    </div>
+                    <a href="#">
+                      <div class="currency_items clearfix">
+                        <div class="currency_item clearfix">
+                          <div class="name">
+                            USD
+                          </div>
+                          <div class="val1">
+                            10 100
+                          </div>
+                          <div class="val2">
+                            10 120
+                          </div>
+                        </div>
+                        <div class="currency_item clearfix">
+                          <div class="name">
+                            USD
+                          </div>
+                          <div class="val1">
+                            10 100
+                          </div>
+                          <div class="val2">
+                            10 120
+                          </div>
+                        </div>
+                        <div class="currency_item clearfix">
+                          <div class="name">
+                            USD
+                          </div>
+                          <div class="val1">
+                            10 100
+                          </div>
+                          <div class="val2">
+                            10 120
+                          </div>
+                        </div>
+                      </div>
+                      <div class="more">
+                        cмотреть все банки>>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="firm_container gray_container">
+      <div class="container">
+        <div class="row big_row">
+          <div class="main clearfix">
+            <div class="col-xs-9">
+              <div class="catalog_menu_bar min roght_droup">
+                <div class="catalog_menu_bar_title">
+                  Каталог товаров и услуг <span class="glyphicon glyphicon-chevron-down"></span>
+                </div>
+                <div class="catalog_menu_bar_items">
+                  <div class="catalog_menu_bar_item">
+                    <div class="catalog_menu_bar_item_title">
+                      <div class="arrow"></div>
+                      <img src="img/catalog_menu_icon_1.png" />Дом и квартира
+                    </div>
+                    <div class="in_tab">
+                      <div class="in_tab_header">
+                        <div class="in_tab_title">
+                          Отдых и развлечения
+                        </div>
+                      </div>
+                      <div class="in_tab_content clearfix">
+                        <div class="col-xs-4">
+                          <div class="subsection">
+                            <div class="subsection_title">
+                              Активный отдых<span class="badge">22</span>
+                            </div>
+                            <a class="subsection_item">Боулинг</a><a class="subsection_item">Футбол</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Музеи</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Музеи</a>
+                          </div>
+                          <div class="subsection">
+                            <div class="subsection_title">
+                              Активный отдых<span class="badge">22</span>
+                            </div>
+                            <a class="subsection_item">Боулинг</a><a class="subsection_item">Футбол</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Лазертаг</a>
+                          </div>
+                        </div>
+                        <div class="col-xs-4">
+                          <div class="subsection">
+                            <div class="subsection_title">
+                              Активный отдых<span class="badge">22</span>
+                            </div>
+                            <a class="subsection_item">Боулинг</a><a class="subsection_item">Футбол</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Музеи</a>
+                          </div>
+                          <div class="subsection">
+                            <div class="subsection_title">
+                              Активный отдых<span class="badge">22</span>
+                            </div>
+                            <a class="subsection_item">Боулинг</a><a class="subsection_item">Футбол</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Музеи</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Музеи</a>
+                          </div>
+                        </div>
+                        <div class="col-xs-4">
+                          <div class="subsection">
+                            <div class="subsection_title">
+                              Активный отдых<span class="badge">22</span>
+                            </div>
+                            <a class="subsection_item">Боулинг</a><a class="subsection_item">Футбол</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Музеи</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Музеи</a>
+                          </div>
+                          <div class="subsection">
+                            <div class="subsection_title">
+                              Активный отдых<span class="badge">22</span>
+                            </div>
+                            <a class="subsection_item">Боулинг</a><a class="subsection_item">Футбол</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Музеи</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog_menu_bar_item">
+                    <div class="catalog_menu_bar_item_title">
+                      <div class="arrow"></div>
+                      <img src="img/catalog_menu_icon_2.png" />Строительство и ремонт
+                    </div>
+                    <div class="in_tab">
+                      <div class="in_tab_header">
+                        <div class="in_tab_title">
+                          Строительство и ремонт
+                        </div>
+                      </div>
+                      <div class="in_tab_content clearfix">
+                        <div class="col-xs-4">
+                          <div class="subsection">
+                            <div class="subsection_title">
+                              Активный отдых<span class="badge">22</span>
+                            </div>
+                            <a class="subsection_item">Боулинг</a><a class="subsection_item">Футбол</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Музеи</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Музеи</a>
+                          </div>
+                          <div class="subsection">
+                            <div class="subsection_title">
+                              Активный отдых<span class="badge">22</span>
+                            </div>
+                            <a class="subsection_item">Боулинг</a><a class="subsection_item">Футбол</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Лазертаг</a>
+                          </div>
+                        </div>
+                        <div class="col-xs-4">
+                          <div class="subsection">
+                            <div class="subsection_title">
+                              Активный отдых<span class="badge">22</span>
+                            </div>
+                            <a class="subsection_item">Боулинг</a><a class="subsection_item">Футбол</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Музеи</a>
+                          </div>
+                          <div class="subsection">
+                            <div class="subsection_title">
+                              Активный отдых<span class="badge">22</span>
+                            </div>
+                            <a class="subsection_item">Боулинг</a><a class="subsection_item">Футбол</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Музеи</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Музеи</a>
+                          </div>
+                        </div>
+                        <div class="col-xs-4">
+                          <div class="subsection">
+                            <div class="subsection_title">
+                              Активный отдых<span class="badge">22</span>
+                            </div>
+                            <a class="subsection_item">Боулинг</a><a class="subsection_item">Футбол</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Музеи</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Музеи</a>
+                          </div>
+                          <div class="subsection">
+                            <div class="subsection_title">
+                              Активный отдых<span class="badge">22</span>
+                            </div>
+                            <a class="subsection_item">Боулинг</a><a class="subsection_item">Футбол</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Лазертаг</a><a class="subsection_item">Музеи</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog_menu_bar_item">
+                    <div class="catalog_menu_bar_item_title">
+                      <div class="arrow"></div>
+                      <img src="img/catalog_menu_icon_3.png" />Работа и бизнес
+                    </div>
+                  </div>
+                  <div class="catalog_menu_bar_item">
+                    <div class="catalog_menu_bar_item_title">
+                      <div class="arrow"></div>
+                      <img src="img/catalog_menu_icon_1.png" />Авто, мото, вело
+                    </div>
+                  </div>
+                  <div class="catalog_menu_bar_item">
+                    <div class="catalog_menu_bar_item_title">
+                      <div class="arrow"></div>
+                      <img src="img/catalog_menu_icon_2.png" />Семья и дети
+                    </div>
+                  </div>
+                  <div class="catalog_menu_bar_item">
+                    <div class="catalog_menu_bar_item_title">
+                      <div class="arrow"></div>
+                      <img src="img/catalog_menu_icon_3.png" />Шоппинг
+                    </div>
+                  </div>
+                  <div class="catalog_menu_bar_item">
+                    <div class="catalog_menu_bar_item_title">
+                      <div class="arrow"></div>
+                      <img src="img/catalog_menu_icon_1.png" />Отдых и развлечение
+                    </div>
+                  </div>
+                  <div class="catalog_menu_bar_item">
+                    <div class="catalog_menu_bar_item_title">
+                      <div class="arrow"></div>
+                      <img src="img/catalog_menu_icon_2.png" />Все для праздника
+                    </div>
+                  </div>
+                  <div class="catalog_menu_bar_item">
+                    <div class="catalog_menu_bar_item_title">
+                      <div class="arrow"></div>
+                      <img src="img/catalog_menu_icon_3.png" />Здоровье и красота
+                    </div>
+                  </div>
+                  <div class="catalog_menu_bar_item">
+                    <div class="catalog_menu_bar_item_title">
+                      <div class="arrow"></div>
+                      <img src="img/catalog_menu_icon_1.png" />Сделано в Витебске
+                    </div>
+                  </div>
+                  <div class="catalog_menu_bar_item">
+                    <div class="catalog_menu_bar_item_title">
+                      <div class="arrow"></div>
+                      <img src="img/catalog_menu_icon_2.png" />Услуги в Витебске
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="breadcrumb_container breadcrumb_firm">
+                <ol class="breadcrumb">
+                  <li>
+                    <a href="#">Отдых и развлечения</a>
+                  </li>
+                  <li>
+                    <a href="#">Рестораны, кафе пиццерии </a>
+                  </li>
+                </ol>
+              </div>
+              <div class="standart_title">
+                <h1>
+                  Ресторан "Лямус"
+                </h1>
+              </div>
+              <div class="firm_menu">
+                <div class="firm_menu_top_navs clearfix">
+                  <a href="#">О компании</a>
+                  <div class="separator_line"></div>
+                  <a href="#">Продукция</a>
+                  <div class="separator_line"></div>
+                  <a href="#">Цены</a>
+                  <div class="separator_line"></div>
+                  <a href="#">Новости</a>
+                  <div class="separator_line"></div>
+                  <a href="#">Контакты</a><a class="pull-right" href="#">Отправить отзыв</a>
+                </div>
+                <div class="firm_menu_bottom_navs clearfix">
+                  <a class="blue first" href="#">Меню</a><a class="prime" href="#">Заказат столик!</a><a href="#">Обеденное меню на сегодня</a><a href="#">Вакансии</a><a href="#">О компании</a><a href="#">О компании</a>
+                </div>
+              </div>
+              <div class="firm_body">
+                <div class="firm_firs_text">
+                  <p>
+                    <strong>Ресторан «Лямус» является единственным рестораном-пивоварней в г. Витебске, который открылся в августе 2009 г. В ресторане широко представлены блюда белорусской кухни, в том числе детской. Собственная пивоварня начала свою работу в середине 2013 года. Ежедневно в пивоварне производится до 200 л пива. В «Лямусе» пиво варится по классической технологии на оборудовании производителя с мировым именем ZIP Technologies. Ресторан-пивоварня неуклонно соблюдает закон Вильгельма IV «О чистоте пива», который гласит, что при производстве пива можно использовать только натуральное сырьё: солод, хмель и воду</strong>
+                  </p>
+                </div>
+                <div class="firm_photo_carusel gray_block">
+                  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"><!-- Indicators --><ol class="carousel-indicators"><li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li><li data-target="#carousel-example-generic" data-slide-to="1"></li><li data-target="#carousel-example-generic" data-slide-to="2"></li></ol><!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <div class="row">
+                        <div class="col-xs-4">
+                          <a data-featherlight="#lightbox_001" href="#"><img alt="..." src="img/offer_1.jpg" /></a>
+                          <div class="lightbox_container" id="lightbox_001">
+                            <img alt="..." src="img/big_food_1.jpg" />
+                          </div>
+                        </div>
+                        <div class="col-xs-4">
+                          <a data-featherlight="#lightbox_002" href="#"><img alt="..." src="img/offer_2.jpg" /></a>
+                          <div class="lightbox_container" id="lightbox_002">
+                            <img alt="..." src="img/big_food_2.jpg" />
+                          </div>
+                        </div>
+                        <div class="col-xs-4">
+                          <a data-featherlight="#lightbox_003" href="#"><img alt="..." src="img/offer_3.jpg" /></a>
+                          <div class="lightbox_container" id="lightbox_003">
+                            <img alt="..." src="img/big_food_1.jpg" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="row">
+                        <div class="col-xs-4">
+                          <a data-featherlight="#lightbox_001" href="#"><img alt="..." src="img/offer_4.jpg" /></a>
+                          <div class="lightbox_container" id="lightbox_001">
+                            <img alt="..." src="img/big_food_1.jpg" />
+                          </div>
+                        </div>
+                        <div class="col-xs-4">
+                          <a data-featherlight="#lightbox_002" href="#"><img alt="..." src="img/offer_2.jpg" /></a>
+                          <div class="lightbox_container" id="lightbox_002">
+                            <img alt="..." src="img/big_food_2.jpg" />
+                          </div>
+                        </div>
+                        <div class="col-xs-4">
+                          <a data-featherlight="#lightbox_003" href="#"><img alt="..." src="img/offer_1.jpg" /></a>
+                          <div class="lightbox_container" id="lightbox_003">
+                            <img alt="..." src="img/big_food_1.jpg" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="row">
+                        <div class="col-xs-4">
+                          <a data-featherlight="#lightbox_001" href="#"><img alt="..." src="img/offer_3.jpg" /></a>
+                          <div class="lightbox_container" id="lightbox_001">
+                            <img alt="..." src="img/big_food_1.jpg" />
+                          </div>
+                        </div>
+                        <div class="col-xs-4">
+                          <a data-featherlight="#lightbox_002" href="#"><img alt="..." src="img/offer_1.jpg" /></a>
+                          <div class="lightbox_container" id="lightbox_002">
+                            <img alt="..." src="img/big_food_2.jpg" />
+                          </div>
+                        </div>
+                        <div class="col-xs-4">
+                          <a data-featherlight="#lightbox_003" href="#"><img alt="..." src="img/offer_4.jpg" /></a>
+                          <div class="lightbox_container" id="lightbox_003">
+                            <img alt="..." src="img/big_food_1.jpg" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Controls --><a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a><a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a></div>
+                </div>
+                <div class="firm_offer gray_block clearfix">
+                  <div class="firm_offer_title">
+                    Бизнес ланч в ресторане "Лямус"
+                  </div>
+                  <div class="firm_offer_images clearfix">
+                    <div class="img">
+                      <img src="img/offer_1.jpg" />
+                    </div>
+                    <div class="img">
+                      <img src="img/offer_2.jpg" />
+                    </div>
+                  </div>
+                  <div class="firm_offer_text">
+                    Ресторан «Лямус» является единственным рестораном-пивоварней в г. Витебске, который открылся в августе 2009 г. В ресторане широко представлены блюда белорусской кухни, в том числе детской. Собственная пивоварня начала свою работу в середине 2013 года. 
+                  </div>
+                  <div class="firm_offer_price">
+                    60 000 руб.
+                  </div>
+                </div>
+                <div class="firm_offer gray_block clearfix">
+                  <div class="firm_offer_title">
+                    Бизнес ланч в ресторане "Лямус"
+                  </div>
+                  <div class="firm_offer_images clearfix">
+                    <div class="img">
+                      <img src="img/offer_4.jpg" />
+                    </div>
+                    <div class="img">
+                      <img src="img/offer_3.jpg" />
+                    </div>
+                  </div>
+                  <div class="firm_offer_text">
+                    Ресторан «Лямус» является единственным рестораном-пивоварней в г. Витебске, который открылся в августе 2009 г. В ресторане широко представлены блюда белорусской кухни.
+                  </div>
+                  <div class="firm_offer_price">
+                    20 000 руб.
+                  </div>
+                </div>
+                <div class="firm_offer gray_block clearfix">
+                  <div class="firm_offer_title">
+                    Другое, более длинное предложение в ресторане "Лямус"
+                  </div>
+                  <div class="firm_offer_images clearfix">
+                    <div class="img">
+                      <img src="img/offer_3.jpg" />
+                    </div>
+                    <div class="img">
+                      <img src="img/offer_4.jpg" />
+                    </div>
+                    <div class="img">
+                      <img src="img/offer_1.jpg" />
+                    </div>
+                    <div class="img">
+                      <img src="img/offer_2.jpg" />
+                    </div>
+                  </div>
+                  <div class="firm_offer_text">
+                    Ресторан «Лямус» является единственным рестораном-пивоварней в г. Витебске, который открылся в августе 2009 г. В ресторане широко представлены блюда белорусской кухни, в том числе детской. Собственная пивоварня начала свою работу в середине 2013 года. Ресторан «Лямус» является единственным рестораном-пивоварней в г. Витебске, который открылся в августе 2009 г. <br /><br />В ресторане широко представлены блюда белорусской кухни, в том числе детской. Собственная пивоварня начала свою работу в середине 2013 года. 
+                  </div>
+                  <div class="firm_offer_price">
+                    120 000 руб.
+                  </div>
+                </div>
+                <br /><br />
+                <p>
+                  Ресторан «Лямус» является единственным рестораном-пивоварней в г. Витебске, который открылся в августе 2009 г. В ресторане широко представлены блюда белорусской кухни, в том числе детской. Собственная пивоварня начала свою работу в середине 2013 года. Ежедневно в пивоварне производится до 200 л пива. В «Лямусе» пиво варится по классической технологии на оборудовании производителя с мировым именем ZIP Technologies. Ресторан-пивоварня неуклонно соблюдает закон Вильгельма IV «О чистоте пива», который гласит, что при производстве пива можно использовать только натуральное сырьё: солод, хмель и воду
+                </p>
+                <br /><br />
+                <p>
+                  <img src="img/firm_im_1.jpg" />
+                </p>
+                <br />
+                <p>
+                  Ресторан «Лямус» является единственным рестораном-пивоварней в г. Витебске, который открылся в августе 2009 г. В ресторане широко представлены блюда белорусской кухни, в том числе детской. Собственная пивоварня начала свою работу в середине 2013 года. Ежедневно в пивоварне производится до 200 л пива. В «Лямусе» пиво варится по классической технологии на оборудовании производителя с мировым именем ZIP Technologies. Ресторан-пивоварня неуклонно соблюдает закон Вильгельма IV «О чистоте пива», который гласит, что при производстве пива можно использовать только натуральное сырьё: солод, хмель и воду
+                </p>
+                <br />
+                <p>
+                  <strong>Заголовок</strong>
+                </p>
+                <p>
+                  Ресторан «Лямус» является единственным рестораном-пивоварней в г. Витебске, который открылся в августе 2009 г. В ресторане широко представлены блюда белорусской кухни, в том числе детской. Собственная пивоварня начала свою работу в середине 2013 года. Ежедневно в пивоварне производится до 200 л пива. В «Лямусе» пиво варится по классической технологии на оборудовании производителя с мировым именем ZIP Technologies. Ресторан-пивоварня неуклонно соблюдает закон Вильгельма IV «О чистоте пива», который гласит, что при производстве пива можно использовать только натуральное сырьё: солод, хмель и воду Ресторан «Лямус» является единственным рестораном-пивоварней в г. Витебске, который открылся в августе 2009 г. В ресторане широко представлены блюда белорусской кухни, в том числе детской. Собственная пивоварня начала свою работу в середине 2013 года. Ежедневно в пивоварне производится до 200 л пива. В «Лямусе» пиво варится по классической технологии на оборудовании производителя с мировым именем ZIP Technologies. Ресторан-пивоварня неуклонно соблюдает закон Вильгельма IV «О чистоте пива», который гласит, что при производстве пива можно использовать только натуральное сырьё: солод, хмель и воду
+                </p>
+                <div class="firm_footer gray_block">
+                  <div class="row">
+                    <div class="firm_footer_map col-xs-6">
+                      <script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=GU8DCR4dhhnhaeqrg3vAd5Tf-5v7jdrW&width=100%&height=350"></script>
+                    </div>
+                    <div class="firm_footer_photo col-xs-6">
+                      <img height="350" src="img/firm_im_vhod.jpg" width="396" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="firm_right_bar">
+                <div class="firm_logo">
+                  <img src="img/lyamus_logo.jpg" />
+                </div>
+                <div class="firm_contacts">
+                  <div class="firm_contacts__item">
+                    <div class="title">
+                      Адрес:
+                    </div>
+                    <div class="firm_contacts__item_item">
+                      <img src="img/adress_icon.png" /><a href="#">Витебск, пр-т Победы, 1</a>
+                    </div>
+                  </div>
+                  <div class="firm_contacts__item">
+                    <div class="title">
+                      Телефоны:
+                    </div>
+                    <div class="firm_contacts__item_item">
+                      <img src="img/phone_icon.gif" />+375 212 57-59-08
+                    </div>
+                    <div class="firm_contacts__item_item">
+                      <img src="img/mts_icon.jpg" />+375 29 714 39 27
+                    </div>
+                    <div class="firm_contacts__item_item">
+                      <img src="img/velcom_icon.gif" />+375 29 714 39 27
+                    </div>
+                    <div class="firm_contacts__item_item">
+                      <img src="img/life_icon.png" />+375 29 714 39 27
+                    </div>
+                  </div>
+                  <div class="firm_contacts__item">
+                    <div class="title">
+                      Социальные сети
+                    </div>
+                    <div class="firm_contacts__item_item">
+                      <img src="img/vk.gif"><a href="http://vk.com/gorod_vitebsk">vk.com/gorod_vitebsk</a></img>
+                    </div>
+                    <div class="firm_contacts__item_item">
+                      <img src="img/dnoklasniki.gif"><a href="http://vk.com/gorod_vitebsk">odnoklassniki.ru/gorod_vitebsk</a></img>
+                    </div>
+                  </div>
+                  <div class="firm_contacts__item">
+                    <div class="title">
+                      Время работы:
+                    </div>
+                    <div class="firm_contacts__item_item">
+                      <img src="img/time.png" />Пн-Вс: 11:00-23:30 Первый понедельник месяца до 15:00 - санитарный день
+                    </div>
+                  </div>
+                  <div class="firm_contacts__item">
+                    <div class="title">
+                      Сайт:
+                    </div>
+                    <div class="firm_contacts__item_item">
+                      <img src="img/internet_icon.png" /><a href="lyamus.gorodvitebsk.by">lyamus.gorodvitebsk.by</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row big_row">
+          <div class="logo col-xs-2">
+            <a href="/"><img src="img/logo.png"/></a>
+          </div>
+          <div class="footer_nav col-xs-10">
+            <div class="footer_nav_item">
+              <a href="#"><span class="glyphicon glyphicon-plus-sign"></span>Добавить организацию <br> в каталог </a>
+            </div>
+            <div class="footer_nav_item">
+              <a href="#"><span class="glyphicon glyphicon-ok-sign"></span>Размещение <br> рекламы</a>
+            </div>
+            <div class="footer_nav_item one_line">
+              <a href="#"><span class="glyphicon glyphicon-globe"></span> Создание сайтов </a>
+            </div>
+            <div class="footer_nav_item">
+              <a href="#"><span class="glyphicon glyphicon-film"></span>Заказать <br> видео-рекламу</a>
+            </div>
+            <div class="footer_nav_item one_line">
+              <a href="#"><span class="glyphicon glyphicon-phone-alt"></span>Контакты  </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

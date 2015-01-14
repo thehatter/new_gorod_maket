@@ -1,0 +1,798 @@
+doctype html
+html
+  head
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    meta http-equiv="Content-Type" content="text/html; charset=utf-8"
+    title ВИТЕБСКИЙ ГОРОДСКОЙ ИНТЕРНЕТ-ПОРТАЛ - GorodVitebsk.by - ВСЁ О ГОРОДЕ ВИТЕБСКЕ!Новости Витебска,Каталог организаций,фирмы витебска,Витебск и Витебская область,интересное,события,происшествия,афиша,погода,курсы валют,поиск лекарств,скидки и акции,новости
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles">
+    <link href="css/main.css" rel="stylesheet" media="screen">
+    <link href="css/new_gorod_top_bar.css" rel="stylesheet" media="screen">
+    
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/new_gorod_top_bar.js"></script>
+    <script src="js/main.js"></script>
+
+  body.firm_page
+
+    a.top_button href="#top"
+
+    .modal.fade id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+      .modal-dialog.modal-lg
+        .modal-content
+          form role="form"
+            .modal-header
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              h4.modal-title#myModalLabel Добавление организации в каталог
+            .modal-body
+              .form-group
+                label Название
+                input.form-control type="text" placeholder="Введите название ораганизации"
+              .form-group
+                label Сфера деятельности
+                select.form-control
+                  option Шоппинг  ---  Косметика и парфюмерия
+                  option Шоппинг  ---  Магазины алкогольных напитков
+                  option Шоппинг  ---  Косметика и парфюмерия
+                  option Шоппинг  ---  Магазины алкогольных напитков
+                  option Шоппинг  ---  Магазины алкогольных напитков
+                  option Шоппинг  ---  Магазины алкогольных напитков
+
+              .form-group
+                label Краткое описание
+                textarea.form-control 
+              .form-group
+                label Контакты (телефон для связи и т.д.)
+                textarea.form-control 
+
+              .form-group
+                label Ссылка на сайт
+                input.form-control type="text"
+              .form-group
+                label Электронная почта
+                input.form-control type="text"
+              .form-group
+                label Контактное лицо
+                input.form-control type="text"
+
+            .modal-footer
+              button type="button" class="btn btn-default" data-dismiss="modal" Закрыть
+              button type="submit" class="btn btn-success" data-dismiss="modal" Отправить
+
+    / <===========================================================>
+    /                NEW_GOROD_TOP_BAR_CONTAINER
+    / <===========================================================>
+
+    .new_gorod_top_bar_container
+      .new_gorod_top_bar
+
+        ul.menu_ul.clearfix
+          li.first.clearfix <a target="_blank" href="http://gorod.vitebsk.by/index.html"><strong>gorod.vitebsk.by:</strong></a> <i class="icon_menu"></i>
+          .hid
+            li <a target="_blank" href="http://gorod.vitebsk.by/index.html">Новости</a>
+            li <a target="_blank" href="http://gorod.vitebsk.by/jiteli.htm">Каталог</a>
+            li <a target="_blank" href="http://rabotavitebsk.by/">Работа</a>
+            li <a target="_blank" href="http://gorod.vitebsk.by/afisha/index.htm">Афиша</a>
+            li <a href="http://vdv-tv.by/">ТВ</a>
+            li <a href="http://namvam.by/">Обьявления</a>
+            li <a target="_blank" href="http://gorod.vitebsk.by/skidki/index.html">Скидки</a>
+            li.last.cont
+              <a href="#" class="cont_a"><strong>Все проекты:</strong></a>
+              ul.clearfix
+                li <a target="_blank" href="http://m.gorodvitebsk.by/">Мобильный Витебск</a>
+                li <a target="_blank" href="http://gorod.vitebsk.by/made/index.html">Сделано в Витебске</a>
+                li <a target="_blank" href="http://gorod.vitebsk.by/turism.htm">Туризм и отдых</a>
+                li <a target="_blank" href="http://gorod.vitebsk.by/feeriya/index.html">Феерия льна</a>
+                li <a target="_blank" href="http://foto.gorodvitebsk.by/">Фотоальбом</a>
+                li <a target="_blank" href="http://forum.gorodvitebsk.by/">Форум</a>
+                li <a target="_blank" href="http://gorod.vitebsk.by/add-info.htm">Реклама на портале</a>
+                li <a target="_blank" href="http://www.prometei-design.com/rus/CorporativSitesRus.htm">Создание сайтов</a>
+                li <a target="_blank" href="http://gorod.vitebsk.by/prometei/">Компьютерное обучение</a>  
+                li <a target="_blank" href="http://gorod.vitebsk.by/news/index.html">Архив новостей</a>
+
+
+
+
+
+    / <===========================================================>
+    /                            HEADER
+    / <===========================================================>
+    .header_container.gray_container
+      .container
+        .row.big_row
+          .header.clearfix
+            .logo.col-xs-2
+              a href="/" <img src="img/logo.png"/>
+            .header_nav.col-xs-10
+              .header_nav_in.clearfix
+                .header_nav_left_bar
+                  .search_bar.clearfix
+                    form
+                      <input type="text" class="form-control" placeholder="Я ищю салоны красоты в Витебске!">
+                      <button type="submit" class="btn btn-lg btn-warning"> <span class="glyphicon glyphicon-search"></span> Поиск</button>
+                  .menu_container
+                    a href="#" Розыгрыши
+                    a href="#" Скидки
+                    a href="#" Интернет-магазины
+                    a href="#" Лекарства
+                    a href="#" Интернет-ТВ
+                .header_nav_right_bar.clearfix
+                  .wather_informer
+                    .title Погода в Витебске
+                    .wather_info
+                      a href="#"
+                        img src="img/wather_im.png"
+                  .currency_informer.clearfix
+                    .title Курсы валют
+                    a href="#"
+                      .currency_items.clearfix
+                        .currency_item.clearfix
+                          .name USD
+                          .val1 10 100
+                          .val2 10 120
+                        .currency_item.clearfix
+                          .name USD
+                          .val1 10 100
+                          .val2 10 120
+                        .currency_item.clearfix
+                          .name USD
+                          .val1 10 100
+                          .val2 10 120
+                      .more cмотреть все банки>>
+
+
+ 
+
+
+    / <===========================================================>
+    /                           FIRM_CONTAINER
+    / <===========================================================>
+
+    .firm_container.gray_container
+      .container
+        .row.big_row
+          .main.clearfix
+            .col-xs-9
+
+
+              / <===========================================================>
+              /                        BREADCRUMB
+              / <===========================================================>
+              .breadcrumb_container
+                ol.breadcrumb
+                  li
+                    a href="#" Здоровье и красота
+                  li Салоны красоты в Витебске 
+
+              / <===========================================================>
+              /                        STANDART_TITLE
+              / <===========================================================>
+
+              .standart_title
+                h1 Салоны красоты в Витебске
+
+
+              / <===========================================================>
+              /                       CATALOG SECTION PAGE
+              / <===========================================================>
+
+              .gray_block.gray_font_666
+                p Офисная мебель - визитная карточка компании!
+                p Соответствующую атмосферу в офисе создает в первую очередь мебель и декор: стиль, гармония, лаконичность. Именно этим нужно руководствоваться, когда собираетесь купить мебель для офиса в Витебске: столы (компьютерные столы, столы для переговоров), стулья, офисные стулья, кресла, шкафы, шкафы купе, барные стулья и т.д..Город изобилует  фирмами, специализирующимися на продаже такого товара, как корпусная мебель, мебель для кафе, баров, ресторанов, гостиниц, банков, торговое оборудование, алюминиевые мобильные и стационарные перегородки и т.д. Некоторые компании предлагают мебель на заказ и полный цикл: проектирование и изготовление мебели.
+
+
+              / <===========================================================>
+              /                       CATALOG_SECTION_ITEM
+              / <===========================================================>
+              .catalog_section_item.clearfix.orange_line
+                .catalog_sale_corner
+                  img src="img/sale_corner.png"
+                  .sale 20%
+                  .hide_text Вы можете получить скидку на товары этой фиры с помощью нашей дисконтной карты
+
+                .catalog_section_left
+                  a href="#"
+                    img.img-thumbnail src="img/catalog_section_img_1.jpg"
+
+                  .firm_contacts
+                    .firm_contacts__item.inline
+                      .title Адрес:
+                      .firm_contacts__item_item
+                        img src="img/adress_icon.png"
+                        a href="#" Витебск, пр-т Победы, 1
+                    .firm_contacts__item.section_ot
+                      .title Телефоны:
+                      .firm_contacts__item_item
+                        img src="img/phone_icon.gif"
+                        | +375 212 57-59-08
+                      .firm_contacts__item_item
+                        img src="img/mts_icon.jpg"
+                        | +375 29 714 39 27
+                      .firm_contacts__item_item
+                        img src="img/velcom_icon.gif"
+                        | +375 29 714 39 27
+                      .firm_contacts__item_item
+                        img src="img/life_icon.png"
+                        | +375 29 714 39 27
+
+                    .firm_contacts__item.section_ot
+                      .title Время работы:
+                      .firm_contacts__item_item
+                        img src="img/time.png"
+                        | Пн-Вс: 11:00-23:30 Первый понедельник месяца до 15:00 - санитарный день
+
+                    .firm_contacts__item.inline
+                      .title Сайт:
+                      .firm_contacts__item_item
+                        img src="img/internet_icon.png"
+                        a href="lyamus.gorodvitebsk.by" lyamus.gorodvitebsk.by
+                    .firm_more
+                      a href="#" 
+                        | Подробнее 
+                        span.glyphicon.glyphicon-chevron-right
+
+                .catalog_section_right
+                  a.title href="# "Парикмахерская “Блюз”
+
+                  .text
+                    p Новый салон красоты приглашает всех модниц в гости. К Вашим услугам:
+
+                    p - весь спектр парикмахерских услуг (стрижки мужские, женские, детские, укладки, косоплетение, окраска волос, лечение волос, стрижка горячими ножницами). Салон работает на профессиональной итальянской косметике для волос.
+
+                    p - НОВИНКА! Экранирование волос; Биозавивка estell;
+
+
+                    ul
+                      li Депиляция,  тату
+                      li Автозагар
+                      li Продажа профессиональных лечебных косметических средств
+
+                    .firm_catalog_actions_container
+                      .firm_catalog_action
+                        span.label.label-warning Акция
+                        .text Текст, очень короткий, в одну строку
+                      .firm_catalog_action
+                        span.label.label-primary Новость
+                        .text Текст, очень короткий, в одну строку
+                      .firm_catalog_action
+                        span.label.label-success Скидка
+                        .text Текст, очень короткий, в одну строку, но тут оказался очень длинный текст
+
+
+                    p Весь спектр парикмахерских услуг (стрижки мужские, женские, детские, укладки, косоплетение, окраска волос, лечение волос, стрижка горячими ножницами). Салон работает на профессиональной итальянской косметике для волос.
+
+                  .catalog_section_item_images
+                    .catalog_section_col
+                      a href="#" data-featherlight="#lightbox_001"
+                        img.img-thumbnail.img-responsive src="img/offer_1.jpg" alt="..."
+                      #lightbox_001.lightbox_container
+                        img src="img/big_food_1.jpg" alt="..."
+                    .catalog_section_col
+                      a href="#" data-featherlight="#lightbox_002"
+                        img.img-thumbnail src="img/offer_2.jpg" alt="..."
+                      #lightbox_002.lightbox_container
+                        img src="img/big_food_2.jpg" alt="..."
+                    .catalog_section_col
+                      a href="#" data-featherlight="#lightbox_003"
+                        img.img-thumbnail src="img/offer_3.jpg" alt="..."
+                      #lightbox_003.lightbox_container
+                        img src="img/big_food_1.jpg" alt="..."
+
+
+
+
+              .main_big_baner
+                a href="#"
+                  img src="img/baner_main_1.png"
+                a.pull-right href="#"
+                  img src="img/baner_main_2.png"
+
+              / <===========================================================>
+              /                       CATALOG_SECTION_ITEM
+              / <===========================================================>
+              .catalog_section_item.clearfix
+                .catalog_sale_corner
+                  img src="img/sale_corner.png"
+                  .sale 5%
+                  .hide_text Вы можете получить скидку на товары этой фиры с помощью нашей дисконтной карты
+
+                .catalog_section_left
+                  a href="#"
+                    img.img-thumbnail src="img/catalog_section_img_1.jpg"
+
+                  .firm_contacts
+                    .firm_contacts__item.inline
+                      .title Адрес:
+                      .firm_contacts__item_item
+                        img src="img/adress_icon.png"
+                        a href="#" Витебск, пр-т Победы, 1
+                    .firm_contacts__item.section_ot
+                      .title Телефоны:
+                      .firm_contacts__item_item
+                        img src="img/phone_icon.gif"
+                        | +375 212 57-59-08
+                      .firm_contacts__item_item
+                        img src="img/mts_icon.jpg"
+                        | +375 29 714 39 27
+                      .firm_contacts__item_item
+                        img src="img/velcom_icon.gif"
+                        | +375 29 714 39 27
+                      .firm_contacts__item_item
+                        img src="img/life_icon.png"
+                        | +375 29 714 39 27
+
+                    .firm_contacts__item.section_ot
+                      .title Время работы:
+                      .firm_contacts__item_item
+                        img src="img/time.png"
+                        | Пн-Вс: 11:00-23:30 Первый понедельник месяца до 15:00 - санитарный день
+
+                    .firm_contacts__item.inline
+                      .title Сайт:
+                      .firm_contacts__item_item
+                        img src="img/internet_icon.png"
+                        a href="lyamus.gorodvitebsk.by" lyamus.gorodvitebsk.by
+
+                    .firm_more
+                      a href="#" 
+                        | Подробнее 
+                        span.glyphicon.glyphicon-chevron-right
+
+                .catalog_section_right
+                  a.title href="#" Студия красоты "ЗОЛОТАЯ СТРЕКОЗА"
+
+                  .text
+                    p Новый салон красоты приглашает всех модниц в гости. К Вашим услугам:
+
+                    p - весь спектр парикмахерских услуг (стрижки мужские, женские, детские, укладки, косоплетение, окраска волос, лечение волос, стрижка горячими ножницами). Салон работает на профессиональной итальянской косметике для волос.
+
+                    p - НОВИНКА! Экранирование волос; Биозавивка estell;
+
+                     
+                    p -НОВИНКА! Кератиновое восстановление волос 
+
+                    ul
+                      li Депиляция,  тату
+                      li Автозагар
+                      li Продажа профессиональных лечебных косметических средств
+                      li Депиляция,  тату
+                      li Автозагар
+
+                    p Весь спектр парикмахерских услуг (стрижки мужские, женские, детские, укладки, косоплетение, окраска волос, лечение волос, стрижка горячими ножницами). Салон работает на профессиональной итальянской косметике для волос.
+
+                  .catalog_section_item_images
+                    .catalog_section_col
+                      a href="#" data-featherlight="#lightbox_001"
+                        img.img-thumbnail.img-responsive src="img/offer_1.jpg" alt="..."
+                      #lightbox_001.lightbox_container
+                        img src="img/big_food_1.jpg" alt="..."
+                    .catalog_section_col
+                      a href="#" data-featherlight="#lightbox_002"
+                        img.img-thumbnail src="img/offer_2.jpg" alt="..."
+                      #lightbox_002.lightbox_container
+                        img src="img/big_food_2.jpg" alt="..."
+                    .catalog_section_col
+                      a href="#" data-featherlight="#lightbox_003"
+                        img.img-thumbnail src="img/offer_3.jpg" alt="..."
+                      #lightbox_003.lightbox_container
+                        img src="img/big_food_1.jpg" alt="..."
+
+
+              / <===========================================================>
+              /                       CATALOG_SECTION_ITEM
+              / <===========================================================>
+              .catalog_section_item.clearfix
+                .catalog_section_left
+                  a href="#"
+                    img.img-thumbnail src="img/catalog_section_img_1.jpg"
+
+                  .firm_contacts
+                    .firm_contacts__item.inline
+                      .title Адрес:
+                      .firm_contacts__item_item
+                        img src="img/adress_icon.png"
+                        a href="#" Витебск, пр-т Победы, 1
+                    .firm_contacts__item.section_ot
+                      .title Телефоны:
+                      .firm_contacts__item_item
+                        img src="img/phone_icon.gif"
+                        | +375 212 57-59-08
+                      .firm_contacts__item_item
+                        img src="img/mts_icon.jpg"
+                        | +375 29 714 39 27
+                      .firm_contacts__item_item
+                        img src="img/velcom_icon.gif"
+                        | +375 29 714 39 27
+                      .firm_contacts__item_item
+                        img src="img/life_icon.png"
+                        | +375 29 714 39 27
+
+                    .firm_contacts__item.section_ot
+                      .title Время работы:
+                      .firm_contacts__item_item
+                        img src="img/time.png"
+                        | Пн-Вс: 11:00-23:30 Первый понедельник месяца до 15:00 - санитарный день
+
+                    .firm_contacts__item.inline
+                      .title Сайт:
+                      .firm_contacts__item_item
+                        img src="img/internet_icon.png"
+                        a href="lyamus.gorodvitebsk.by" lyamus.gorodvitebsk.by
+
+                    .firm_more
+                      a href="#" 
+                        | Подробнее 
+                        span.glyphicon.glyphicon-chevron-right
+
+                .catalog_section_right
+                  a.title href="#" Парикмахерская “Блюз с очень очень длинным названием”
+
+                  .text
+                    p  Тут очень много текста Новый салон красоты приглашает всех модниц в гости. К Вашим услугам:
+
+                    p  Тут очень много текста Новый салон красоты приглашает всех модниц в гости. К Вашим услугам:
+
+                    p - весь спектр парикмахерских услуг (стрижки мужские, женские, детские, укладки, косоплетение, окраска волос, лечение волос, стрижка горячими ножницами). Салон работает на профессиональной итальянской косметике для волос. Салон работает на профессиональной итальянской косметике для волос.
+
+                    p - НОВИНКА! Экранирование волос; Биозавивка estell;
+
+                     
+                    p -НОВИНКА! Кератиновое восстановление волос 
+
+                    ul
+                      li Депиляция,  тату
+                      li Автозагар
+                      li Продажа профессиональных лечебных косметических средств
+                      li Депиляция,  тату
+                      li Автозагар
+
+                    p Весь спектр парикмахерских услуг (стрижки мужские, женские, детские, укладки, косоплетение, окраска волос, лечение волос, стрижка горячими ножницами). Салон работает на профессиональной итальянской косметике для волос.
+
+                  .catalog_section_item_images
+                    .catalog_section_col
+                      a href="#" data-featherlight="#lightbox_001"
+                        img.img-thumbnail.img-responsive src="img/offer_1.jpg" alt="..."
+                      #lightbox_001.lightbox_container
+                        img src="img/big_food_1.jpg" alt="..."
+                    .catalog_section_col
+                      a href="#" data-featherlight="#lightbox_002"
+                        img.img-thumbnail src="img/offer_2.jpg" alt="..."
+                      #lightbox_002.lightbox_container
+                        img src="img/big_food_2.jpg" alt="..."
+                    .catalog_section_col
+                      a href="#" data-featherlight="#lightbox_003"
+                        img.img-thumbnail src="img/offer_3.jpg" alt="..."
+                      #lightbox_003.lightbox_container
+                        img src="img/big_food_1.jpg" alt="..."
+
+
+            / <===========================================================>
+            /                         RIGHT BAR
+            / <===========================================================>
+
+            / <===========================================================>
+            /                        CATALOG_MENU_BAR
+            / <===========================================================>
+
+
+            .col-xs-3
+              .catalog_menu_bar.closed
+                .catalog_menu_bar_title.expand
+                  | Каталог товаров и услуг 
+                  span.glyphicon.glyphicon-chevron-down
+                .catalog_menu_bar_items
+                  .catalog_menu_bar_item
+                    .catalog_menu_bar_item_title
+                      .arrow
+                      img src="img/catalog_menu_icon_1.png"
+                      | Дом и квартира
+                    .in_tab
+                      .in_tab_header
+                        .in_tab_title Отдых и развлечения
+                      .in_tab_content.clearfix
+                        .col-xs-4
+                          .subsection
+                            .subsection_title 
+                              | Активный отдых
+                              span.badge 22
+                            a.subsection_item Боулинг
+                            a.subsection_item Футбол
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                          .subsection
+                            .subsection_title 
+                              | Активный отдых
+                              span.badge 22
+                            a.subsection_item Боулинг
+                            a.subsection_item Футбол
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+
+                        .col-xs-4
+                          .subsection
+                            .subsection_title 
+                              | Активный отдых
+                              span.badge 22
+                            a.subsection_item Боулинг
+                            a.subsection_item Футбол
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                          .subsection
+                            .subsection_title 
+                              | Активный отдых
+                              span.badge 22
+                            a.subsection_item Боулинг
+                            a.subsection_item Футбол
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                            
+                        .col-xs-4
+                          .subsection
+                            .subsection_title 
+                              | Активный отдых
+                              span.badge 22
+                            a.subsection_item Боулинг
+                            a.subsection_item Футбол
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                          .subsection
+                            .subsection_title 
+                              | Активный отдых
+                              span.badge 22
+                            a.subsection_item Боулинг
+                            a.subsection_item Футбол
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+
+
+
+
+
+                  .catalog_menu_bar_item
+                    .catalog_menu_bar_item_title
+                      .arrow
+                      img src="img/catalog_menu_icon_2.png"
+                      | Строительство и ремонт
+                    .in_tab
+                      .in_tab_header
+                        .in_tab_title Строительство и ремонт
+                      .in_tab_content.clearfix
+                        .col-xs-4
+                          .subsection
+                            .subsection_title 
+                              | Активный отдых
+                              span.badge 22
+                            a.subsection_item Боулинг
+                            a.subsection_item Футбол
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                          .subsection
+                            .subsection_title 
+                              | Активный отдых
+                              span.badge 22
+                            a.subsection_item Боулинг
+                            a.subsection_item Футбол
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+
+                        .col-xs-4
+                          .subsection
+                            .subsection_title 
+                              | Активный отдых
+                              span.badge 22
+                            a.subsection_item Боулинг
+                            a.subsection_item Футбол
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                          .subsection
+                            .subsection_title 
+                              | Активный отдых
+                              span.badge 22
+                            a.subsection_item Боулинг
+                            a.subsection_item Футбол
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                            
+                        .col-xs-4
+                          .subsection
+                            .subsection_title 
+                              | Активный отдых
+                              span.badge 22
+                            a.subsection_item Боулинг
+                            a.subsection_item Футбол
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                          .subsection
+                            .subsection_title 
+                              | Активный отдых
+                              span.badge 22
+                            a.subsection_item Боулинг
+                            a.subsection_item Футбол
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+
+
+                  .catalog_menu_bar_item
+                    .catalog_menu_bar_item_title
+                      .arrow
+                      img src="img/catalog_menu_icon_3.png"
+                      | Работа и бизнес
+                  .catalog_menu_bar_item
+                    .catalog_menu_bar_item_title
+                      .arrow
+                      img src="img/catalog_menu_icon_1.png"
+                      | Авто, мото, вело
+                  .catalog_menu_bar_item
+                    .catalog_menu_bar_item_title
+                      .arrow
+                      img src="img/catalog_menu_icon_2.png"
+                      | Семья и дети
+                  .catalog_menu_bar_item
+                    .catalog_menu_bar_item_title
+                      .arrow
+                      img src="img/catalog_menu_icon_3.png"
+                      | Шоппинг
+                  .catalog_menu_bar_item
+                    .catalog_menu_bar_item_title
+                      .arrow
+                      img src="img/catalog_menu_icon_1.png"
+                      | Отдых и развлечение
+                  .catalog_menu_bar_item
+                    .catalog_menu_bar_item_title
+                      .arrow
+                      img src="img/catalog_menu_icon_2.png"
+                      | Все для праздника
+                  .catalog_menu_bar_item
+                    .catalog_menu_bar_item_title
+                      .arrow
+                      img src="img/catalog_menu_icon_3.png"
+                      | Здоровье и красота
+                  .catalog_menu_bar_item
+                    .catalog_menu_bar_item_title
+                      .arrow
+                      img src="img/catalog_menu_icon_1.png"
+                      | Сделано в Витебске
+                  .catalog_menu_bar_item
+                    .catalog_menu_bar_item_title
+                      .arrow
+                      img src="img/catalog_menu_icon_2.png"
+                      | Услуги в Витебске
+
+
+              / <===========================================================>
+              /                        SECTION FILTERS
+              / <===========================================================>
+              .section_filters
+                form role="form"
+                  .form-group
+                    select.form-control
+                      option Тип салона
+                      option Шоппинг  ---  Магазины алкогольных напитков
+                      option Шоппинг  ---  Косметика и парфюмерия
+                      option Шоппинг  ---  Магазины алкогольных напитков
+                      option Шоппинг  ---  Магазины алкогольных напитков
+                      option Шоппинг  ---  Магазины алкогольных напитков
+                  .form-group
+                    select.form-control
+                      option Виды услуг
+                      option Шоппинг  ---  Магазины алкогольных напитков
+                      option Виды услуг
+
+                  .form-group
+                    select.form-control
+                      option Другие опции
+                      option Шоппинг  ---  Магазины алкогольных напитков
+                      option Виды услуг
+
+                  label.text-muted Опции:
+
+                  .checkbox
+                    label
+                      input type="checkbox"
+                      | Африканские косички
+
+                  .checkbox
+                    label
+                      input type="checkbox"
+                      | Окрашивание волос
+
+                  .checkbox
+                    label
+                      input type="checkbox"
+                      | Педикюр
+
+                  .checkbox
+                    label
+                      input type="checkbox"
+                      | Длинная опция очень длинная
+
+                  .checkbox
+                    label
+                      input type="checkbox"
+                      | Окрашивание волос
+
+                  .checkbox
+                    label
+                      input type="checkbox"
+                      | Педикюр
+
+                  .checkbox
+                    label
+                      input type="checkbox"
+                      | Прочее
+
+                    
+
+
+
+
+              .baner_vertical
+                img src="img/baner_vertical_1.png"
+              .baner_vertical
+                img src="img/baner_vertical_2.png"
+
+
+
+
+    / <===========================================================>
+    /                            FOOTER
+    / <===========================================================>
+
+
+    .footer
+      .container
+        .row.big_row
+          .logo.col-xs-2
+            a href="/" <img src="img/logo.png"/>
+          .footer_nav.col-xs-10
+            .footer_nav_item 
+              a href="#"
+                span.glyphicon.glyphicon-plus-sign
+                | Добавить организацию <br> в каталог 
+            .footer_nav_item 
+              a href="#"
+                span.glyphicon.glyphicon-ok-sign
+                | Размещение <br> рекламы
+            .footer_nav_item.one_line
+              a href="#"
+                span.glyphicon.glyphicon-globe
+                |  Создание сайтов 
+            .footer_nav_item 
+              a href="#"
+                span.glyphicon.glyphicon-film
+                | Заказать <br> видео-рекламу
+            .footer_nav_item.one_line
+              a href="#"
+                span.glyphicon.glyphicon-phone-alt
+                | Контакты  
