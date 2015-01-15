@@ -75,7 +75,8 @@
 
     $(".firm_right_bar").affix({
         offset: { 
-            top: 200
+            top: 200,
+            bottom: 200
         }
     });
 

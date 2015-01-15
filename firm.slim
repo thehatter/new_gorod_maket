@@ -8,12 +8,12 @@ html
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles">
     <link href="css/main.css" rel="stylesheet" media="screen">
-    <link href="css/new_gorod_top_bar.css" rel="stylesheet" media="screen">
+    <link href="css/top_bar_2015.css" rel="stylesheet" media="screen">
     
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/new_gorod_top_bar.js"></script>
+    <script src="js/tob_bar_2015.js"></script>
     <script src="js/main.js"></script>
 
   body.firm_page
@@ -63,35 +63,62 @@ html
               button type="submit" class="btn btn-success" data-dismiss="modal" Отправить
 
     / <===========================================================>
-    /                NEW_GOROD_TOP_BAR_CONTAINER
+    /                        TOP_BAR_2015
     / <===========================================================>
 
-    .new_gorod_top_bar_container
-      .new_gorod_top_bar
+    .top_bar_2015_container
+      .top_bar_2015
+        .logo
+          a href="http://gorodvitebsk.by/"
+            img src="img/g_logo_top_bar.png"
+            span 
+              strong GorodVitebsk.by
 
-        ul.menu_ul.clearfix
-          li.first.clearfix <a target="_blank" href="http://gorod.vitebsk.by/index.html"><strong>gorod.vitebsk.by:</strong></a> <i class="icon_menu"></i>
-          .hid
-            li <a target="_blank" href="http://gorod.vitebsk.by/index.html">Новости</a>
-            li <a target="_blank" href="http://gorod.vitebsk.by/jiteli.htm">Каталог</a>
-            li <a target="_blank" href="http://rabotavitebsk.by/">Работа</a>
-            li <a target="_blank" href="http://gorod.vitebsk.by/afisha/index.htm">Афиша</a>
-            li <a href="http://vdv-tv.by/">ТВ</a>
-            li <a href="http://namvam.by/">Обьявления</a>
-            li <a target="_blank" href="http://gorod.vitebsk.by/skidki/index.html">Скидки</a>
-            li.last.cont
-              <a href="#" class="cont_a"><strong>Все проекты:</strong></a>
-              ul.clearfix
-                li <a target="_blank" href="http://m.gorodvitebsk.by/">Мобильный Витебск</a>
-                li <a target="_blank" href="http://gorod.vitebsk.by/made/index.html">Сделано в Витебске</a>
-                li <a target="_blank" href="http://gorod.vitebsk.by/turism.htm">Туризм и отдых</a>
-                li <a target="_blank" href="http://gorod.vitebsk.by/feeriya/index.html">Феерия льна</a>
-                li <a target="_blank" href="http://foto.gorodvitebsk.by/">Фотоальбом</a>
-                li <a target="_blank" href="http://forum.gorodvitebsk.by/">Форум</a>
-                li <a target="_blank" href="http://gorod.vitebsk.by/add-info.htm">Реклама на портале</a>
-                li <a target="_blank" href="http://www.prometei-design.com/rus/CorporativSitesRus.htm">Создание сайтов</a>
-                li <a target="_blank" href="http://gorod.vitebsk.by/prometei/">Компьютерное обучение</a>  
-                li <a target="_blank" href="http://gorod.vitebsk.by/news/index.html">Архив новостей</a>
+        ul.menu_ul
+          li <a target="_blank" href="http://gorod.vitebsk.by/index.html">Новости</a>
+          li <a target="_blank" href="http://gorod.vitebsk.by/afisha/index.htm">Афиша</a>
+          li <a target="_blank" href="http://gorod.vitebsk.by/jiteli.htm">Каталог товаров</a>
+          li <a target="_blank" href="http://rabotavitebsk.by/">Работа</a>
+          li <a target="_blank" href="http://naparu.by/">Еда</a>
+          li <a href="http://namvam.by/">Обьявления</a>
+          li <a href="http://vdv-tv.by/">ТВ</a>
+          li <a href="http://auto.namvam.by/">Авто</a>
+          li <a target="_blank" href="http://gorod.vitebsk.by/skidki/index.html">Скидки</a>
+          li.cont
+            a.cont_a href="#"
+              .shevron
+              | Все проекты
+            ul.clearfix
+              li <a target="_blank" href="http://m.gorodvitebsk.by/">Мобильный Витебск</a>
+              li <a target="_blank" href="http://gorod.vitebsk.by/made/index.html">Сделано в Витебске</a>
+              li <a target="_blank" href="http://gorod.vitebsk.by/turism.htm">Туризм и отдых</a>
+              li <a target="_blank" href="http://gorod.vitebsk.by/feeriya/index.html">Феерия льна</a>
+              li <a target="_blank" href="http://foto.gorodvitebsk.by/">Фотоальбом</a>
+              li <a target="_blank" href="http://forum.gorodvitebsk.by/">Форум</a>
+              li <a target="_blank" href="http://gorod.vitebsk.by/add-info.htm">Реклама на портале</a>
+              li <a target="_blank" href="http://www.prometei-design.com/rus/CorporativSitesRus.htm">Создание сайтов</a>
+              li <a target="_blank" href="http://gorod.vitebsk.by/prometei/">Компьютерное обучение</a>  
+              li <a target="_blank" href="http://gorod.vitebsk.by/news/index.html">Архив новостей</a>
+          li.enter_button <a target="_blank" href="#">Войти</a>
+
+        .social_bar
+          a href="http://vk.com/gorod_vitebsk"
+            img src="img/social_icons_1.png"
+          a href="http://instagram.com/gorodvitebsk"
+            img src="img/social_icons_2.png"
+          a href="https://www.facebook.com/GorodVitebsk.by"
+            img src="img/social_icons_3.png"
+          a href="http://ok.ru/group/56855124705326"
+            img src="img/social_icons_4.png"
+          a href="https://www.youtube.com/user/gorodvitebskby1"
+            img src="img/social_icons_5.png"
+          a href="https://twitter.com/gorodvitebskby"
+            img src="img/social_icons_6.png"
+          a href="https://plus.google.com/+GorodVitebsk/posts"
+            img src="img/social_icons_7.png"
+          a href="https://www.linkedin.com/company/%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%BB-%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0-%D0%B2%D0%B8%D1%82%D0%B5%D0%B1%D1%81%D0%BA%D0%B0---gorodvitebsk-by"
+            img src="img/social_icons_8.png"
+
 
 
 
@@ -399,11 +426,11 @@ html
                   a href="#" Новости
                   .separator_line
                   a href="#" Контакты
-                  a.pull-right href="#" Отправить отзыв
+                  a.pull-right href="#" 
+                    span.glyphicon.glyphicon-pencil 
+                    |  Отзывы
                 .firm_menu_bottom_navs.clearfix
-                  a.blue.first href="#" Меню
-                  a.prime href="#" Заказат столик!
-                  a href="#" Обеденное меню на сегодня
+                  a href="#" Дополнительные кнопки
                   a href="#" Вакансии
                   a href="#" О компании
                   a href="#" О компании
@@ -518,19 +545,6 @@ html
 
 
                 .firm_offer.gray_block.clearfix
-                  .firm_offer_title Бизнес ланч в ресторане "Лямус"
-                  .firm_offer_images.clearfix
-                    .img
-                      img src="img/offer_4.jpg"
-                    .img
-                      img src="img/offer_3.jpg"
-                    
-                  .firm_offer_text
-                    | Ресторан «Лямус» является единственным рестораном-пивоварней в г. Витебске, который открылся в августе 2009 г. В ресторане широко представлены блюда белорусской кухни.
-                  .firm_offer_price 20 000 руб.
-
-
-                .firm_offer.gray_block.clearfix
                   .firm_offer_title Другое, более длинное предложение в ресторане "Лямус"
                   .firm_offer_images.clearfix
                     .img
@@ -580,6 +594,74 @@ html
 
 
 
+              / <===========================================================>
+              /                            ORG_NEWS
+              / <===========================================================>
+
+              .org_news
+                .grean_herder_section
+                  a href="#"
+                  .title  
+                    a href="# "Hовости организации
+                .org_news_container.clearfix
+
+                  .org_news_item.clearfix
+                    .title 
+                      a href="#" Новый порядок работы ИП в Республике Беларусь 
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+                      .span.separator |
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+                  .org_news_item.mega.odd.clearfix
+                    .img 
+                      img src="img/firm_news_img.jpg"
+                    .title 
+                      a href="#" В магазине МАСТЕР ОГРОМНЫЙ выбор бензопил, триммеров. Значительно более длинный текст про бензопилы и тримеры и все такое. Новый порядок работы ИП в Республике Беларусь 
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+                      .span.separator |
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+                  .org_news_item.clearfix
+                    .title 
+                      a href="#" Новый порядок работы ИП в Республике Беларусь 
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+                      .span.separator |
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+                  .org_news_item.odd.clearfix
+                    .title 
+                      a href="#" В магазине МАСТЕР ОГРОМНЫЙ выбор бензопил, триммеров, мотоблоков и любых товаров для сада и огорода. 
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+                      .span.separator |
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+                  .org_news_item.clearfix
+                    .title 
+                      a href="#" Новый порядок работы ИП в Республике Беларусь 
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+                      .span.separator |
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+                  .org_news_item.odd.clearfix
+                    .title 
+                      a href="#" В магазине МАСТЕР ОГРОМНЫЙ выбор бензопил, триммеров, мотоблоков и любых товаров для сада и огорода. 
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+                      .span.separator |
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+
                 / <===========================================================>
                 /                         FIRM_FOOTER
                 / <===========================================================>
@@ -589,6 +671,8 @@ html
                       <script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=GU8DCR4dhhnhaeqrg3vAd5Tf-5v7jdrW&width=100%&height=350"></script>
                     .firm_footer_photo.col-xs-6
                       img src="img/firm_im_vhod.jpg" height="350" width="396"
+
+
 
 
 

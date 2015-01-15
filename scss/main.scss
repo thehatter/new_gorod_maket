@@ -615,7 +615,7 @@ h1 {
 
 
 .catalog_menu_bar {
-  margin: 0 0px;
+  margin: 0 0px 11px 0;
   position: relative;
   .catalog_menu_bar_title {
     padding: 15px 10px 15px 18px;
@@ -631,6 +631,12 @@ h1 {
       -moz-transform: rotate(0deg) ;
       -o-transform: rotate(0deg) ;
       -ms-transform: rotate(0deg) ;
+
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
     }
 
   }
@@ -724,7 +730,7 @@ h1 {
 }
 
 .catalog_menu_bar.expand {
-  margin: 0 0 0px 0;
+  margin: 0 0 16px 0;
 
   .catalog_menu_bar_title {
     span {
@@ -733,6 +739,12 @@ h1 {
       -moz-transform: rotate(180deg) ;
       -o-transform: rotate(180deg) ;
       -ms-transform: rotate(180deg) ;
+
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
     }
   }
 
@@ -755,6 +767,7 @@ h1 {
 
   .subsection{
     margin: 0 0 20px 0;
+    cursor: auto;
 
     .subsection_title {
       font-size: 17px;
@@ -771,6 +784,7 @@ h1 {
       display: block;
       color: #666;
       font-size: 15px;
+      cursor: pointer;
     }
   }
 
@@ -1032,7 +1046,7 @@ h1 {
 // <===========================================================>
 
 .firm_body {
-  padding: 0 0 40px 0;
+  padding: 0 0 20px 0;
 }
 
 .firm_firs_text {
@@ -1059,12 +1073,13 @@ h1 {
     margin: 0 0 12px 0;
     .title {
       font-size: 16px;
-      color: #666;
+      color: #333;
       padding: 5px 0 5px 0;
+      font-weight: bold;
     }
 
     .firm_contacts__item_item {
-      margin: 0 0 5px 0px;
+      margin: 0 0 5px 8px;
       img {
         margin: -3px 5px 0 0;
       }
@@ -1074,7 +1089,7 @@ h1 {
 
   .firm_contacts__item.section_ot {
     .firm_contacts__item_item {
-      margin: 0 0 5px 20px;
+      margin: 0 0 5px 10px;
       img {
         margin: -3px 5px 0 0;
       }
@@ -1086,9 +1101,10 @@ h1 {
     margin: 0 0 12px 0;
     .title {
       font-size: 16px;
-      color: #666;
+      color: #333;
       padding: 5px 0 0px 0;
       float: left;
+      font-weight: bold;
     }
 
     .firm_contacts__item_item {
@@ -1270,11 +1286,34 @@ h1 {
       display: block;
       font-size: 23px;
       font-weight: bold;
-      color: #555;
+      color: #333;
       margin: 0 0 12px;
       padding: 0 50px 0 0;
       line-height: 1.1;
     }
+
+    .catalog_section_discount {
+      background: #ffffff;
+      padding: 8px 10px 8px 70px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      margin: 12px 0;
+      position: relative;
+      line-height: 1.1;
+      font-weight: bold;
+
+      .img {
+        background: url(img/sales_big_for_section.png) center no-repeat;
+        width: 51px;
+        height: 44px;
+        position: absolute;
+        bottom: 8px; left: 10px;
+        z-index: 10;
+      }
+    }
+
+
     .catalog_section_item_images {
       position: absolute;
       bottom: 12px; right: 12px;
@@ -1309,18 +1348,19 @@ h1 {
     display: block;
     float: left;
     padding: 5px 10px;
-    margin: 0 4px 0 0;
+    margin: 0 8px 0 0;
     font-size: 13px;
-    min-width: 75px;
+    // min-width: 75px;
   }
   .text {
     padding: 3px 0 0 0;
+    margin:  0 0 0 40px;
   }
 }
 
 .firm_catalog_actions_container {
-  margin: 10px 0;
-  padding: 3px 12px;
+  margin: 8px 0;
+  padding: 1px 9px;
   background: #FCFCFC;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -2465,7 +2505,85 @@ transition: all 0.3s ease-in-out;
 
 
   .org_news_item.odd {
-    background: #F7F7F7;
+    background: #efefef;
+
+  }
+
+}
+
+.org_news.right_column {
+
+  background: #fbfbfb;
+  .grean_herder_section {
+    background: #36CA55;
+    padding: 8px 20px;
+
+    .title a {
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+
+
+  .org_news_item {
+    padding: 8px 8px;
+    .title a{
+      font-size: 16px;
+      color: #444;
+      font-weight: bold;
+    }
+    .body {
+      .span.section {
+        float: left;
+        padding: 0 10px 0 0px;
+      }
+      .span.separator {
+        float: left;
+        padding: 0 10px 0 0px;
+      }
+      .span.name a{
+        float: left;
+        padding: 0 10px 0 0px;
+        color: #666;
+      }
+    }
+
+  }
+
+
+  .org_news_item.mega {
+    padding: 12px 30px 12px 10px;
+    border-left: 16px solid #fd7d09;
+
+    img {
+      float: none;
+      clear: both;
+      margin: 0 16px 0 0;
+    }
+    .title {
+    margin: 10px 0 0 0;
+      a {
+        font-size: 16px;
+        color: #444;
+        font-weight: bold;
+      }
+    }
+    .body {
+      .span.section {
+        float: left;
+        padding: 0 10px 0 0px;
+      }
+      .span.separator {
+        float: left;
+        padding: 0 10px 0 0px;
+      }
+      .span.name a{
+        float: left;
+        padding: 0 10px 0 0px;
+        color: #666;
+      }
+    }
 
   }
 
