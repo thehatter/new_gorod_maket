@@ -296,15 +296,19 @@ transition: all 0.2s ease-in-out;
 
 .main_nav .item a .img{
   position: absolute;
-  right: 12px; top: 16px;
+  right: 14px; top: 18px;
 }
 .main_nav .item.item_6 a .img,
 .main_nav .item.item_9 a .img,
 .main_nav .item.item_10 a .img,
-.main_nav .item.item_11 a .img{
-  right: 12px; top: 8px;
+.main_nav .item.item_11 a .img,
+.main_nav .item.item_12 a .img {
+  right: 14px; top: 11px;
 }
 
+.main_nav .item.item_9 a .img {
+  right: 14px; top: 7px;
+}
 
 .main_nav .item a .title{
   position: absolute;
@@ -329,7 +333,8 @@ transition: all 0.2s ease-in-out;
   .main_nav .item.item_6 a .img,
   .main_nav .item.item_9 a .img,
   .main_nav .item.item_10 a .img,
-  .main_nav .item.item_11 a .img {
+  .main_nav .item.item_11 a .img,
+  .main_nav .item.item_12 a .img {
     right: 3px; top: 3px;
   }
 
