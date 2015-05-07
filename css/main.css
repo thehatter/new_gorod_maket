@@ -175,7 +175,7 @@ a.top_button {
   .header .logo_2 {
     display: none; } }
 .main_nav_container {
-  background: #262626;
+  background: #f5f5f5;
   margin: 0px 0 20px 0; }
 
 .main_nav {
@@ -248,7 +248,7 @@ a.top_button {
   background: #0238D3; }
 
 .item_4 a {
-  background: #7B0085; }
+  background: #FD8407; }
 
 .item_5 a {
   background: #128901; }
@@ -263,7 +263,7 @@ a.top_button {
   background: #411D9C; }
 
 .item_9 a {
-  background: #FD8407; }
+  background: #7B0085; }
 
 .item_10 a {
   background: #2061E9; }
