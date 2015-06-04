@@ -97,6 +97,14 @@
     background: #f7c707;
   }
 
+  .firm_button {
+    background: #f7c707;
+  }
+
+  .exit_button {
+    background: #D30013;
+  }
+
   li.cont {
     .shevron {
       float: left;
@@ -142,7 +150,7 @@
 }
 
 
-@media screen and (max-width: 1458px) {
+@media screen and (max-width: 1511px) {
   .top_bar_2015 {
     ul.menu_ul {
 
@@ -156,7 +164,7 @@
   }
 }
 
-@media screen and (max-width: 1411px) {
+@media screen and (max-width: 1465px) {
   .top_bar_2015 {
     ul.menu_ul {
       li {
@@ -169,7 +177,7 @@
   }
 }
 
-@media screen and (max-width: 1325px) {
+@media screen and (max-width: 1372px) {
   .top_bar_2015 {
     ul.menu_ul {
       li {
@@ -182,7 +190,20 @@
   }
 }
 
-@media screen and (max-width: 1262px) {
+@media screen and (max-width: 1301px) {
+  .top_bar_2015 {
+    ul.menu_ul {
+      li {
+        a {
+          padding: 7px 7px 4px 7px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
   .top_bar_2015 {
     ul.menu_ul {
       li {
@@ -268,3 +289,16 @@
     }
   }
 }
+  @media screen and (min-width: 1095px) {
+    .top_bar_2015.login_user {
+      ul.menu_ul {
+        li {
+          a {
+            padding: 7px 5px 4px 5px;
+            font-size: 13px;
+          }
+        }
+      }
+
+    }
+  }

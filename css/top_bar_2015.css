@@ -78,6 +78,10 @@
       transition: all 0.5s ease-in-out; }
   .top_bar_2015 .enter_button {
     background: #f7c707; }
+  .top_bar_2015 .firm_button {
+    background: #f7c707; }
+  .top_bar_2015 .exit_button {
+    background: #D30013; }
   .top_bar_2015 li.cont .shevron {
     float: left;
     width: 11px;
@@ -122,19 +126,23 @@
       -ms-transform: scale(1.2);
       transform: scale(1.2); }
 
-@media screen and (max-width: 1458px) {
+@media screen and (max-width: 1511px) {
   .top_bar_2015 ul.menu_ul li a {
     padding: 5px 14px 4px 14px;
     font-size: 15px; } }
-@media screen and (max-width: 1411px) {
+@media screen and (max-width: 1465px) {
   .top_bar_2015 ul.menu_ul li a {
     padding: 5px 10px 4px 10px;
     font-size: 15px; } }
-@media screen and (max-width: 1325px) {
+@media screen and (max-width: 1372px) {
   .top_bar_2015 ul.menu_ul li a {
     padding: 6px 9px 4px 9px;
     font-size: 14px; } }
-@media screen and (max-width: 1262px) {
+@media screen and (max-width: 1301px) {
+  .top_bar_2015 ul.menu_ul li a {
+    padding: 7px 7px 4px 7px;
+    font-size: 14px; } }
+@media screen and (max-width: 1250px) {
   .top_bar_2015 ul.menu_ul li a {
     padding: 7px 5px 4px 5px;
     font-size: 13px; } }
@@ -194,5 +202,9 @@
               font-size: 16px; }
         .top_bar_2015 ul.menu_ul li li:hover {
           background: #cdcdcd; } }
+@media screen and (min-width: 1095px) {
+  .top_bar_2015.login_user ul.menu_ul li a {
+    padding: 7px 5px 4px 5px;
+    font-size: 13px; } }
 
 /*# sourceMappingURL=top_bar_2015.css.map */

@@ -76,15 +76,14 @@ html
 
         ul.menu_ul
           li <a target="_blank" href="http://gorod.vitebsk.by/index.html">Новости</a>
-          li <a target="_blank" href="http://gorod.vitebsk.by/jiteli.htm">Каталог</a>
-          li <a target="_blank" href="http://rabotavitebsk.by/">Работа</a>
           li <a target="_blank" href="http://gorod.vitebsk.by/afisha/index.htm">Афиша</a>
-          li <a href="http://vdv-tv.by/">ТВ</a>
-          li <a href="http://auto.namvam.by/">Авто</a>
+          li <a target="_blank" href="http://gorod.vitebsk.by/jiteli.htm">Каталог товаров</a>
+          li <a target="_blank" href="http://rabotavitebsk.by/">Работа</a>
           li <a target="_blank" href="http://naparu.by/">Еда</a>
           li <a href="http://namvam.by/">Обьявления</a>
+          li <a href="http://vdv-tv.by/">ТВ</a>
+          li <a href="http://auto.namvam.by/">Авто</a>
           li <a target="_blank" href="http://gorod.vitebsk.by/skidki/index.html">Скидки</a>
-          li <a target="_blank" href="http://gorodvitebsk.by/priz">Розыгрыши</a>
           li.cont
             a.cont_a href="#"
               .shevron
@@ -145,7 +144,7 @@ html
             .search_bar_container
               .search_bar.clearfix
                 form
-                  <input type="text" class="form-control" placeholder="Поиск!">
+                  <input type="text" class="form-control" placeholder="Быстрый поиск товаров и услуг в Витебске...">
                   <button type="submit" class=""> <span class="glyphicon glyphicon-search"></span></button>
             .informer
               .curency 
@@ -258,9 +257,9 @@ html
               / <===========================================================>
 
               .horizontal_grean_menu.clearfix
-                a.active.first href="#" СЕГОДНЯ
+                a.first href="#" СЕГОДНЯ
                 .separator_line
-                a href="#" КИНО
+                a.active href="#" КИНО
                 .separator_line
                 a href="#" ВЕЧЕРИНКИ
                 .separator_line
@@ -282,7 +281,7 @@ html
 
 
               .afisha_line_section.clearfix
-                .title КИНО В ВИТЕБСКЕ
+                .title КИНО
                 .afisha_l_s__item
                   a href="#"
                     img src="img/afisha_img_1.jpg"
@@ -319,46 +318,40 @@ html
                     .date с 28.05 по 03.06
                     .name Кот Гром и заколдованный дом
 
-              .afisha_line_section.clearfix
-                .title ВЕЧЕРИНКИ
-                .afisha_l_s__item
-                  a href="#"
-                    .img
-                      span.helper
-                      img src="img/afisha_party_1.jpg"
-                    .date 28.06.2015
-                    .name Retro&POP вечеринка в Меге
-                .afisha_l_s__item
-                  a href="#"
-                    .img
-                      span.helper
-                      img src="img/afisha_party_2.jpg"
-                    .date 28.06.2015
-                    .name Суперкоманда 3D
-                .afisha_l_s__item
-                  a href="#"
-                    .img
-                      span.helper
-                        img src="img/afisha_party_3.jpg"
-                    .date 28.06.2015
-                    .name Лето. Пушкин. Rock-n-Roll
-                .afisha_l_s__item
-                  a href="#"
-                    .img
-                      span.helper
-                      img src="img/afisha_party_1.jpg"
-                    .date 28.06.2015
-                    .name Тайна Сухаревой башни. Чародей равновесия, 3D
-                .afisha_l_s__item
-                  a href="#"
-                    .img
-                      span.helper
-                      img src="img/afisha_party_2.jpg"
-                    .date 28.06.2015
-                    .name Суперкоманда 3D
 
-
-
+              / <===========================================================>
+              /                         kino_news
+              / <===========================================================>
+              h3.kino Новости кино
+              .kino_news
+                .kino_news_item.clearfix
+                  a href="#"
+                    .img
+                      img src="img/kino_news_1.png"
+                    .title Безумный Макс: Дорога ярости на экранах кинотеатров Витебска уже с 5 мая 
+                    .body Преследуемый призраками беспокойного прошлого, Макс уверен, что лучший способ выжить — скитаться в одиночестве. Несмотря на это, он присоединяется к бунтарям, бегущим через всю пустыню на боевой фуре, под предводительством военачальника Фуриосы...
+                    .more Подробнее
+                .kino_news_item.clearfix
+                  a href="#"
+                    .img
+                      img src="img/kino_news_2.png"
+                    .title Безумный Макс: Дорога ярости на экранах кинотеатров Витебска уже с 5 мая 
+                    .body Преследуемый призраками беспокойного прошлого, Макс уверен, что лучший способ выжить — скитаться в одиночестве. Несмотря на это, он присоединяется к бунтарям, бегущим через всю пустыню на боевой фуре, под предводительством военачальника Фуриосы...
+                    .more Подробнее
+                .kino_news_item.clearfix
+                  a href="#"
+                    .img
+                      img src="img/kino_news_1.png"
+                    .title Безумный Макс: Дорога ярости на экранах кинотеатров Витебска уже с 5 мая 
+                    .body Преследуемый призраками беспокойного прошлого, Макс уверен, что лучший способ выжить — скитаться в одиночестве. Несмотря на это, он присоединяется к бунтарям, бегущим через всю пустыню на боевой фуре, под предводительством военачальника Фуриосы...
+                    .more Подробнее
+                .kino_news_item.clearfix
+                  a href="#"
+                    .img
+                      img src="img/kino_news_2.png"
+                    .title Безумный Макс: Дорога ярости на экранах кинотеатров Витебска уже с 5 мая 
+                    .body Преследуемый призраками беспокойного прошлого, Макс уверен, что лучший способ выжить — скитаться в одиночестве. Несмотря на это, он присоединяется к бунтарям, бегущим через всю пустыню на боевой фуре, под предводительством военачальника Фуриосы...
+                    .more Подробнее
 
             / <===========================================================>
             /                         RIGHT BAR

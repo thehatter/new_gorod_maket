@@ -14,7 +14,7 @@ html
     <script src="js/tob_bar_2015.js"></script>
     <script src="js/main.js"></script>
 
-  body
+  body.main
 
     a.top_button href="#top"
 
@@ -76,14 +76,15 @@ html
 
         ul.menu_ul
           li <a target="_blank" href="http://gorod.vitebsk.by/index.html">Новости</a>
-          li <a target="_blank" href="http://gorod.vitebsk.by/afisha/index.htm">Афиша</a>
-          li <a target="_blank" href="http://gorod.vitebsk.by/jiteli.htm">Каталог товаров</a>
+          li <a target="_blank" href="http://gorod.vitebsk.by/jiteli.htm">Каталог</a>
           li <a target="_blank" href="http://rabotavitebsk.by/">Работа</a>
-          li <a target="_blank" href="http://naparu.by/">Еда</a>
-          li <a href="http://namvam.by/">Обьявления</a>
+          li <a target="_blank" href="http://gorod.vitebsk.by/afisha/index.htm">Афиша</a>
           li <a href="http://vdv-tv.by/">ТВ</a>
           li <a href="http://auto.namvam.by/">Авто</a>
+          li <a target="_blank" href="http://naparu.by/">Еда</a>
+          li <a href="http://namvam.by/">Обьявления</a>
           li <a target="_blank" href="http://gorod.vitebsk.by/skidki/index.html">Скидки</a>
+          li <a target="_blank" href="http://gorodvitebsk.by/priz">Розыгрыши</a>
           li.cont
             a.cont_a href="#"
               .shevron
@@ -128,7 +129,7 @@ html
         .row.big_row
           .col-md-12
             .baner_horizontal.top_banner
-              img src="img/banner_800x60.jpg"
+              img src="img/banner_1170x60.png"
 
 
 
@@ -144,7 +145,7 @@ html
             .search_bar_container
               .search_bar.clearfix
                 form
-                  <input type="text" class="form-control" placeholder="Быстрый поиск товаров и услуг в Витебске...">
+                  <input type="text" class="form-control" placeholder="Поиск!">
                   <button type="submit" class=""> <span class="glyphicon glyphicon-search"></span></button>
             .informer
               .curency 
@@ -233,7 +234,6 @@ html
 
 
 
-
     / <===========================================================>
     /                             MAIN
     / <===========================================================>
@@ -243,13 +243,15 @@ html
         .row.big_row
           .main.clearfix
             .col-xs-9
-              .main_big_baner
+              .main_big_baner.center
                 a href="#"
-                  img src="img/banner_468x60.jpg"
-                a.pull-right href="#"
-                  img src="img/baner_main_2.png"
+                  <object width="800" height="240" wmode="opaque" style="background: url(http://gorodvitebsk.by/BANNER/makdonalds/11052015/md_gorodvitebsk_800x240.gif) #FFF 800px 240px no-repeat;" type="application/x-shockwave-flash" data="http://gorodvitebsk.by/BANNER/makdonalds/11052015/md_gorodvitebsk_800x240.swf" id="FlashID"><a target="_blank" href="http://mcdonalds.by/ru/menu.html?utm_source=gorodvitebsk&amp;utm_medium=cpm&amp;utm_campaign=chiabatta_omd_Belarus"><param value="http://gorodvitebsk.by/BANNER/makdonalds/11052015/md_gorodvitebsk_800x240.swf" name="data"><param value="high" name="quality"><param value="opaque" name="wmode"><param value="6.0.65.0" name="swfversion"><param value="Scripts/expressInstall.swf" name="expressinstall"><param value="http://gorodvitebsk.by/BANNER/makdonalds/11052015/md_gorodvitebsk_800x240.swf" name="src"></a></object>
 
               .news_block
+                .blue_herder_section
+                  .title
+                    a href="#" Hовости Витебска
+
                 .row
                   .col-xs-4
                     a href="#"
@@ -363,14 +365,18 @@ html
                   .col-xs-4
                     a href="#"
                       .news_baner
-                        img.img-responsive src="img/news_baner.jpg"
+                        img.img-responsive src="img/banner_270x311.png"
+
+
+              .banner_100p
+                img.img-responsive src="img/banner_870x60.png" 
               
               .news_block
                 .row
                   .col-xs-4
                     a href="#"
-                      .news_baner.x250
-                        img.img-responsive src="img/banner_250x250.jpg"
+                      .news_baner
+                        img.img-responsive src="img/banner_270x311.png"
                   .col-xs-4
                     a href="#"
                       .news_item
@@ -414,19 +420,25 @@ html
                 .org_news_container.clearfix
 
                   .org_news_item.clearfix
-                    .title 
-                      a href="#" Новый порядок работы ИП в Республике Беларусь 
-                    .body
-                      .span.section
-                        a href="#" Одежда и аксессуары
-                      .span.separator |
-                      .span.name
-                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
-                  .org_news_item.mega.odd.clearfix
                     .img 
-                      img src="img/firm_news_img.jpg"
+                      a href="#"
+                        img src="img/org_news_1.jpg"
                     .title 
-                      a href="#" В магазине МАСТЕР ОГРОМНЫЙ выбор бензопил, триммеров. Значительно более длинный текст про бензопилы и тримеры и все такое. Новый порядок работы ИП в Республике Беларусь 
+                      a href="#" 
+                        | Новый порядок работы ИП в Республике Беларусь 
+                        span.label.label-danger Новинка
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+                      .span.separator |
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+                  .org_news_item.odd.clearfix
+                    .img
+                      a href="#"
+                        img src="img/org_news_2.jpg"
+                    .title 
+                      a href="#" В магазине МАСТЕР ОГРОМНЫЙ выбор бензопил, триммеров. Значительно более длинный текст про бензопилы и тримеры и все такое.
                     .body
                       .span.section
                         a href="#" Одежда и аксессуары
@@ -434,6 +446,9 @@ html
                       .span.name
                         a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
                   .org_news_item.clearfix
+                    .img
+                      a href="#"
+                        img src="img/org_news_3.jpg"
                     .title 
                       a href="#" Новый порядок работы ИП в Республике Беларусь 
                     .body
@@ -443,15 +458,9 @@ html
                       .span.name
                         a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
                   .org_news_item.odd.clearfix
-                    .title 
-                      a href="#" В магазине МАСТЕР ОГРОМНЫЙ выбор бензопил, триммеров, мотоблоков и любых товаров для сада и огорода. 
-                    .body
-                      .span.section
-                        a href="#" Одежда и аксессуары
-                      .span.separator |
-                      .span.name
-                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
-                  .org_news_item.clearfix
+                    .img 
+                      a href="#"
+                        img src="img/org_news_4.jpg"
                     .title 
                       a href="#" Новый порядок работы ИП в Республике Беларусь 
                     .body
@@ -460,9 +469,24 @@ html
                       .span.separator |
                       .span.name
                         a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
-                  .org_news_item.odd.clearfix
+                  .org_news_item.clearfix
+                    .img 
+                      a href="#"
+                        img src="img/org_news_2.jpg"
                     .title 
-                      a href="#" В магазине МАСТЕР ОГРОМНЫЙ выбор бензопил, триммеров, мотоблоков и любых товаров для сада и огорода. 
+                      a href="#" В магазине МАСТЕР ОГРОМНЫЙ выбор бензопил, триммеров. Значительно более длинный текст про бензопилы и тримеры и все такое. 
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+                      .span.separator |
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+                  .org_news_item.odd.clearfix
+                    .img
+                      a href="#"
+                        img src="img/org_news_5.jpg"
+                    .title 
+                      a href="#" Новый порядок работы ИП в Республике Беларусь 
                     .body
                       .span.section
                         a href="#" Одежда и аксессуары
@@ -470,10 +494,11 @@ html
                       .span.name
                         a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
 
-
+                .align_center_link
+                  a href="#" Смотреть архив новостей
 
               .baner_horizontal
-                img src="img/banner_800x60.jpg"
+                img.img-responsive src="img/banner_870x60.png" 
 
               / <===========================================================>
               /                            slider_baner_oma
@@ -548,7 +573,7 @@ html
 
             .col-xs-3
               .baner_vertical
-                img src="img/banner_250x300.jpg"
+                img.img-responsive src="img/banner_270x311.png"
 
               .catalog_menu_bar.main_catalog.expand
                 .catalog_menu_bar_title
@@ -838,13 +863,13 @@ html
                   .carousel-inner
                     .item.active
                       a href="#"
-                        img src="img/banner_250x300.jpg"
+                        img src="img/banner_270x311.png"
                     .item
                       a href="#"
-                        img src="img/banner_250x300.jpg"
+                        img src="img/banner_270x311.png"
                     .item
                       a href="#"
-                        img src="img/banner_250x300.jpg"
+                        img src="img/banner_270x311.png"
 
 
 
@@ -858,10 +883,15 @@ html
                 </div>
 
               .baner_vertical
-                img src="img/banner_240x400.jpg"
+                img src="img/banner_270x311.png"
 
               .baner_vertical
-                img src="img/banner_250x250.jpg"
+                img src="img/banner_270x311.png"
+
+              .baner_vertical
+                img src="img/banner_270x311.png"
+
+
 
 
               .baner_vertical
@@ -880,19 +910,17 @@ html
           .container
             .row
               .title_bg
-                a href="#"
-                  img src="img/vidget_icon_afisha.png"
                 .header_buttons.clearfix
-                  .header_button
+                  .header_button.with_img
                     a href="#" АФИША ВИТЕБСКА
                   .header_button.grean
                     a href="#" СЕГОДНЯ
               .widget_horizontal_menu.clearfix
                 a href="#" КИНО
                 .separator_line
-                a href="#" КОНЦЕРТЫ
-                .separator_line
                 a href="#" ВЕЧЕРИНКИ
+                .separator_line
+                a href="#" КОНЦЕРТЫ
                 .separator_line
                 a href="#" СПЕКТАКЛИ
                 .separator_line
@@ -915,40 +943,49 @@ html
                 .row
                   .widget_item_container.col-xs-2
                     a href="#"
-                      .widget_item
+                      .img
+                        span.helper
                         img src="img/afisha_img_1.jpg"
-                        .title «Магия лунного света длинное название»
-                        .place Кинотеатр "Мир"
+                      .date 28.06.2015
+                      .name Retro&POP вечеринка в Меге
                   .widget_item_container.col-xs-2
                     a href="#"
-                      .widget_item
+                      .img
+                        span.helper
                         img src="img/afisha_img_2.jpg"
-                        .title «Магия лунного света»
-                        .place Кинотеатр "Мир"
+                      .date с 13.05 по 03.06
+                      .name Суперкоманда 3D
                   .widget_item_container.col-xs-2
                     a href="#"
-                      .widget_item
+                      .img
+                        span.helper
                         img src="img/afisha_img_3.jpg"
-                        .title «Магия лунного света длинное название»
-                        .place Кинотеатр "Мир"
+                      .date 28.06.2015
+                      .name Лето. Пушкин. Rock-n-Roll
                   .widget_item_container.col-xs-2
                     a href="#"
-                      .widget_item
-                        img src="img/afisha_img_4.jpg"
-                        .title «Магия лунного света»
-                        .place Кинотеатр "Мир"
+                      .img
+                        span.helper
+                        img src="img/afisha_party_1.jpg"
+                      .date с 13.05 по 03.06
+                      .name Тайна Сухаревой башни. Чародей равновесия, 3D
                   .widget_item_container.col-xs-2
                     a href="#"
-                      .widget_item
-                        img src="img/afisha_img_5.jpg"
-                        .title «Магия лунного света»
-                        .place Кинотеатр "Мир"
+                      .img
+                        span.helper
+                        img src="img/afisha_party_2.jpg"
+                      .date с 13.05 по 03.06
+                      .name Суперкоманда 3D
                   .widget_item_container.col-xs-2
                     a href="#"
-                      .widget_item
-                        img src="img/afisha_img_6.jpg"
-                        .title «Магия лунного света»
-                        .place Кинотеатр "Мир"
+                      .img
+                        span.helper
+                        img src="img/afisha_party_3.jpg"
+                      .date 28.06.2015
+                      .name Лето. Пушкин. Rock-n-Roll
+
+
+
 
     .widgets_container
       .widget_type_1_container

@@ -62,12 +62,13 @@ html
               button type="button" class="btn btn-default" data-dismiss="modal" Закрыть
               button type="submit" class="btn btn-success" data-dismiss="modal" Отправить
 
+
     / <===========================================================>
     /                        TOP_BAR_2015
     / <===========================================================>
 
     .top_bar_2015_container
-      .top_bar_2015
+      .top_bar_2015.login_user
         .logo
           a href="http://gorodvitebsk.by/"
             img src="img/g_logo_top_bar.png"
@@ -76,14 +77,15 @@ html
 
         ul.menu_ul
           li <a target="_blank" href="http://gorod.vitebsk.by/index.html">Новости</a>
-          li <a target="_blank" href="http://gorod.vitebsk.by/afisha/index.htm">Афиша</a>
-          li <a target="_blank" href="http://gorod.vitebsk.by/jiteli.htm">Каталог товаров</a>
+          li <a target="_blank" href="http://gorod.vitebsk.by/jiteli.htm">Каталог</a>
           li <a target="_blank" href="http://rabotavitebsk.by/">Работа</a>
-          li <a target="_blank" href="http://naparu.by/">Еда</a>
-          li <a href="http://namvam.by/">Обьявления</a>
+          li <a target="_blank" href="http://gorod.vitebsk.by/afisha/index.htm">Афиша</a>
           li <a href="http://vdv-tv.by/">ТВ</a>
           li <a href="http://auto.namvam.by/">Авто</a>
+          li <a target="_blank" href="http://naparu.by/">Еда</a>
+          li <a href="http://namvam.by/">Обьявления</a>
           li <a target="_blank" href="http://gorod.vitebsk.by/skidki/index.html">Скидки</a>
+          li <a target="_blank" href="http://gorodvitebsk.by/priz">Розыгрыши</a>
           li.cont
             a.cont_a href="#"
               .shevron
@@ -99,7 +101,8 @@ html
               li <a target="_blank" href="http://www.prometei-design.com/rus/CorporativSitesRus.htm">Создание сайтов</a>
               li <a target="_blank" href="http://gorod.vitebsk.by/prometei/">Компьютерное обучение</a>  
               li <a target="_blank" href="http://gorod.vitebsk.by/news/index.html">Архив новостей</a>
-          li.enter_button <a target="_blank" href="#">Войти</a>
+          li.firm_button <a target="_blank" href="#">Моя фирма</a>
+          li.exit_button <a target="_blank" href="#">Выйти</a>
 
         .social_bar
           a href="http://vk.com/gorod_vitebsk"
@@ -122,8 +125,6 @@ html
 
 
 
-
-
     / <===========================================================>
     /                            HEADER 2
     / <===========================================================>
@@ -136,7 +137,7 @@ html
             .search_bar_container
               .search_bar.clearfix
                 form
-                  <input type="text" class="form-control" placeholder="Быстрый поиск товаров и услуг в Витебске...">
+                  <input type="text" class="form-control" placeholder="Поиск!">
                   <button type="submit" class=""> <span class="glyphicon glyphicon-search"></span></button>
             .informer
               .curency 
@@ -427,9 +428,34 @@ html
               .firm_body
 
                 .firm_firs_text
-                  p
-                    strong
-                      | Ресторан «Лямус» является единственным рестораном-пивоварней в г. Витебске, который открылся в августе 2009 г. В ресторане широко представлены блюда белорусской кухни, в том числе детской. Собственная пивоварня начала свою работу в середине 2013 года. Ежедневно в пивоварне производится до 200 л пива. В «Лямусе» пиво варится по классической технологии на оборудовании производителя с мировым именем ZIP Technologies. Ресторан-пивоварня неуклонно соблюдает закон Вильгельма IV «О чистоте пива», который гласит, что при производстве пива можно использовать только натуральное сырьё: солод, хмель и воду
+                  p Что может быть лучше, чем сбежать от городской суеты, ежедневных забот и окунуться в особую атмосферу деревенского быта конца 19 начало 20 века.
+
+                  p Именно в ресторане «Лямус» Вы можете попробовать блюда старобелорусской кухни в лучших традициях наших бабушек и дедушек и оценить их незабываемый вкус, почувствовать причастность к благородной белорусской шляхте, отдыхая под этническую музыку белорусских цимбал. 
+
+                  p В ресторане "Лямус" Вы можете заказать банкет в зале вместимостью 25 посадочных мест. Общая вместимость 2-х залов 74 посадочных места. 
+
+                  a href="#"
+                    | По итогам конкурса "Лучший предприниматель 2013 г." ЗАО "Фенек" (ресторан "Лямус") стало победителем в номинации "Лучший предприниматель в сфере общественного питания".
+
+
+
+                h4 Свежие новости фирмы
+                .firm_short_news.gray_block
+                  .firm_short_news_item
+                    a href="#"
+                      span.date 23-12-2014
+                      span.title Режим работы ресторана в праздничные дни 
+                      span.label.label-danger Новинка
+                  .firm_short_news_item
+                    a href="#"
+                      span.date 19-11-2014
+                      span.title Новый год в ресторане Лямус
+                  .firm_short_news_item
+                    a href="#"
+                      span.date 21-08-2014
+                      span.title 20.08.2014 г. ресторану "Лямус" исполнилось 5 лет!!!! 
+                      span.label.label-warning Акция
+
 
 
                 .firm_photo_carusel.gray_block
@@ -584,23 +610,29 @@ html
                 .grean_herder_section
                   a href="#"
                   .title  
-                    a href="# "Hовости организации
+                    a href="# "Hовости / акции организаций Витебска...
                 .org_news_container.clearfix
 
                   .org_news_item.clearfix
-                    .title 
-                      a href="#" Новый порядок работы ИП в Республике Беларусь 
-                    .body
-                      .span.section
-                        a href="#" Одежда и аксессуары
-                      .span.separator |
-                      .span.name
-                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
-                  .org_news_item.mega.odd.clearfix
                     .img 
-                      img src="img/firm_news_img.jpg"
+                      a href="#"
+                        img src="img/org_news_1.jpg"
                     .title 
-                      a href="#" В магазине МАСТЕР ОГРОМНЫЙ выбор бензопил, триммеров. Значительно более длинный текст про бензопилы и тримеры и все такое. Новый порядок работы ИП в Республике Беларусь 
+                      a href="#" 
+                        | Новый порядок работы ИП в Республике Беларусь 
+                        span.label.label-danger Новинка
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+                      .span.separator |
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+                  .org_news_item.odd.clearfix
+                    .img
+                      a href="#"
+                        img src="img/org_news_2.jpg"
+                    .title 
+                      a href="#" В магазине МАСТЕР ОГРОМНЫЙ выбор бензопил, триммеров. Значительно более длинный текст про бензопилы и тримеры и все такое.
                     .body
                       .span.section
                         a href="#" Одежда и аксессуары
@@ -608,6 +640,9 @@ html
                       .span.name
                         a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
                   .org_news_item.clearfix
+                    .img
+                      a href="#"
+                        img src="img/org_news_3.jpg"
                     .title 
                       a href="#" Новый порядок работы ИП в Республике Беларусь 
                     .body
@@ -617,15 +652,9 @@ html
                       .span.name
                         a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
                   .org_news_item.odd.clearfix
-                    .title 
-                      a href="#" В магазине МАСТЕР ОГРОМНЫЙ выбор бензопил, триммеров, мотоблоков и любых товаров для сада и огорода. 
-                    .body
-                      .span.section
-                        a href="#" Одежда и аксессуары
-                      .span.separator |
-                      .span.name
-                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
-                  .org_news_item.clearfix
+                    .img 
+                      a href="#"
+                        img src="img/org_news_4.jpg"
                     .title 
                       a href="#" Новый порядок работы ИП в Республике Беларусь 
                     .body
@@ -634,15 +663,33 @@ html
                       .span.separator |
                       .span.name
                         a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
-                  .org_news_item.odd.clearfix
+                  .org_news_item.clearfix
+                    .img 
+                      a href="#"
+                        img src="img/org_news_2.jpg"
                     .title 
-                      a href="#" В магазине МАСТЕР ОГРОМНЫЙ выбор бензопил, триммеров, мотоблоков и любых товаров для сада и огорода. 
+                      a href="#" В магазине МАСТЕР ОГРОМНЫЙ выбор бензопил, триммеров. Значительно более длинный текст про бензопилы и тримеры и все такое. 
                     .body
                       .span.section
                         a href="#" Одежда и аксессуары
                       .span.separator |
                       .span.name
                         a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+                  .org_news_item.odd.clearfix
+                    .img
+                      a href="#"
+                        img src="img/org_news_5.jpg"
+                    .title 
+                      a href="#" Новый порядок работы ИП в Республике Беларусь 
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+                      .span.separator |
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+
+                .align_center_link
+                  a href="#" Смотреть архив новостей
 
                 / <===========================================================>
                 /                         FIRM_FOOTER
@@ -724,7 +771,7 @@ html
       .container
         .row.big_row
           .logo.col-xs-2
-            a href="/" <img src="img/logo.png"/>
+            a href="/" <img src="img/logo_old.png"/>
           .footer_nav.col-xs-10
             .footer_nav_item 
               a href="#"

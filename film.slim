@@ -246,21 +246,13 @@ html
             .col-xs-9
 
               / <===========================================================>
-              /                        STANDART_TITLE
-              / <===========================================================>
-
-              .standart_title.slim
-                h1 Афиша
-
-
-              / <===========================================================>
               /                             AFISHA
               / <===========================================================>
 
               .horizontal_grean_menu.clearfix
-                a.active.first href="#" СЕГОДНЯ
+                a.first href="#" СЕГОДНЯ
                 .separator_line
-                a href="#" КИНО
+                a.active href="#" КИНО
                 .separator_line
                 a href="#" ВЕЧЕРИНКИ
                 .separator_line
@@ -280,9 +272,125 @@ html
                 .separator_line
                 a.last href="#" ТВ
 
+              / <===========================================================>
+              /                        STANDART_TITLE
+              / <===========================================================>
+
+              .standart_title.slim_2
+                img.pull-right src="img/social_icons_line.png"
+                h1 Безумный Макс: Дорога ярости 3D
+
+
+
+              / <===========================================================>
+              /                        afisha_page_body
+              / <===========================================================>
+              .afisha_page_body.clearfix
+                .afisha_page_img.clearfix
+                  .img
+                    img src="img/afisha_film_img.jpg"
+                .main_tickets_info
+                  .date с 28.05.2015 по 03.06.2015
+                  .tickets_line.clearfix
+                    .place 
+                      | Дом кино
+                      span.zal зал-1
+                    .price 40 - 50 тыс.
+                    .time_holder
+                      .time 14:50
+                      .time 17:00
+                      .time 19:10
+                      .time 21:20
+                  .place_info
+                    span.text г. Витебск, ул. Ленина, 40  Телефон +375 212 37-37-82
+                    .url 
+                      a href="http://www.kino.vitebsk.by" www.kino.vitebsk.by
+                  .date с 28.05.2015 по 03.06.2015
+                  .tickets_line.clearfix
+                    .place 
+                      | Дом кино
+                      span.zal зал-1
+                    .price 40 - 50 тыс.
+                    .time_holder
+                      .time 14:50
+                      .time 17:00
+                      .time 19:10
+                      .time 21:20
+                  .place_info
+                    span.text г. Витебск, ул. Ленина, 40  Телефон +375 212 37-37-82
+                    .url 
+                      a href="http://www.kino.vitebsk.by" www.kino.vitebsk.by
+                  .big_buttons
+                    a.big_color_button href="#" КУПИТЬ БИЛЕТЫ!
+                    a.big_color_button.orange href="#" РОЗЫГРЫШ БИЛЕТОВ!
+                    
+
+
+
+                / <===========================================================>
+                /                        standart_info
+                / <===========================================================>
+                .standart_info.clearfix
+                  .row
+                    .col-md-4
+                      .standart_info_item
+                        span.prop Год:
+                        span.value 2015
+                      .standart_info_item
+                        span.prop Страна:
+                        span.value Австралия, США
+                      .standart_info_item
+                        span.prop Режиссер:
+                        span.value Джордж Миллер
+                      .standart_info_item
+                        span.prop Время:
+                        span.value 2 часа 10 минут 
+                    .col-md-8
+                      .standart_info_item
+                        span.prop Актеры:
+                        span.value Джош Хелман, Зои Кравиц, Меган Гэйл, Николас Холт, Нэйтан Джонс, Райли Кио, Роузи Хантингтон-Уайтли, Том Харди, Хью Кияс-Бёрн, Шарлиз Терон
+
+
+                / <===========================================================>
+                /                         film_short
+                / <===========================================================>
+                .film_short 
+                  p Преследуемый призраками беспокойного прошлого, Макс уверен, что лучший способ выжить — скитаться в одиночестве. Несмотря на это, он присоединяется к бунтарям, бегущим через всю пустыню на боевой фуре, под предводительством военачальника Фуриосы.
+
+                  p Они пытаются сбежать из Цитадели, страдающей от тирании Несмертного Джо, у которого они забрали кое-что очень ценное. Разъярённый военачальник бросает все свои силы на погоню за мятежниками, ступая на дорогу войны — дорогу ярости.
+
+
+                / <===========================================================>
+                /                         trailer
+                / <===========================================================>
+                <iframe width="100%" height="500" src="https://www.youtube.com/embed/6SdPp6Tc2jA?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+
+
+              / <===========================================================>
+              /                         kino_news
+              / <===========================================================>
+              h3.kino Новости фильма
+              .kino_news
+                .kino_news_item.clearfix
+                  a href="#"
+                    .img
+                      img src="img/kino_news_1.png"
+                    .title Безумный Макс: Дорога ярости на экранах кинотеатров Витебска уже с 5 мая 
+                    .body Преследуемый призраками беспокойного прошлого, Макс уверен, что лучший способ выжить — скитаться в одиночестве. Несмотря на это, он присоединяется к бунтарям, бегущим через всю пустыню на боевой фуре, под предводительством военачальника Фуриосы...
+                    .more Подробнее
+                .kino_news_item.clearfix
+                  a href="#"
+                    .img
+                      img src="img/kino_news_1.png"
+                    .title Безумный Макс: Дорога ярости на экранах кинотеатров Витебска уже с 5 мая 
+                    .body Преследуемый призраками беспокойного прошлого, Макс уверен, что лучший способ выжить — скитаться в одиночестве. Несмотря на это, он присоединяется к бунтарям, бегущим через всю пустыню на боевой фуре, под предводительством военачальника Фуриосы...
+                    .more Подробнее
+
+
 
               .afisha_line_section.clearfix
-                .title КИНО В ВИТЕБСКЕ
+                .title Другие фильмы
                 .afisha_l_s__item
                   a href="#"
                     img src="img/afisha_img_1.jpg"
@@ -291,73 +399,23 @@ html
                 .afisha_l_s__item
                   a href="#"
                     img src="img/afisha_img_2.jpg"
-                    .date с 28.05 по 03.06
+                    .date с 28.05.2015 по 03.06.2015
                     .name Суперкоманда 3D
                 .afisha_l_s__item
                   a href="#"
                     img src="img/afisha_img_3.jpg"
-                    .date с 28.05 по 03.06
+                    .date до 7 мая
                     .name «13-й район: Кирпичные особняки»
                 .afisha_l_s__item
                   a href="#"
                     img src="img/afisha_img_4.jpg"
-                    .date с 28.05 по 03.06
+                    .date до 12 мая
                     .name Кот Гром и заколдованный дом
                 .afisha_l_s__item
                   a href="#"
                     img src="img/afisha_img_5.jpg"
-                    .date с 28.05 по 03.06
+                    .date до 10 сентября
                     .name Кот Гром и заколдованный дом
-                .afisha_l_s__item
-                  a href="#"
-                    img src="img/afisha_img_2.jpg"
-                    .date с 28.05 по 03.06
-                    .name Кот Гром и заколдованный дом
-                .afisha_l_s__item
-                  a href="#"
-                    img src="img/afisha_img_5.jpg"
-                    .date с 28.05 по 03.06
-                    .name Кот Гром и заколдованный дом
-
-              .afisha_line_section.clearfix
-                .title ВЕЧЕРИНКИ
-                .afisha_l_s__item
-                  a href="#"
-                    .img
-                      span.helper
-                      img src="img/afisha_party_1.jpg"
-                    .date 28.06.2015
-                    .name Retro&POP вечеринка в Меге
-                .afisha_l_s__item
-                  a href="#"
-                    .img
-                      span.helper
-                      img src="img/afisha_party_2.jpg"
-                    .date 28.06.2015
-                    .name Суперкоманда 3D
-                .afisha_l_s__item
-                  a href="#"
-                    .img
-                      span.helper
-                        img src="img/afisha_party_3.jpg"
-                    .date 28.06.2015
-                    .name Лето. Пушкин. Rock-n-Roll
-                .afisha_l_s__item
-                  a href="#"
-                    .img
-                      span.helper
-                      img src="img/afisha_party_1.jpg"
-                    .date 28.06.2015
-                    .name Тайна Сухаревой башни. Чародей равновесия, 3D
-                .afisha_l_s__item
-                  a href="#"
-                    .img
-                      span.helper
-                      img src="img/afisha_party_2.jpg"
-                    .date 28.06.2015
-                    .name Суперкоманда 3D
-
-
 
 
             / <===========================================================>
