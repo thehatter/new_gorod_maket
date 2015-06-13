@@ -2701,6 +2701,18 @@ transition: all 0.2s ease-in-out;
 
   }
 
+  .org_news_item.no_img {
+    .title {
+      margin: 0px 0 0 5px;
+      line-height: 1.2;
+    }
+    .body {
+      margin: 5px 0 0 5px;
+    }
+  }
+
+
+
 
   .org_news_item.mega {
     padding: 12px 30px 12px 10px;
@@ -2948,6 +2960,16 @@ transition: all 0.2s ease-in-out;
   padding: 0px;
 }
 
+.two_banners_bar {
+  margin: 10px 0;
+  .two_banners_baner {
+    float: left;
+    width: 49.5%;
+  }
+  img {
+    width: 100%;
+  }
+}
 
 // <===========================================================>
 //                        BANER_VERTICAL

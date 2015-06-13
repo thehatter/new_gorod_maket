@@ -1789,6 +1789,11 @@ a.big_color_button.orange {
       float: left;
       padding: 0 10px 0 0px;
       color: #666; }
+  .org_news.right_column .org_news_item.no_img .title {
+    margin: 0px 0 0 5px;
+    line-height: 1.2; }
+  .org_news.right_column .org_news_item.no_img .body {
+    margin: 5px 0 0 5px; }
   .org_news.right_column .org_news_item.mega {
     padding: 12px 30px 12px 10px;
     border-left: 16px solid #fd7d09; }
@@ -1937,6 +1942,14 @@ a.big_color_button.orange {
 .baner_horizontal.top_banner {
   margin: 0px 0 0px 0;
   padding: 0px; }
+
+.two_banners_bar {
+  margin: 10px 0; }
+  .two_banners_bar .two_banners_baner {
+    float: left;
+    width: 49.5%; }
+  .two_banners_bar img {
+    width: 100%; }
 
 .baner_vertical {
   margin: 0px 0 16px 0; }
