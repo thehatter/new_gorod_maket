@@ -1112,9 +1112,12 @@ transition: all 0.2s ease-in-out;
 // <===========================================================>
 //                          firm_right_bar
 // <===========================================================>
-
+.firm_right_bar.affix-top {
+  padding: 20px 0 0 0;
+}
 
 .firm_right_bar {
+  
   .firm_logo {
     text-align: center;
     padding-bottom: 20px;
@@ -1516,6 +1519,7 @@ transition: all 0.2s ease-in-out;
       line-height: 1.2;
       min-height: 40px;
       color:#000;
+      padding: 0 0 10px 0;
     }
 
     .place {
@@ -1548,7 +1552,6 @@ transition: all 0.2s ease-in-out;
     opacity: 0.70;
   }
 }
-
 
 
 // <===========================================================>
