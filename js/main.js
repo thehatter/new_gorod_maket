@@ -17,6 +17,18 @@
         return false;
       });
 
+      function upButtonPosition () {
+        if ($(window).scrollTop() + $(window).height() >= ($(document).height() -100)) {
+          $('a.top_button').addClass("on_bot_of_the_page");
+        }
+        else {
+          $('a.top_button').removeClass("on_bot_of_the_page");
+        }
+      };
+      $(window).scroll(function() {
+        upButtonPosition();
+      });
+      upButtonPosition();
 
       // ============================ catalog_expand ============================
 
@@ -78,14 +90,50 @@
 
       // ========================================================================
 
+    // ============================ fix_firm_bar ============================
 
+      $(".firm_container .firm_right_bar_container").height($(".firm_container").height());
 
-    $(".firm_right_bar").affix({
-        offset: { 
-            top: 200,
-            bottom: 200
+      function firmBarPosition () {
+        var BarHeight = $(".firm_right_bar").height();
+        var BarWidth = $(".firm_right_bar_container").width();
+        var WinHeight = $(window).height();
+        var Diff = 0;
+
+        if (BarHeight > $(window).height()) {
+          var Diff = BarHeight - $(window).height();
+          console.log(Diff);
         }
-    });
+
+        $(".firm_right_bar").width(BarWidth);
+        if (($(window).scrollTop() > 200) && ($(window).scrollTop() + WinHeight < ($(document).height() -100 - (Diff))))  {
+          $(".firm_right_bar").addClass("bar_fixed_midle");
+          $('.firm_right_bar').removeClass("bar_fixed_bottom");
+        } else if ($(window).scrollTop() + WinHeight >= ($(document).height() -100 - (Diff)))  {
+          if (BarHeight > (WinHeight - 100)) {
+            $(".firm_right_bar").addClass("bar_fixed_bottom");
+            $('.firm_right_bar').removeClass("bar_fixed_midle");
+          }
+
+        }
+        else {
+          $(".firm_right_bar").removeClass("bar_fixed_midle");
+          $('.firm_right_bar').removeClass("bar_fixed_bottom");
+        }
+      };
+      $(window).scroll(function() {
+        firmBarPosition();
+      });
+      firmBarPosition();
+
+
+
+    // $(".firm_right_bar").affix({
+    //     offset: { 
+    //         top: 200,
+    //         bottom: 200
+    //     }
+    // });
 
 
 

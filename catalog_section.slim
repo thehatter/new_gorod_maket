@@ -9,12 +9,15 @@ html
     <link href="css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles">
     <link href="css/main.css" rel="stylesheet" media="screen">
     <link href="css/top_bar_2015.css" rel="stylesheet" media="screen">
+    <link href="css/lightbox.css" rel="stylesheet" media="screen">
     
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/tob_bar_2015.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/lightbox.min.js"></script>
+
 
   body.firm_page
 
@@ -262,13 +265,16 @@ html
                 p Соответствующую атмосферу в офисе создает в первую очередь мебель и декор: стиль, гармония, лаконичность. Именно этим нужно руководствоваться, когда собираетесь купить мебель для офиса в Витебске: столы (компьютерные столы, столы для переговоров), стулья, офисные стулья, кресла, шкафы, шкафы купе, барные стулья и т.д..Город изобилует  фирмами, специализирующимися на продаже такого товара, как корпусная мебель, мебель для кафе, баров, ресторанов, гостиниц, банков, торговое оборудование, алюминиевые мобильные и стационарные перегородки и т.д. Некоторые компании предлагают мебель на заказ и полный цикл: проектирование и изготовление мебели.
 
 
-              .baner_horizontal
-                img src="img/banner_800x60.jpg"
+
+              .banner_100p.vertical_indent_10
+                img.img-responsive src="img/banner_885x60.png" 
 
               / <===========================================================>
               /                       CATALOG_SECTION_ITEM 1
               / <===========================================================>
-              .catalog_section_item.clearfix.orange_line
+              .catalog_section_item.clearfix.with_top_header
+                .catalog_section_top_header
+                  | Топовая организация
 
                 .catalog_section_left
                   a href="#"
@@ -357,21 +363,14 @@ html
 
                   .catalog_section_item_images
                     .catalog_section_col
-                      a href="#" data-featherlight="#lightbox_001"
+                      a href="img/big_food_1.jpg" data-lightbox="example-set" data-title="My caption"
                         img.img-thumbnail.img-responsive src="img/offer_1.jpg" alt="..."
-                      #lightbox_001.lightbox_container
-                        img src="img/big_food_1.jpg" alt="..."
                     .catalog_section_col
-                      a href="#" data-featherlight="#lightbox_002"
-                        img.img-thumbnail src="img/offer_2.jpg" alt="..."
-                      #lightbox_002.lightbox_container
-                        img src="img/big_food_2.jpg" alt="..."
+                      a href="img/big_food_2.jpg" data-lightbox="example-set" data-title="My caption"
+                        img.img-thumbnail.img-responsive src="img/offer_2.jpg" alt="..."
                     .catalog_section_col
-                      a href="#" data-featherlight="#lightbox_003"
-                        img.img-thumbnail src="img/offer_3.jpg" alt="..."
-                      #lightbox_003.lightbox_container
-                        img src="img/big_food_1.jpg" alt="..."
-
+                      a href="img/big_food_1.jpg" data-lightbox="example-set" data-title="My caption"
+                        img.img-thumbnail.img-responsive src="img/offer_3.jpg" alt="..."
 
 
 
@@ -385,7 +384,9 @@ html
               / <===========================================================>
               /                       CATALOG_SECTION_ITEM 2
               / <===========================================================>
-              .catalog_section_item.clearfix.orange_line
+              .catalog_section_item.clearfix.with_top_header
+                .catalog_section_top_header
+                  | Топовая организация
 
                 .catalog_section_left
                   a href="#"
@@ -457,20 +458,14 @@ html
 
                   .catalog_section_item_images
                     .catalog_section_col
-                      a href="#" data-featherlight="#lightbox_001"
+                      a href="img/big_food_1.jpg" data-lightbox="example-set" data-title="My caption"
                         img.img-thumbnail.img-responsive src="img/offer_1.jpg" alt="..."
-                      #lightbox_001.lightbox_container
-                        img src="img/big_food_1.jpg" alt="..."
                     .catalog_section_col
-                      a href="#" data-featherlight="#lightbox_002"
-                        img.img-thumbnail src="img/offer_2.jpg" alt="..."
-                      #lightbox_002.lightbox_container
-                        img src="img/big_food_2.jpg" alt="..."
+                      a href="img/big_food_2.jpg" data-lightbox="example-set" data-title="My caption"
+                        img.img-thumbnail.img-responsive src="img/offer_2.jpg" alt="..."
                     .catalog_section_col
-                      a href="#" data-featherlight="#lightbox_003"
-                        img.img-thumbnail src="img/offer_3.jpg" alt="..."
-                      #lightbox_003.lightbox_container
-                        img src="img/big_food_1.jpg" alt="..."
+                      a href="img/big_food_1.jpg" data-lightbox="example-set" data-title="My caption"
+                        img.img-thumbnail.img-responsive src="img/offer_3.jpg" alt="..."
 
 
 
@@ -482,7 +477,9 @@ html
               / <===========================================================>
               /                       CATALOG_SECTION_ITEM 3
               / <===========================================================>
-              .catalog_section_item.clearfix.orange_line
+              .catalog_section_item.clearfix.with_top_header
+                .catalog_section_top_header
+                  | Топовая организация
 
                 .catalog_section_left
                   a href="#"
@@ -570,20 +567,14 @@ html
 
                   .catalog_section_item_images
                     .catalog_section_col
-                      a href="#" data-featherlight="#lightbox_001"
+                      a href="img/big_food_1.jpg" data-lightbox="example-set" data-title="My caption"
                         img.img-thumbnail.img-responsive src="img/offer_1.jpg" alt="..."
-                      #lightbox_001.lightbox_container
-                        img src="img/big_food_1.jpg" alt="..."
                     .catalog_section_col
-                      a href="#" data-featherlight="#lightbox_002"
-                        img.img-thumbnail src="img/offer_2.jpg" alt="..."
-                      #lightbox_002.lightbox_container
-                        img src="img/big_food_2.jpg" alt="..."
+                      a href="img/big_food_2.jpg" data-lightbox="example-set" data-title="My caption"
+                        img.img-thumbnail.img-responsive src="img/offer_2.jpg" alt="..."
                     .catalog_section_col
-                      a href="#" data-featherlight="#lightbox_003"
-                        img.img-thumbnail src="img/offer_3.jpg" alt="..."
-                      #lightbox_003.lightbox_container
-                        img src="img/big_food_1.jpg" alt="..."
+                      a href="img/big_food_1.jpg" data-lightbox="example-set" data-title="My caption"
+                        img.img-thumbnail.img-responsive src="img/offer_3.jpg" alt="..."
 
 
 

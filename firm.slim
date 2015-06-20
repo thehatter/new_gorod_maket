@@ -9,12 +9,14 @@ html
     <link href="css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles">
     <link href="css/main.css" rel="stylesheet" media="screen">
     <link href="css/top_bar_2015.css" rel="stylesheet" media="screen">
+    <link href="css/lightbox.css" rel="stylesheet" media="screen">
     
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/tob_bar_2015.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/lightbox.min.js"></script>
 
   body.firm_page
 
@@ -411,12 +413,18 @@ html
                     span.glyphicon.glyphicon-pencil 
                     |  Отзывы
                 .firm_menu_bottom_navs.clearfix
-                  a href="#" Дополнительные кнопки
-                  a href="#" Вакансии
-                  a href="#" О компании чрезвычайно длинная кнопка
-                  a href="#" О компании тоже довольно длинная
-                  a href="#" Весьма длинаая кнопка, очень, такая что аж в 2 строки!
-                  a href="#" О компании а длинее этой кнопки уже просто не должно быть, никогда никогда
+                  .nav_item
+                    a href="#" Дополнительные кнопки
+                  .nav_item
+                    a href="#" Вакансии
+                  .nav_item
+                    a href="#" О компании чрезвычайно длинная кнопка
+                  .nav_item
+                    a href="#" О компании тоже довольно длинная
+                  .nav_item
+                    a href="#" Весьма длинаая кнопка, очень, такая что аж в 2 строки!
+                  .nav_item
+                    a href="#" О компании а длинее этой кнопки уже просто не должно быть, никогда никогда
 
 
 
@@ -473,54 +481,38 @@ html
                       .item.active
                         .row
                           .col-xs-4
-                            a href="#" data-featherlight="#lightbox_001"
-                              img src="img/offer_1.jpg" alt="..."
-                            #lightbox_001.lightbox_container
-                              img src="img/big_food_1.jpg" alt="..."
+                            a href="img/big_food_1.jpg" data-lightbox="example-set" data-title="My caption"
+                              img src="img/offer_1.jpg"
                           .col-xs-4
-                            a href="#" data-featherlight="#lightbox_002"
-                              img src="img/offer_2.jpg" alt="..."
-                            #lightbox_002.lightbox_container
-                              img src="img/big_food_2.jpg" alt="..."
+                            a href="img/big_food_2.jpg" data-lightbox="example-set" data-title="My caption"
+                              img src="img/offer_2.jpg"
                           .col-xs-4
-                            a href="#" data-featherlight="#lightbox_003"
-                              img src="img/offer_3.jpg" alt="..."
-                            #lightbox_003.lightbox_container
-                              img src="img/big_food_1.jpg" alt="..."
+                            a href="img/big_food_1.jpg" data-lightbox="example-set" data-title="My caption"
+                              img src="img/offer_3.jpg"
                       .item
                         .row
                           .col-xs-4
-                            a href="#" data-featherlight="#lightbox_001"
-                              img src="img/offer_4.jpg" alt="..."
-                            #lightbox_001.lightbox_container
-                              img src="img/big_food_1.jpg" alt="..."
+                            a href="img/big_food_1.jpg" data-lightbox="example-set" data-title="My caption"
+                              img src="img/offer_1.jpg"
                           .col-xs-4
-                            a href="#" data-featherlight="#lightbox_002"
-                              img src="img/offer_2.jpg" alt="..."
-                            #lightbox_002.lightbox_container
-                              img src="img/big_food_2.jpg" alt="..."
+                            a href="img/big_food_2.jpg" data-lightbox="example-set" data-title="My caption"
+                              img src="img/offer_2.jpg"
                           .col-xs-4
-                            a href="#" data-featherlight="#lightbox_003"
-                              img src="img/offer_1.jpg" alt="..."
-                            #lightbox_003.lightbox_container
-                              img src="img/big_food_1.jpg" alt="..."
+                            a href="img/big_food_1.jpg" data-lightbox="example-set" data-title="My caption"
+                              img src="img/offer_3.jpg"
                       .item
                         .row
                           .col-xs-4
-                            a href="#" data-featherlight="#lightbox_001"
-                              img src="img/offer_3.jpg" alt="..."
-                            #lightbox_001.lightbox_container
-                              img src="img/big_food_1.jpg" alt="..."
+                            a href="img/big_food_1.jpg" data-lightbox="example-set" data-title="My caption"
+                              img src="img/offer_1.jpg"
                           .col-xs-4
-                            a href="#" data-featherlight="#lightbox_002"
-                              img src="img/offer_1.jpg" alt="..."
-                            #lightbox_002.lightbox_container
-                              img src="img/big_food_2.jpg" alt="..."
+                            a href="img/big_food_2.jpg" data-lightbox="example-set" data-title="My caption"
+                              img src="img/offer_2.jpg"
                           .col-xs-4
-                            a href="#" data-featherlight="#lightbox_003"
-                              img src="img/offer_4.jpg" alt="..."
-                            #lightbox_003.lightbox_container
-                              img src="img/big_food_1.jpg" alt="..."
+                            a href="img/big_food_1.jpg" data-lightbox="example-set" data-title="My caption"
+                              img src="img/offer_3.jpg"
+
+
 
 
                     <!-- Controls -->
@@ -710,52 +702,70 @@ html
             / <===========================================================>
 
             .col-xs-3
-              .firm_right_bar
-                .firm_logo
-                  img src="img/lyamus_logo.jpg"
-                .firm_contacts
-                  .firm_contacts__item
-                    .title Адрес:
-                    .firm_contacts__item_item
-                      img src="img/adress_icon.png"
-                      a href="#" Витебск, пр-т Победы, 1
-                  .firm_contacts__item
-                    .title Телефоны:
-                    .firm_contacts__item_item
-                      img src="img/phone_icon.gif"
-                      | +375 212 57-59-08
-                    .firm_contacts__item_item
-                      img src="img/mts_icon.jpg"
-                      | +375 29 714 39 27
-                    .firm_contacts__item_item
-                      img src="img/velcom_icon.gif"
-                      | +375 29 714 39 27
-                    .firm_contacts__item_item
-                      img src="img/life_icon.png"
-                      | +375 29 714 39 27
+              .firm_right_bar_container
+                .firm_right_bar
+                  .firm_logo
+                    img src="img/lyamus_logo.jpg"
+                  .firm_contacts
+                    .firm_contacts__item
+                      .title Адрес:
+                      .firm_contacts__item_item
+                        img src="img/adress_icon.png"
+                        a href="#" Витебск, пр-т Победы, 1
+                    .firm_contacts__item
+                      .title Телефоны:
+                      .firm_contacts__item_item
+                        img src="img/phone_icon.gif"
+                        | +375 212 57-59-08
+                      .firm_contacts__item_item
+                        img src="img/mts_icon.jpg"
+                        | +375 29 714 39 27
+                      .firm_contacts__item_item
+                        img src="img/velcom_icon.gif"
+                        | +375 29 714 39 27
+                      .firm_contacts__item_item
+                        img src="img/life_icon.png"
+                        | +375 29 714 39 27
 
-                  .firm_contacts__item
-                    .title Социальные сети
-                    .firm_contacts__item_item
-                      img src="img/vk.gif"
-                       a href="http://vk.com/gorod_vitebsk" vk.com/gorod_vitebsk
-                    .firm_contacts__item_item
-                      img src="img/dnoklasniki.gif"
-                       a href="http://vk.com/gorod_vitebsk" odnoklassniki.ru/gorod_vitebsk
-                       
+                    .firm_contacts__item
+                      .title Социальные сети
+                      .firm_contacts__item_item
+                        img src="img/social_icons_1.png"
+                         a href="http://vk.com/gorod_vitebsk" gorod_vitebsk
+                      .firm_contacts__item_item
+                        img src="img/social_icons_4.png"
+                         a href="http://vk.com/gorod_vitebsk" gorod_vitebsk
+                      .firm_contacts__item_item
+                        img src="img/social_icons_3.png"
+                         a href="http://vk.com/gorod_vitebsk" GorodVitebsk.by
+                      .firm_contacts__item_item
+                        img src="img/social_icons_2.png"
+                         a href="http://vk.com/gorod_vitebsk" gorodvitebsk
+                      .firm_contacts__item_item
+                        img src="img/social_icons_5.png"
+                         a href="http://vk.com/gorod_vitebsk" gorodvitebskby1
+                      .firm_contacts__item_item
+                        img src="img/social_icons_6.png"
+                         a href="http://vk.com/gorod_vitebsk" gorodvitebsk
+                      .firm_contacts__item_item
+                        img src="img/social_icons_7.png"
+                         a href="http://vk.com/gorod_vitebsk" gorodvitebsk
+                      .firm_contacts__item_item
+                        img src="img/social_icons_8.png"
+                         a href="http://vk.com/gorod_vitebsk" gorodvitebsk
+                         
 
-                  .firm_contacts__item
-                    .title Время работы:
-                    .firm_contacts__item_item
-                      img src="img/time.png"
-                      | Пн-Вс: 11:00-23:30 Первый понедельник месяца до 15:00 - санитарный день
+                    .firm_contacts__item
+                      .title Время работы:
+                      .firm_contacts__item_item
+                        img src="img/time.png"
+                        | Пн-Вс: 11:00-23:30 Первый понедельник месяца до 15:00 - санитарный день
 
-                  .firm_contacts__item
-                    .title Сайт:
-                    .firm_contacts__item_item
-                      img src="img/internet_icon.png"
-                      a href="lyamus.gorodvitebsk.by" lyamus.gorodvitebsk.by
-
+                    .firm_contacts__item
+                      .title Сайт:
+                      .firm_contacts__item_item
+                        img src="img/internet_icon.png"
+                        a href="lyamus.gorodvitebsk.by" lyamus.gorodvitebsk.by
 
 
 

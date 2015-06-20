@@ -8,11 +8,13 @@ html
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/main.css" rel="stylesheet" media="screen">
     <link href="css/top_bar_2015.css" rel="stylesheet" media="screen">
+    <link href="css/lightbox.css" rel="stylesheet" media="screen">
     
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/tob_bar_2015.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/lightbox.min.js"></script>
 
   body.main
 
@@ -277,8 +279,7 @@ html
               / <===========================================================>
 
               .standart_title.slim_2
-                img.pull-right src="img/social_icons_line.png"
-                h1 Безумный Макс: Дорога ярости 3D
+                h1 Безумный Макс: Дорога ярости 3D длинное название!
 
 
 
@@ -290,40 +291,88 @@ html
                   .img
                     img src="img/afisha_film_img.jpg"
                 .main_tickets_info
-                  .date с 28.05.2015 по 03.06.2015
-                  .tickets_line.clearfix
-                    .place 
-                      | Дом кино
-                      span.zal зал-1
-                    .price 40 - 50 тыс.
-                    .time_holder
-                      .time 14:50
-                      .time 17:00
-                      .time 19:10
-                      .time 21:20
-                  .place_info
-                    span.text г. Витебск, ул. Ленина, 40  Телефон +375 212 37-37-82
-                    .url 
-                      a href="http://www.kino.vitebsk.by" www.kino.vitebsk.by
-                  .date с 28.05.2015 по 03.06.2015
-                  .tickets_line.clearfix
-                    .place 
-                      | Дом кино
-                      span.zal зал-1
-                    .price 40 - 50 тыс.
-                    .time_holder
-                      .time 14:50
-                      .time 17:00
-                      .time 19:10
-                      .time 21:20
-                  .place_info
-                    span.text г. Витебск, ул. Ленина, 40  Телефон +375 212 37-37-82
-                    .url 
-                      a href="http://www.kino.vitebsk.by" www.kino.vitebsk.by
-                  .big_buttons
+                  / <===========================================================>
+                  /                        social links
+                  / <===========================================================>
+                  .social_links
+                    img src="img/vk_like_button.png"
+
+                    img src="img/social_icons_line.png"
+
+                
+                  .tickets_boxes_container.clearfix
+                    .tickets_box
+                      .tickets_box_in
+                        .place 
+                          | Дом кино
+                        .zal зал-1
+                        .date с 28.05.2015 по 03.06.2015
+                        .price
+                          strong Цена:  
+                          | 40-50 тыс.
+                        .time_holder
+                          strong Сеансы:  
+                          .time 
+                            img src="img/time.png"
+                            |  17:00
+                          .time 
+                            img src="img/time.png"
+                            |  19:10
+                          .time 
+                            img src="img/time.png"
+                            |  21:20
+
+                        .tickets_box_place_info
+                          .place_adress
+                            img src="img/adress_icon.png" 
+                            |  г. Витебск, ул. Ленина, 40 
+                          .phone
+                            img src="img/phone_icon.gif" 
+                            |  +375 212 37-37-82
+                          .url 
+                            a href="http://www.kino.vitebsk.by"
+                              img src="img/internet_icon_2.png" 
+                              |  www.kino.vitebsk.by
+
+                    .tickets_box
+                      .tickets_box_in
+                        .place 
+                          | Кинотеатр Мир
+                        .zal зал-1
+                        .date с 28.05.2015 по 03.06.2015
+                        .price
+                          strong Цена:  
+                          | 40-50 тыс.
+                        .time_holder
+                          strong Сеансы:  
+                          .time 
+                            img src="img/time.png"
+                            |  17:00
+                          .time 
+                            img src="img/time.png"
+                            |  19:10
+                          .time 
+                            img src="img/time.png"
+                            |  21:20
+
+                        .tickets_box_place_info
+                          .place_adress
+                            img src="img/adress_icon.png" 
+                            |  г. Витебск, ул. Ленина, 40 
+                          .phone
+                            img src="img/phone_icon.gif" 
+                            |  +375 212 37-37-82
+                          .url 
+                            a href="http://www.kino.vitebsk.by"
+                              img src="img/internet_icon_2.png" 
+                              |  www.kino.vitebsk.by
+
+
+                  .big_buttons.clear_both.clearfix
                     a.big_color_button href="#" КУПИТЬ БИЛЕТЫ!
                     a.big_color_button.orange href="#" РОЗЫГРЫШ БИЛЕТОВ!
                     
+
 
 
 

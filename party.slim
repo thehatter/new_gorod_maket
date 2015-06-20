@@ -277,7 +277,6 @@ html
               / <===========================================================>
 
               .standart_title.slim_2
-                img.pull-right src="img/social_icons_line.png"
                 h1 Ночная перестрелка
 
 
@@ -289,18 +288,47 @@ html
                   .img
                     img src="img/afisha_party_img.jpg"
 
+
                 .main_tickets_info
-                  .date 28.05.2015
-                  .tickets_line.clearfix
-                    .place 
-                      | Клуб ЗЕБРА
-                    .price 40 - 50 тыс.
-                    .time_holder 
-                      .time 21:20
-                  .place_info
-                    span.text г. Витебск, ул. Ленина, 40  Телефон +375 212 37-37-82
-                    .url 
-                      a href="http://www.kino.vitebsk.by" www.kino.vitebsk.by
+                  / <===========================================================>
+                  /                        social links
+                  / <===========================================================>
+                  .social_links
+                    img src="img/vk_like_button.png"
+
+                    img src="img/social_icons_line.png"
+
+                
+                  .tickets_boxes_container.clearfix
+                    .tickets_box.full_width
+                      .tickets_box_in
+                        .place 
+                          | Клуб ЗЕБРА
+                        .date 28.05.2015
+                        .price
+                          strong Цена:  
+                          | 40-50 тыс.
+                        .time_holder.inline
+                          strong Время:  
+                          .time 
+                            img src="img/time.png"
+                            |  17:00
+
+
+                        .tickets_box_place_info
+                          .place_adress
+                            img src="img/adress_icon.png" 
+                            |  г. Витебск, ул. Ленина, 40 
+                          .phone
+                            img src="img/phone_icon.gif" 
+                            |  +375 212 37-37-82
+                          .url 
+                            a href="http://www.kino.vitebsk.by"
+                              img src="img/internet_icon_2.png" 
+                              |  www.kino.vitebsk.by
+
+
+
 
                   .party_text
                     p Если вы не знаете, куда сходить ночью в Витебске, попробуйте окунуться в авантюрный гангстерский мир с Маф-Клубом “Мафия. Закрытые игры”.
@@ -310,10 +338,7 @@ html
                     p Кроме массы новых знакомств и весёлого времяпровождения, игра научит разбираться в людях, разовьёт в вас внимательность и логику.
                     p Преследуемый призраками беспокойного прошлого, Макс уверен, что лучший способ выжить — скитаться в одиночестве. Несмотря на это, он присоединяется к бунтарям, бегущим через всю пустыню на боевой фуре, под предводительством военачальника Фуриосы.
 
-
-
-
-                  .big_buttons
+                  .big_buttons.clear_both.clearfix
                     a.big_color_button href="#" КУПИТЬ БИЛЕТЫ!
                     a.big_color_button.orange href="#" РОЗЫГРЫШ БИЛЕТОВ!
 
