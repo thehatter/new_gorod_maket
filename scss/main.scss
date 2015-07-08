@@ -91,6 +91,8 @@ h3.kino {
   clear: both;
 }
 
+.float_right {float: right;}
+.float_left {float: left;}
 
     a.top_button {
       display: block;
@@ -115,7 +117,7 @@ h3.kino {
 
     .standart_title.slim h1 {
       padding: 0;
-      margin-top:0;
+      margin: 0 0 12px 0;
     }
 
     .standart_title.slim_2 h1 {
@@ -128,7 +130,9 @@ h3.kino {
       float: left;
     }
 
-
+    nav.paginator {
+      text-align: center;
+    }
 // <===========================================================>
 //                       big_buttons
 // <===========================================================>
@@ -3380,13 +3384,144 @@ a.top_button.on_bot_of_the_page {
 }
 
 
+// <===========================================================>
+//                            reviews
+// <===========================================================>
 
 
 
+.reviews {
+  margin: 30px 0 0 0;
+}
+.reviews_mini_title_container {
+  margin: 10px;
+}
+.reviews_mini_title {
+  float: left;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 10px 0 0;
+}
 
 
+.review_item {
+  background: #FAFAFA;
+  border: 1px solid #F2F2F2;
+  padding: 20px;
+  margin: 20px 0 20px 0;
+}
 
 
+.review_org_name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 6px 0;
+
+}
+
+.review_stars {
+  float: left;
+  margin: 0 15px 0 0;
+  font-size: 20px;
+
+  span {
+    padding: 0 2px 0 0;
+    color: #C8C8C8;
+  }
+
+  .gold {
+    color: #EE8800;
+  }
+}
+
+.reviews_all_stars .review_stars{
+    font-size: 26px;
+}
+
+.review_name {
+  float: left;
+  margin: 0 15px 0 0;
+  font-size: 16px;
+
+}
+.review_date {
+  float: left;
+  margin: 0 5px 0 0;
+  font-weight: normal;
+  font-size: 16px;
+  color: #EE0306;
+
+}
+.review_text {
+  clear: both;
+  padding: 16px 0px 10px 0;
+}
+
+.review_images {
+  margin: 0 -3px;
+
+  a {
+    margin: 3px;
+  }
+}
 
 
+.review_item .review_reply {
+  background: #FEFEFE;
+  border: 1px solid #F2F2F2;
+  padding: 20px;
+  margin: 10px 0 0 0;
+}
+
+.add_review {
+  a {
+    font-size: 16px;
+    font-weight: bold;
+    margin: -5px 0 0 0;
+
+
+    span {
+      color: red;
+    }
+  }
+}
+
+.add_review.main_section {
+  margin: -40px 0 0 0;
+}
+
+
+textarea.review_text {
+  min-height: 200px;
+}
+
+
+.review_images.when_upl {
+  a {
+    position: relative;
+    display: block;
+    float: left;
+    .delete_review_img {
+      position: absolute;
+      left: 2px;
+      right: 2px;
+      top: 2px;
+      bottom: 2px;
+
+      display: none;
+
+      background: white;
+      padding: 10px 16px;
+      font-size: 26px;
+    }
+  }
+
+  a:hover {
+    .delete_review_img {
+
+      display: block;
+    }
+  }
+
+}
 

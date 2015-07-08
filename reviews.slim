@@ -1,0 +1,945 @@
+doctype html
+html
+  head
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    meta http-equiv="Content-Type" content="text/html; charset=utf-8"
+    title ВИТЕБСКИЙ ГОРОДСКОЙ ИНТЕРНЕТ-ПОРТАЛ - GorodVitebsk.by - ВСЁ О ГОРОДЕ ВИТЕБСКЕ!Новости Витебска,Каталог организаций,фирмы витебска,Витебск и Витебская область,интересное,события,происшествия,афиша,погода,курсы валют,поиск лекарств,скидки и акции,новости
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles">
+    <link href="css/main.css" rel="stylesheet" media="screen">
+    <link href="css/top_bar_2015.css" rel="stylesheet" media="screen">
+    <link href="css/lightbox.css" rel="stylesheet" media="screen">
+    
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/tob_bar_2015.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/lightbox.min.js"></script>
+
+
+  body.firm_page
+
+    a.top_button href="#top"
+
+    .modal.fade id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+      .modal-dialog.modal-lg
+        .modal-content
+          form role="form"
+            .modal-header
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              h4.modal-title#myModalLabel Добавление организации в каталог
+            .modal-body
+              .form-group
+                label Название
+                input.form-control type="text" placeholder="Введите название ораганизации"
+              .form-group
+                label Сфера деятельности
+                select.form-control
+                  option Шоппинг  ---  Косметика и парфюмерия
+                  option Шоппинг  ---  Магазины алкогольных напитков
+                  option Шоппинг  ---  Косметика и парфюмерия
+                  option Шоппинг  ---  Магазины алкогольных напитков
+                  option Шоппинг  ---  Магазины алкогольных напитков
+                  option Шоппинг  ---  Магазины алкогольных напитков
+
+              .form-group
+                label Краткое описание
+                textarea.form-control 
+              .form-group
+                label Контакты (телефон для связи и т.д.)
+                textarea.form-control 
+
+              .form-group
+                label Ссылка на сайт
+                input.form-control type="text"
+              .form-group
+                label Электронная почта
+                input.form-control type="text"
+              .form-group
+                label Контактное лицо
+                input.form-control type="text"
+
+            .modal-footer
+              button type="button" class="btn btn-default" data-dismiss="modal" Закрыть
+              button type="submit" class="btn btn-success" data-dismiss="modal" Отправить
+
+
+    .modal.fade id="reviews_modal" class="reviews_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+      .modal-dialog.modal-lg
+        .modal-content
+          form role="form"
+            .modal-header
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              h4.modal-title#myModalLabel Добавить отзыв
+            .modal-body
+
+              .form-group
+                label Название организации
+                input.form-control type="text" placeholder="Лямус"
+
+              .form-group
+                label Ваш отзыв
+                textarea.review_text.form-control 
+
+              br
+
+              .form-group
+                label for="exampleInputFile" Загрузить картинки
+                input type="file" id="exampleInputFile"
+                p class="help-block"Загрузите сюда чек или другие фото.
+
+              .review_images.when_upl.clearfix
+                a href="#"
+                  img.img-thumbnail.img-responsive src="img/review_img_1.jpg" alt="..."
+                  .delete_review_img
+                    .span.glyphicon.glyphicon-remove
+                a href="#"
+                  img.img-thumbnail.img-responsive src="img/review_img_2.jpg" alt="..."
+                  .delete_review_img
+                    .span.glyphicon.glyphicon-remove
+                a href="#"
+                  img.img-thumbnail.img-responsive src="img/review_img_3.jpg" alt="..."
+                  .delete_review_img
+                    .span.glyphicon.glyphicon-remove
+
+              br
+              .form-group
+                label Ваше имя
+                input.form-control type="text"
+              .form-group
+                label Электронная почта
+                input.form-control type="text"
+              .form-group
+                label Телефон
+                input.form-control type="text"
+
+            .modal-footer
+              button type="button" class="btn btn-default" data-dismiss="modal" Закрыть
+              button type="submit" class="btn btn-success" data-dismiss="modal" Отправить отзыв!ы
+
+
+
+    / <===========================================================>
+    /                        TOP_BAR_2015
+    / <===========================================================>
+
+    .top_bar_2015_container
+      .top_bar_2015
+        .logo
+          a href="http://gorodvitebsk.by/"
+            img src="img/g_logo_top_bar.png"
+            span 
+              strong GorodVitebsk.by
+
+        ul.menu_ul
+          li <a target="_blank" href="http://gorod.vitebsk.by/index.html">Новости</a>
+          li <a target="_blank" href="http://gorod.vitebsk.by/jiteli.htm">Каталог</a>
+          li <a target="_blank" href="http://rabotavitebsk.by/">Работа</a>
+          li <a target="_blank" href="http://gorod.vitebsk.by/afisha/index.htm">Афиша</a>
+          li <a href="http://vdv-tv.by/">ТВ</a>
+          li <a href="http://auto.namvam.by/">Авто</a>
+          li <a target="_blank" href="http://naparu.by/">Еда</a>
+          li <a href="http://namvam.by/">Обьявления</a>
+          li <a target="_blank" href="http://gorod.vitebsk.by/skidki/index.html">Скидки</a>
+          li <a target="_blank" href="http://gorodvitebsk.by/priz">Розыгрыши</a>
+          li.cont
+            a.cont_a href="#"
+              .shevron
+              | Все проекты
+            ul.clearfix
+              li <a target="_blank" href="http://m.gorodvitebsk.by/">Мобильный Витебск</a>
+              li <a target="_blank" href="http://gorod.vitebsk.by/made/index.html">Сделано в Витебске</a>
+              li <a target="_blank" href="http://gorod.vitebsk.by/turism.htm">Туризм и отдых</a>
+              li <a target="_blank" href="http://gorod.vitebsk.by/feeriya/index.html">Феерия льна</a>
+              li <a target="_blank" href="http://foto.gorodvitebsk.by/">Фотоальбом</a>
+              li <a target="_blank" href="http://forum.gorodvitebsk.by/">Форум</a>
+              li <a target="_blank" href="http://gorod.vitebsk.by/add-info.htm">Реклама на портале</a>
+              li <a target="_blank" href="http://www.prometei-design.com/rus/CorporativSitesRus.htm">Создание сайтов</a>
+              li <a target="_blank" href="http://gorod.vitebsk.by/prometei/">Компьютерное обучение</a>  
+              li <a target="_blank" href="http://gorod.vitebsk.by/news/index.html">Архив новостей</a>
+          li.enter_button <a target="_blank" href="#">Войти</a>
+
+        .social_bar
+          a href="http://vk.com/gorod_vitebsk"
+            img src="img/social_icons_1.png"
+          a href="http://instagram.com/gorodvitebsk"
+            img src="img/social_icons_2.png"
+          a href="https://www.facebook.com/GorodVitebsk.by"
+            img src="img/social_icons_3.png"
+          a href="http://ok.ru/group/56855124705326"
+            img src="img/social_icons_4.png"
+          a href="https://www.youtube.com/user/gorodvitebskby1"
+            img src="img/social_icons_5.png"
+          a href="https://twitter.com/gorodvitebskby"
+            img src="img/social_icons_6.png"
+          a href="https://plus.google.com/+GorodVitebsk/posts"
+            img src="img/social_icons_7.png"
+          a href="https://www.linkedin.com/company/%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%BB-%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0-%D0%B2%D0%B8%D1%82%D0%B5%D0%B1%D1%81%D0%BA%D0%B0---gorodvitebsk-by"
+            img src="img/social_icons_8.png"
+
+
+
+
+
+
+    / <===========================================================>
+    /                            HEADER 2
+    / <===========================================================>
+    .header_container.gray_container
+      .container
+        .row.big_row
+          .header.clearfix
+            .logo
+              a href="/" <img src="img/logo.png"/>
+            .search_bar_container
+              .search_bar.clearfix
+                form
+                  <input type="text" class="form-control" placeholder="Поиск!">
+                  <button type="submit" class=""> <span class="glyphicon glyphicon-search"></span></button>
+            .informer
+              .curency 
+                a href="#" $ 14 500
+              .wather_widget
+                a href="#"
+                  .img 
+                    img src="img/wather_icon.png"
+                  .temperature +20
+
+            .logo_2
+              a href="/" <img src="img/logo_2.png"/>
+
+    / <===========================================================>
+    /                            MAIN NAV 2
+    / <===========================================================>
+    .main_nav_container
+      .container
+        .row.big_row
+          .main_nav.col-md-12
+            .main_nav_in.clearfix
+              .item.first.item_1
+                a href="#"
+                  .img
+                    img src="img/main_nav_icon_1.png"
+                  .title Новости
+              .item.item_6
+                a href="#"
+                  .img
+                    img src="img/main_nav_icon_6.png"
+                  .title Афиша
+              .item.item_2
+                a href="#"
+                  .img
+                    img src="img/main_nav_icon_2.png"
+                  .title Работа
+              .item.item_5
+                a href="#"
+                  .img
+                    img src="img/main_nav_icon_5.png"
+                  .title Каталог
+              .item.item_10
+                a href="#"
+                  .img
+                    img src="img/main_nav_icon_10.png"
+                  .title Расписание транспорта
+              .item.last.item_12
+                a.last href="#"
+                  .img
+                    img src="img/main_nav_icon_12.png"
+                  .title Поиск лекарств
+              .item.item_3
+                a.color_vai_1 href="#"
+                  .img
+                    img src="img/main_nav_icon_3.png"
+                  .title Объявления
+              .item.item_9
+                a href="#"
+                  .img
+                    img src="img/main_nav_icon_9.png"
+                  .title Интернет магазины
+              .item.item_11
+                a href="#"
+                  .img
+                    img src="img/main_nav_icon_11.png"
+                  .title Розыгрыши
+              .item.item_4
+                a href="#"
+                  .img
+                    img src="img/main_nav_icon_4.png"
+                  .title Радио
+              .item.item_8
+                a href="#"
+                  .img
+                    img src="img/main_nav_icon_8.png"
+                  .title Online камера
+              .item.item_7
+                a href="#"
+                  .img
+                    img src="img/main_nav_icon_7.png"
+                  .title Интернет TV
+
+ 
+
+
+    / <===========================================================>
+    /                           FIRM_CONTAINER
+    / <===========================================================>
+
+    .firm_container.gray_container
+      .container
+        .row.big_row
+          .main.clearfix
+            .col-xs-9
+
+
+              / <===========================================================>
+              /                        STANDART_TITLE
+              / <===========================================================>
+
+              .standart_title.slim
+                h1 Новые отзывы
+                .add_review.float_right.main_section
+                  a.btn.btn-warning href="#" data-toggle="modal" data-target="#reviews_modal"
+                    .span.glyphicon.glyphicon-pencil
+                    | Добавить отзыв 
+
+              .reviews
+                .review_item.clearfix
+                  .review_org_name 
+                    a href="#" Ресторан "Лямус"
+                  .review_stars
+                    span.glyphicon.glyphicon-star.gold
+                    span.glyphicon.glyphicon-star.gold
+                    span.glyphicon.glyphicon-star.gold
+                    span.glyphicon.glyphicon-star.gold
+                    span.glyphicon.glyphicon-star
+                  .review_name Константин
+                  .review_date 08.07.2015 18:00
+                  .review_text Заказывал мышь A4Tech Bloody Blazing A6, менеджер оформил заказ, но потом перезвонил сказал, что А6 нету и предложил А7, сказав, что они идентичны по своим характеристикам, хотя у А6 сенсор V-Track, а у А7 оптический (хорошо, что я проверил сразу) - это, конечно, минус к компетенции продавца. А так все нормально, по работе курьера замечаний нет.
+
+                .review_item.clearfix
+                  .review_org_name 
+                    a href="#" Ресторан "Лямус очень длинное название фирмы" очень, просто длинее некуда очень длинное
+                  .review_stars
+                    span.glyphicon.glyphicon-star.gold
+                    span.glyphicon.glyphicon-star.gold
+                    span.glyphicon.glyphicon-star.gold
+                    span.glyphicon.glyphicon-star.gold
+                    span.glyphicon.glyphicon-star
+                  .review_name Константин Иванович Иванов
+                  .review_date 08.07.2015 18:00
+                  .review_text Заказывал мышь A4Tech Bloody Blazing A6, менеджер оформил заказ, но потом перезвонил сказал, что А6 нету и предложил А7, сказав, что они идентичны по своим характеристикам, хотя у А6 сенсор V-Track, а у А7 оптический (хорошо, что я проверил сразу) - это, конечно, минус к компетенции продавца. А так все нормально, по работе курьера замечаний нет.
+
+                .review_item.clearfix
+                  .review_org_name 
+                    a href="#" Ресторан "Лямус"
+                  .review_stars
+                    span.glyphicon.glyphicon-star.gold
+                    span.glyphicon.glyphicon-star.gold
+                    span.glyphicon.glyphicon-star.gold
+                    span.glyphicon.glyphicon-star.gold
+                    span.glyphicon.glyphicon-star
+                  .review_name Константин
+                  .review_date 08.07.2015 18:00
+                  .review_text Заказывал мышь A4Tech Bloody Blazing A6, менеджер оформил заказ, но потом перезвонил сказал, что А6 нету и предложил А7, сказав, что они идентичны по своим характеристикам, хотя у А6 сенсор V-Track, а у А7 оптический (хорошо, что я проверил сразу) - это, конечно, минус к компетенции продавца. А так все нормально, по работе курьера замечаний нет.
+
+                .banner_100p
+                  img.img-responsive src="img/banner_885x60.png" 
+
+                .review_item.clearfix
+                  .review_org_name 
+                    a href="#" Ресторан "Лямус"
+                  .review_stars
+                    span.glyphicon.glyphicon-star.gold
+                    span.glyphicon.glyphicon-star.gold
+                    span.glyphicon.glyphicon-star.gold
+                    span.glyphicon.glyphicon-star.gold
+                    span.glyphicon.glyphicon-star
+                  .review_name Константин
+                  .review_date 08.07.2015 18:00
+                  .review_text Заказывал мышь A4Tech Bloody Blazing A6, менеджер оформил заказ, но потом перезвонил сказал, что А6 нету и предложил А7, сказав, что они идентичны по своим характеристикам, хотя у А6 сенсор V-Track, а у А7 оптический (хорошо, что я проверил сразу) - это, конечно, минус к компетенции продавца. А так все нормально, по работе курьера замечаний нет.
+                  .review_reply
+                    .review_name Ответ организации
+                    .review_date 08.07.2015 18:00
+                    .review_text Добрый день.В понедельник был официальный выходной во всей стране. Соответственно, ваша мышь будет доставлена на след. рабочий день. ТО есть, в среду.Суть претензий к нашей организации не ясна. 
+
+                .review_item.clearfix
+                  .review_org_name 
+                    a href="#" Ресторан "Лямус"
+                  .review_stars
+                    span.glyphicon.glyphicon-star.gold
+                    span.glyphicon.glyphicon-star.gold
+                    span.glyphicon.glyphicon-star.gold
+                    span.glyphicon.glyphicon-star.gold
+                    span.glyphicon.glyphicon-star
+                  .review_name Константин
+                  .review_date 08.07.2015 18:00
+                  .review_text Заказывал мышь A4Tech Bloody Blazing A6, менеджер оформил заказ, но потом перезвонил сказал, что А6 нету и предложил А7, сказав, что они идентичны по своим характеристикам, хотя у А6 сенсор V-Track, а у А7 оптический (хорошо, что я проверил сразу) - это, конечно, минус к компетенции продавца. А так все нормально, по работе курьера замечаний нет.
+                  .review_images
+                    a href="img/big_food_1.jpg" data-lightbox="example-set" data-title="My caption"
+                      img.img-thumbnail.img-responsive src="img/review_img_1.jpg" alt="..."
+                    a href="img/big_food_2.jpg" data-lightbox="example-set" data-title="My caption"
+                      img.img-thumbnail.img-responsive src="img/review_img_2.jpg" alt="..."
+                    a href="img/big_food_1.jpg" data-lightbox="example-set" data-title="My caption"
+                      img.img-thumbnail.img-responsive src="img/review_img_3.jpg" alt="..."
+
+              nav.paginator
+                ul class="pagination"
+                  li
+                    a href="#" aria-label="Предыдущая"
+                      span aria-hidden="true"
+                       | &laquo;
+
+                  li 
+                    a href="#" 1
+                  li 
+                    a href="#" 2
+                  li 
+                    a href="#" 3
+                  li 
+                    a href="#" 4
+
+                  li
+                    a href="#" aria-label="Следующая"
+                      span aria-hidden="true"
+                        | &raquo;
+
+              / <===========================================================>
+              /                            slider_baner_oma
+              / <===========================================================>
+              .grean_herder_section
+                a href="#"
+                .title  
+                  a href="#" Компания ОМА - строительные материалы и инструменты
+              .slider_baner_oma.gray_block
+
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+                  <!-- Wrapper for slides -->
+                  .carousel-inner
+                    .item.active
+                      .row
+                        .col-xs-3
+                          a href="#"
+                            img src="img/s_baner_1.jpg"
+                        .col-xs-3
+                          a href="#"
+                            img src="img/s_baner_2.jpg"
+                        .col-xs-3
+                          a href="#"
+                            img src="img/s_baner_3.jpg"
+                        .col-xs-3
+                          a href="#"
+                            img src="img/s_baner_4.jpg"
+                    .item
+                      .row
+                        .col-xs-3
+                          a href="#"
+                            img src="img/s_baner_1.jpg"
+                        .col-xs-3
+                          a href="#"
+                            img src="img/s_baner_2.jpg"
+                        .col-xs-3
+                          a href="#"
+                            img src="img/s_baner_3.jpg"
+                        .col-xs-3
+                          a href="#"
+                            img src="img/s_baner_4.jpg"
+                    .item
+                      .row
+                        .col-xs-3
+                          a href="#"
+                            img src="img/s_baner_1.jpg"
+                        .col-xs-3
+                          a href="#"
+                            img src="img/s_baner_2.jpg"
+                        .col-xs-3
+                          a href="#"
+                            img src="img/s_baner_3.jpg"
+                        .col-xs-3
+                          a href="#"
+                            img src="img/s_baner_4.jpg"
+
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                  </a>
+                </div>
+
+
+              / <===========================================================>
+              /                            ORG_NEWS
+              / <===========================================================>
+
+              .org_news
+                .grean_herder_section
+                  a href="#"
+                  .title  
+                    a href="# "Hовости / акции салонов красоты Витебска
+                .org_news_container.clearfix
+
+                  .org_news_item.clearfix
+                    .img 
+                      a href="#"
+                        img src="img/org_news_1.jpg"
+                    .title 
+                      a href="#" 
+                        | Новый порядок работы ИП в Республике Беларусь 
+                        span.label.label-danger Новинка
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+                      .span.separator |
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+                  .org_news_item.odd.clearfix
+                    .img
+                      a href="#"
+                        img src="img/org_news_2.jpg"
+                    .title 
+                      a href="#" В магазине МАСТЕР ОГРОМНЫЙ выбор бензопил, триммеров. Значительно более длинный текст про бензопилы и тримеры и все такое.
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+                      .span.separator |
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+                  .org_news_item.clearfix
+                    .img
+                      a href="#"
+                        img src="img/org_news_3.jpg"
+                    .title 
+                      a href="#" Новый порядок работы ИП в Республике Беларусь 
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+                      .span.separator |
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+                  .org_news_item.odd.clearfix
+                    .img 
+                      a href="#"
+                        img src="img/org_news_4.jpg"
+                    .title 
+                      a href="#" Новый порядок работы ИП в Республике Беларусь 
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+                      .span.separator |
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+                  .org_news_item.clearfix
+                    .img 
+                      a href="#"
+                        img src="img/org_news_2.jpg"
+                    .title 
+                      a href="#" В магазине МАСТЕР ОГРОМНЫЙ выбор бензопил, триммеров. Значительно более длинный текст про бензопилы и тримеры и все такое. 
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+                      .span.separator |
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+                  .org_news_item.odd.clearfix
+                    .img
+                      a href="#"
+                        img src="img/org_news_5.jpg"
+                    .title 
+                      a href="#" Новый порядок работы ИП в Республике Беларусь 
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+                      .span.separator |
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+
+
+              / <===========================================================>
+              /                            tags
+              / <===========================================================>
+
+              .tags
+                .grean_herder_section
+                  a href="#"
+                  .title  
+                    | Нас находят по следующим словам:
+                .all_tags.clearfix
+                    a.tag_item href="#" салоны красоты
+                    a.tag_item href="#" тату
+                    a.tag_item href="#" салоны красоты
+                    a.tag_item href="#" парикмахерские телефоны
+                    a.tag_item href="#" визажист
+                    a.tag_item href="#" парикмахерские
+                    a.tag_item href="#" тату
+                    a.tag_item href="#" визажист
+                    a.tag_item href="#" парикмахерские телефоны
+                    a.tag_item href="#" парикмахерские
+                    a.tag_item href="#" визажист
+                    a.tag_item href="#" тату
+                    a.tag_item href="#" салоны красоты
+                    a.tag_item href="#" визажист
+                    a.tag_item href="#" салоны красоты
+                    a.tag_item href="#" парикмахерские
+                    a.tag_item href="#" тату
+                    a.tag_item href="#" парикмахерские
+                    a.tag_item href="#" парикмахерские телефоны
+                    a.tag_item href="#" парикмахерские
+                    a.tag_item href="#" парикмахерские телефоны
+                    a.tag_item href="#" визажист
+                    a.tag_item href="#" парикмахерские
+                    a.tag_item href="#" тату
+
+
+            / <===========================================================>
+            /                         RIGHT BAR
+            / <===========================================================>
+
+            / <===========================================================>
+            /                        CATALOG_MENU_BAR
+            / <===========================================================>
+
+
+            .col-xs-3
+
+              .catalog_menu_bar.closed
+                .catalog_menu_bar_title.expand
+                  | Каталог товаров и услуг 
+                  span.glyphicon.glyphicon-chevron-down
+                .catalog_menu_bar_items
+                  .catalog_menu_bar_item
+                    .catalog_menu_bar_item_title
+                      .arrow
+                      img src="img/catalog_menu_icon_1.png"
+                      | Дом и квартира
+                    .in_tab
+                      .in_tab_header
+                        .in_tab_title Отдых и развлечения
+                      .in_tab_content.clearfix
+                        .col-xs-4
+                          .subsection
+                            .subsection_title 
+                              | Активный отдых
+                              span.badge 22
+                            a.subsection_item Боулинг
+                            a.subsection_item Футбол
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                          .subsection
+                            .subsection_title 
+                              | Активный отдых
+                              span.badge 22
+                            a.subsection_item Боулинг
+                            a.subsection_item Футбол
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+
+                        .col-xs-4
+                          .subsection
+                            .subsection_title 
+                              | Активный отдых
+                              span.badge 22
+                            a.subsection_item Боулинг
+                            a.subsection_item Футбол
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                          .subsection
+                            .subsection_title 
+                              | Активный отдых
+                              span.badge 22
+                            a.subsection_item Боулинг
+                            a.subsection_item Футбол
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                            
+                        .col-xs-4
+                          .subsection
+                            .subsection_title 
+                              | Активный отдых
+                              span.badge 22
+                            a.subsection_item Боулинг
+                            a.subsection_item Футбол
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                          .subsection
+                            .subsection_title 
+                              | Активный отдых
+                              span.badge 22
+                            a.subsection_item Боулинг
+                            a.subsection_item Футбол
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+
+
+
+
+
+                  .catalog_menu_bar_item
+                    .catalog_menu_bar_item_title
+                      .arrow
+                      img src="img/catalog_menu_icon_2.png"
+                      | Строительство и ремонт
+                    .in_tab
+                      .in_tab_header
+                        .in_tab_title Строительство и ремонт
+                      .in_tab_content.clearfix
+                        .col-xs-4
+                          .subsection
+                            .subsection_title 
+                              | Активный отдых
+                              span.badge 22
+                            a.subsection_item Боулинг
+                            a.subsection_item Футбол
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                          .subsection
+                            .subsection_title 
+                              | Активный отдых
+                              span.badge 22
+                            a.subsection_item Боулинг
+                            a.subsection_item Футбол
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+
+                        .col-xs-4
+                          .subsection
+                            .subsection_title 
+                              | Активный отдых
+                              span.badge 22
+                            a.subsection_item Боулинг
+                            a.subsection_item Футбол
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                          .subsection
+                            .subsection_title 
+                              | Активный отдых
+                              span.badge 22
+                            a.subsection_item Боулинг
+                            a.subsection_item Футбол
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                            
+                        .col-xs-4
+                          .subsection
+                            .subsection_title 
+                              | Активный отдых
+                              span.badge 22
+                            a.subsection_item Боулинг
+                            a.subsection_item Футбол
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+                          .subsection
+                            .subsection_title 
+                              | Активный отдых
+                              span.badge 22
+                            a.subsection_item Боулинг
+                            a.subsection_item Футбол
+                            a.subsection_item Лазертаг
+                            a.subsection_item Лазертаг
+                            a.subsection_item Музеи
+
+
+                  .catalog_menu_bar_item
+                    .catalog_menu_bar_item_title
+                      .arrow
+                      img src="img/catalog_menu_icon_3.png"
+                      | Работа и бизнес
+                  .catalog_menu_bar_item
+                    .catalog_menu_bar_item_title
+                      .arrow
+                      img src="img/catalog_menu_icon_1.png"
+                      | Авто, мото, вело
+                  .catalog_menu_bar_item
+                    .catalog_menu_bar_item_title
+                      .arrow
+                      img src="img/catalog_menu_icon_2.png"
+                      | Семья и дети
+                  .catalog_menu_bar_item
+                    .catalog_menu_bar_item_title
+                      .arrow
+                      img src="img/catalog_menu_icon_3.png"
+                      | Шоппинг
+                  .catalog_menu_bar_item
+                    .catalog_menu_bar_item_title
+                      .arrow
+                      img src="img/catalog_menu_icon_1.png"
+                      | Отдых и развлечение
+                  .catalog_menu_bar_item
+                    .catalog_menu_bar_item_title
+                      .arrow
+                      img src="img/catalog_menu_icon_2.png"
+                      | Все для праздника
+                  .catalog_menu_bar_item
+                    .catalog_menu_bar_item_title
+                      .arrow
+                      img src="img/catalog_menu_icon_3.png"
+                      | Здоровье и красота
+                  .catalog_menu_bar_item
+                    .catalog_menu_bar_item_title
+                      .arrow
+                      img src="img/catalog_menu_icon_1.png"
+                      | Сделано в Витебске
+                  .catalog_menu_bar_item
+                    .catalog_menu_bar_item_title
+                      .arrow
+                      img src="img/catalog_menu_icon_2.png"
+                      | Услуги в Витебске
+
+
+              .baner_vertical
+                img src="img/banner_250x300.jpg"
+
+              .baner_vertical
+                img src="img/banner_240x400.jpg"
+
+              .baner_vertical
+                img src="img/banner_250x250.jpg"
+
+              .baner_vertical
+                img src="img/vk.jpg"
+
+
+              / <===========================================================>
+              /                            ORG_NEWS
+              / <===========================================================>
+
+              .org_news.right_column
+                .grean_herder_section
+                  a href="#"
+                  .title  
+                    a href="# "Hовости / акции салонов красоты Витебска
+                .org_news_container.clearfix
+
+                  .org_news_item.clearfix
+                    .img 
+                      a href="#"
+                        img src="img/org_news_1.jpg"
+                    .title 
+                      a href="#" 
+                        | Новый порядок работы ИП в Республике Беларусь 
+                        span.label.label-danger Новинка
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+                  .org_news_item.odd.clearfix
+                    .img
+                      a href="#"
+                        img src="img/org_news_2.jpg"
+                    .title 
+                      a href="#" В магазине МАСТЕР ОГРОМНЫЙ выбор бензопил, триммеров. Значительно более длинный текст про бензопилы и тримеры и все такое.
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+                  .org_news_item.clearfix
+                    .img
+                      a href="#"
+                        img src="img/org_news_3.jpg"
+                    .title 
+                      a href="#" Новый порядок работы ИП в Республике Беларусь 
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+                  .org_news_item.odd.clearfix
+                    .img 
+                      a href="#"
+                        img src="img/org_news_4.jpg"
+                    .title 
+                      a href="#" Новый порядок работы ИП в Республике Беларусь 
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+                  .org_news_item.clearfix
+                    .img 
+                      a href="#"
+                        img src="img/org_news_2.jpg"
+                    .title 
+                      a href="#" В магазине МАСТЕР ОГРОМНЫЙ выбор бензопил, триммеров. Значительно более длинный текст про бензопилы и тримеры и все такое. 
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+                  .org_news_item.odd.clearfix.no_img
+                    .title 
+                      a href="#" Новый порядок работы ИП в Республике Беларусь 
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+ 
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+
+    / <===========================================================>
+    /                            FOOTER
+    / <===========================================================>
+
+
+    .footer
+      .container
+        .row.big_row
+          .logo.col-xs-2
+            a href="/" <img src="img/logo_old.png"/>
+          .footer_nav.col-xs-10
+            .footer_nav_item 
+              a href="#"
+                span.glyphicon.glyphicon-plus-sign
+                | Добавить организацию <br> в каталог 
+            .footer_nav_item 
+              a href="#"
+                span.glyphicon.glyphicon-ok-sign
+                | Размещение <br> рекламы
+            .footer_nav_item.one_line
+              a href="#"
+                span.glyphicon.glyphicon-globe
+                |  Создание сайтов 
+            .footer_nav_item 
+              a href="#"
+                span.glyphicon.glyphicon-film
+                | Заказать <br> видео-рекламу
+            .footer_nav_item.one_line
+              a href="#"
+                span.glyphicon.glyphicon-phone-alt
+                | Контакты  
