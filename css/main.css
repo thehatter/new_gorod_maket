@@ -2283,6 +2283,9 @@ a.top_button.on_bot_of_the_page {
   .review_stars .gold {
     color: #EE8800; }
 
+.review_stars.radio {
+  float: none; }
+
 .reviews_all_stars .review_stars {
   font-size: 26px; }
 

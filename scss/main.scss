@@ -3434,6 +3434,11 @@ a.top_button.on_bot_of_the_page {
   }
 }
 
+.review_stars.radio {
+  float: none;
+}
+
+
 .reviews_all_stars .review_stars{
     font-size: 26px;
 }
@@ -3524,4 +3529,6 @@ textarea.review_text {
   }
 
 }
+
+
 
