@@ -1127,6 +1127,10 @@ transition: all 0.2s ease-in-out;
   .firm_logo {
     text-align: center;
     padding-bottom: 20px;
+
+    img {
+      max-width: 100%;
+    }
   }
 }
 
@@ -3096,25 +3100,41 @@ a.top_button.on_bot_of_the_page {
 //                            TAGS
 // <===========================================================>
 
+.white_title_section {
+  padding: 10px 0px;
+
+  .title a {
+    color: #666;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .title {
+    color: #666;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
 .tags {
-  margin: 25px 0;
+  margin: 25px 0px;
 
   .all_tags {
-    margin: 6px 0 30px 0;
+    margin: 0px -8px 30px -8px;
   }
 
   a.tag_item {
     display: block;
     float: left;
-    padding: 4px 10px 5px 10px;
-    margin:0 5px 5px 0;
-    background: #aeaeae;
-    color:#fff;
-    font-size: 16px;
+    padding: 4px 8px 5px 8px;
+    margin:0 0px 0px 0;
+    background: none;
+    color:#333;
+    font-size: 14px;
   }
-  a.tag_item:hover {
-    background: #838383;
-  }
+  // a.tag_item:hover {
+  //   background: #838383;
+  // }
 }
 
 // <===========================================================>
