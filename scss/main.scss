@@ -313,6 +313,7 @@ a.big_color_button.orange {
   display: block;
   float: left;
   width: 8.33333333333333%;
+  position: relative;
 }
 
 .main_nav .item a,
@@ -342,6 +343,19 @@ transition: all 0.2s ease-in-out;
   -ms-transform: scale(1.2);
   transform: scale(1.2);
   z-index: 100;
+}
+
+.main_nav .item.item_5 a:hover{
+  top:8px;
+  -moz-transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+.main_nav .item.item_5 a.reviews{
+  top:-15px;
 }
 
 .main_nav .item a .img{
@@ -379,6 +393,7 @@ transition: all 0.2s ease-in-out;
 .item_11 a {background: #CF3E22;}
 .item_12 a {background: #0B5B00;}
 
+
 @media screen and (max-width: 1200px) {
   .main_nav .item.item_6 a .img,
   .main_nav .item.item_9 a .img,
@@ -412,6 +427,41 @@ transition: all 0.2s ease-in-out;
   }
 
 
+}
+
+.main_nav .item a.reviews {
+  position: absolute;
+  
+  height: 20px;
+  display: block;
+  width: 100%;
+  margin: 0;
+  background: none;
+  top:-15px;
+  right: 0;
+  text-decoration: none;
+
+  .content{
+    background: #F39A00;
+    padding: 4px 5px;
+    margin: 0 5px;
+    text-align: center;
+  }
+    
+}
+
+.main_nav .item a.reviews:hover .span {
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 // <===========================================================>
