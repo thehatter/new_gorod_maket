@@ -128,6 +128,11 @@
 
 
 
+
+    $("#radio").click( function () {
+      msg=window.open("radio.html","msg","height=423,width=500,left=300,top=200");
+    });
+
     // $(".firm_right_bar").affix({
     //     offset: { 
     //         top: 200,
