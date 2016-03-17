@@ -3,14 +3,13 @@
 
     // create array to hold day 
     var weekday = new Array();
-    weekday[0] = "Воскресенье";
-    weekday[1] = "Вторник";
-    weekday[2] = "Среда";
-    weekday[3] = "Четверг";
-    weekday[4] = "Пятница";
-    weekday[5] = "Суббота";
-    weekday[6] = "Понедельник";
-
+      weekday[0]=  "Воскресенье";
+      weekday[1] = "Понедельник";
+      weekday[2] = "Вторник";
+      weekday[3] = "Среда";
+      weekday[4] = "Четверг";
+      weekday[5] = "Пятница";
+      weekday[6] = "Cуббота";
 
     var WGen = {
       // format temperatured
@@ -139,5 +138,4 @@
 
   });
 })(jQuery);
-
 
