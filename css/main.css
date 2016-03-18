@@ -2490,7 +2490,10 @@ body.radio {
   display: block; }
 
 @media screen and (max-width: 1280px) {
-  .weekday_h {
-    font-size: 20px; } }
+  .forecast .weekday .weekday_h {
+    font-size: 20px;
+    padding: 20px 0px 0 0px; }
+    .forecast .weekday .weekday_h .title {
+      padding: 4px 0 0 0; } }
 
 /*# sourceMappingURL=main.css.map */
