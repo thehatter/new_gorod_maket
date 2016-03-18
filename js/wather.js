@@ -12,7 +12,7 @@
       weekday[6] = "Cуббота";
 
     var WGen = {
-      // format temperatured
+      // format temperature
       FormatT: function (t) {
         var intT = parseInt(t);
         if (intT > 0){
@@ -131,6 +131,10 @@
     $.get( "wather.xml", function( data ) {
       WGen.createSmallWidget('.wather_widget a', data);
       WGen.createBigWidget('.big_wather_widget_container', data);
+
+      $( ".weekday" ).click(function() {
+        $( this ).toggleClass( "open" );
+      });
     });
 
     

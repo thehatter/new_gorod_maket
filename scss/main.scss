@@ -3664,6 +3664,7 @@ body.radio {
 .forecast .weekday {
   background: #f5f5f5;
   margin: 5px 0;
+  cursor: pointer;
 
   .date_cont {
     float: left;
@@ -3722,9 +3723,10 @@ body.radio {
   }
 
 }
-
+  
   .forecast .weekday:first-child {
     background: #EEEEEE;
+    cursor: auto;
   }
 
   .weekday_h.tod_1,
@@ -3732,13 +3734,22 @@ body.radio {
     display: none;
   }
 
+  .open .weekday_h.tod_1,
+  .open .weekday_h.tod_3 {
+    display: block;
+  }
   .forecast .weekday:first-child .weekday_h.tod_1,
   .forecast .weekday:first-child .weekday_h.tod_3 {
     display: block;
   }
 
 
+@media screen and (max-width: 1280px) {
+  .weekday_h { {
+    font-size: 20px;
+  }
 
+}
 
 
 
