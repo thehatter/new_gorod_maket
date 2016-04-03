@@ -1,0 +1,22 @@
+{
+  "name": "new_gorod_maket",
+  "version": "1.0.0",
+  "description": "just for ajax testing",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thehatter/new_gorod_maket.git"
+  },
+  "author": "hatter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thehatter/new_gorod_maket/issues"
+  },
+  "homepage": "https://github.com/thehatter/new_gorod_maket#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}

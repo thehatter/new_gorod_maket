@@ -22,7 +22,7 @@
       },
       // create html img icon from code
       genIcon: function(i) {
-        return '<img src="http://st7.gisstatic.ru/static/images/icons/new/'+ i +'.png">';
+        return '<img src="https://www.gismeteo.ru/static/images/icons/new/'+ i +'.png">';
       },
 
       toDate: function(dateStr) {
