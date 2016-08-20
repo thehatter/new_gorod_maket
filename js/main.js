@@ -141,6 +141,28 @@
     // });
 
 
+    // ============================ fuel widget ============================
+
+
+    $.get( "fuel_rate.json", function( data ) {
+
+      var itemsHTML = '';
+
+      itemsHTML += '<div class="item"><div class="title">98</div><div class="price">'
+                    + data.gasoline98.value +'</div></div>';
+      itemsHTML += '<div class="item"><div class="title">95</div><div class="price">'
+                    + data.gasoline95.value +'</div></div>';
+      itemsHTML += '<div class="item"><div class="title">92</div><div class="price">'
+                   + data.gasoline92.value +'</div></div>';
+      itemsHTML += '<div class="item"><div class="title">ДТ</div><div class="price">'
+                   + data.dT.value +'</div></div>';
+      itemsHTML += '<div class="item"><div class="title">ГАЗ</div><div class="price">'
+                   + data.gas.value +'</div></div>';
+      console.log(itemsHTML);
+      
+      $('.fuel').append(itemsHTML);
+
+    });    
 
 
   });

@@ -13,6 +13,8 @@
             success: function(data) {
               var table = $(data).find('#cours_obl_tbl');
                $('.big_rates_widget_container').append(table);
+               $('.big_rates_widget_container table').addClass('table table-striped table-hover');
+               $('.big_rates_widget_container table tr td:last-child').removeAttr('style');
             },
         });
 
