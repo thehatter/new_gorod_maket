@@ -2508,32 +2508,32 @@ body.radio {
   float: right;
   margin: 10px 15px 0 0;
   font-size: 16px; }
-  .fuel .item {
+  .fuel .fuel_item {
     float: left;
     text-align: center;
     margin-right: 2px; }
-    .fuel .item .title {
+    .fuel .fuel_item .title {
       width: 34px;
       height: 45px;
       padding: 13px 0 0 1px;
       background: #ccc url("img/can.png") center no-repeat;
       color: #fff; }
-    .fuel .item .price {
+    .fuel .fuel_item .price {
       padding: 0 0 0 2px; }
 
-.fuel .item:nth-of-type(1) .title {
+.fuel .fuel_item:nth-of-type(1) .title {
   background-color: #FF9700; }
 
-.fuel .item:nth-of-type(2) .title {
+.fuel .fuel_item:nth-of-type(2) .title {
   background-color: #DA542C; }
 
-.fuel .item:nth-of-type(3) .title {
+.fuel .fuel_item:nth-of-type(3) .title {
   background-color: #AE193E; }
 
-.fuel .item:nth-of-type(4) .title {
+.fuel .fuel_item:nth-of-type(4) .title {
   background-color: #5334AD; }
 
-.fuel .item:nth-of-type(5) .title {
+.fuel .fuel_item:nth-of-type(5) .title {
   background-color: #287AED; }
 
 @media screen and (max-width: 1200px) {
