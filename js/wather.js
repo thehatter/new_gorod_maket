@@ -37,8 +37,17 @@
       createSmallWidget: function (place, xml) {
         //var currentTime = new Date();
 
-        var currentTemperature = $(xml).find('day:eq(0) forecast:eq(0) values').attr('t');
-        var currentIcon = $(xml).find('day:eq(0) forecast:eq(0) values').attr('icon');
+        //if day 0 forecast exist - get 0 index forecast values
+        if ($(xml).find('day:eq(0) forecast:eq(0) values').attr('icon')){
+          var currentIcon = $(xml).find('day:eq(0) forecast:eq(0) values').attr('icon');
+          var currentTemperature = $(xml).find('day:eq(0) forecast:eq(0) values').attr('t');
+
+        }
+        else { // else get next day values
+          var currentIcon = $(xml).find('day:eq(1) forecast:eq(0) values').attr('icon');
+          var currentTemperature = $(xml).find('day:eq(1) forecast:eq(0) values').attr('t');
+
+        }
 
         var formatedTemperature = WGen.FormatT(currentTemperature);
 
