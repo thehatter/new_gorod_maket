@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/thehatter/new_gorod_maket#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-slim": "^0.3.0"
   }
 }

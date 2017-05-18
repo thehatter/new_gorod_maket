@@ -1,4 +1,5 @@
 /* main.scss */
+
 .row.big_row {
   margin: 0 -60px;
   padding: 0 30px; }
@@ -25,28 +26,33 @@
   .row.big_row {
     margin: 0 -40px;
     padding: 0 00px; }
-
   .gray_container {
     background: none; } }
+
 @media screen and (max-width: 1100px) {
   .row.big_row {
     margin: 0 -15px;
     padding: 0; } }
+
 .container {
   width: 1000px; }
 
 @media (min-width: 768px) {
   .container {
     width: 1000px; } }
+
 @media (min-width: 992px) {
   .container {
     width: 1000px; } }
+
 @media (min-width: 1024px) {
   .container {
     width: 1000px; } }
+
 @media (min-width: 1200px) {
   .container {
     width: 1170px; } }
+
 h1 {
   font-weight: bold;
   font-size: 31px; }
@@ -119,6 +125,7 @@ a.big_color_button.orange {
 .top_baner .big_row {
   padding-top: 5px;
   text-align: center; }
+
 .top_baner img {
   width: 100%; }
 
@@ -208,6 +215,7 @@ a.big_color_button.orange {
 @media screen and (max-width: 1200px) {
   .header .logo_2 {
     display: none; } }
+
 .main_nav_container {
   background: #f5f5f5;
   margin: 0px 0 20px 0; }
@@ -328,7 +336,6 @@ a.big_color_button.orange {
   .main_nav .item.item_12 a .img {
     right: 3px;
     top: 3px; }
-
   .main_nav .item a .img {
     right: 5px;
     top: 5px;
@@ -337,7 +344,6 @@ a.big_color_button.orange {
     -o-transform: scale(0.8);
     -ms-transform: scale(0.8);
     transform: scale(0.8); }
-
   .main_nav .item a {
     display: block;
     margin: 5px;
@@ -347,10 +353,10 @@ a.big_color_button.orange {
     line-height: 0.9;
     font-size: 11px;
     font-weight: normal; }
-
   .main_nav .item a .title {
     left: 5px;
     bottom: 5px; } }
+
 .main_nav .item a.reviews {
   position: absolute;
   height: 20px;
@@ -430,6 +436,7 @@ a.big_color_button.orange {
       font-size: 14.2px;
       font-weight: bold;
       letter-spacing: 0px; } }
+
 .news_block {
   margin: 20px 0 30px 0; }
   .news_block a {
@@ -437,6 +444,7 @@ a.big_color_button.orange {
 
 .news_item .img {
   margin: 0 0 6px 0; }
+
 .news_item .title {
   margin: 10px 0 10px 0;
   height: 55px;
@@ -444,6 +452,7 @@ a.big_color_button.orange {
   font-weight: bold;
   color: #333;
   line-height: 1.1; }
+
 .news_item .short {
   height: 45px;
   font-size: 14px;
@@ -453,6 +462,7 @@ a.big_color_button.orange {
 @media screen and (max-width: 1200px) {
   .news_item .title {
     height: auto; } }
+
 .label_item {
   float: left;
   margin: 0 12px 0 0; }
@@ -469,6 +479,7 @@ a.big_color_button.orange {
   -moz-opacity: 0.60;
   -khtml-opacity: 0.60;
   opacity: 0.60; }
+
 .news_item:hover .title {
   color: #3D8E45; }
 
@@ -572,6 +583,7 @@ a.big_color_button.orange {
     background: url(img/menu_arrow.png) left center no-repeat;
     z-index: 11;
     display: none; }
+
 .catalog_menu_bar_item .in_tab {
   width: 300%;
   min-height: 500px;
@@ -655,6 +667,7 @@ a.big_color_button.orange {
   background: url(img/menu_arrow_right.png) left center no-repeat;
   z-index: 12;
   display: none; }
+
 .catalog_menu_bar.roght_droup .catalog_menu_bar_item .in_tab {
   width: 300%;
   min-height: 500px;
@@ -715,11 +728,11 @@ a.big_color_button.orange {
     .footer .footer_nav .footer_nav_item span {
       float: left;
       font-size: 20px; }
-
   .footer .footer_nav .footer_nav_item.one_line {
     margin: 25px 0 0 20px; }
     .footer .footer_nav .footer_nav_item.one_line span {
       margin: 0px 10px 0px 10px; } }
+
 .breadcrumb_firm {
   float: left;
   padding: 0px 10px; }
@@ -909,6 +922,7 @@ a.big_color_button.orange {
 .firm_photo_carusel .carousel-control {
   background-image: none;
   width: 5%; }
+
 .firm_photo_carusel .item {
   float: left; }
   .firm_photo_carusel .item img {
@@ -2411,6 +2425,7 @@ textarea.review_text {
     background: white;
     padding: 10px 16px;
     font-size: 26px; }
+
 .review_images.when_upl a:hover .delete_review_img {
   display: block; }
 
@@ -2497,8 +2512,10 @@ body.radio {
     padding: 20px 0px 0 0px; }
     .forecast .weekday .weekday_h .title {
       padding: 4px 0 0 0; } }
+
 .big_rates_widget_container table td {
   padding: 0px 20px; }
+
 .big_rates_widget_container table tr td:nth-of-type(8) {
   white-space: wrap !important;
   padding-left: 20px;
@@ -2539,5 +2556,3 @@ body.radio {
 @media screen and (max-width: 1200px) {
   .fuel {
     display: none; } }
-
-/*# sourceMappingURL=main.css.map */

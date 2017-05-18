@@ -130,36 +130,44 @@
   .top_bar_2015 ul.menu_ul li a {
     padding: 5px 14px 4px 14px;
     font-size: 15px; } }
+
 @media screen and (max-width: 1465px) {
   .top_bar_2015 ul.menu_ul li a {
     padding: 5px 10px 4px 10px;
     font-size: 15px; } }
+
 @media screen and (max-width: 1372px) {
   .top_bar_2015 ul.menu_ul li a {
     padding: 6px 9px 4px 9px;
     font-size: 14px; } }
+
 @media screen and (max-width: 1301px) {
   .top_bar_2015 ul.menu_ul li a {
     padding: 7px 7px 4px 7px;
     font-size: 14px; } }
+
 @media screen and (max-width: 1250px) {
   .top_bar_2015 ul.menu_ul li a {
     padding: 7px 5px 4px 5px;
     font-size: 13px; } }
+
 @media screen and (max-width: 1161px) {
   .top_bar_2015 ul.menu_ul li a {
     padding: 7px 4px 4px 4px;
     font-size: 12px; } }
+
 @media screen and (max-width: 1092px) {
   .top_bar_2015 ul.menu_ul li a {
     padding: 7px 3px 4px 3px;
     font-size: 12px; } }
+
 @media screen and (max-width: 1070px) {
   .top_bar_2015 .social_bar {
     display: none; }
   .top_bar_2015 ul.menu_ul li a {
     padding: 7px 4px 4px 4px;
     font-size: 13px; } }
+
 @media screen and (max-width: 960px) {
   .top_bar_2015 {
     height: auto;
@@ -216,9 +224,8 @@
               font-size: 16px; }
         .top_bar_2015 ul.menu_ul li li:hover {
           background: #cdcdcd; } }
+
 @media screen and (min-width: 1095px) {
   .top_bar_2015.login_user ul.menu_ul li a {
     padding: 7px 5px 4px 5px;
     font-size: 13px; } }
-
-/*# sourceMappingURL=top_bar_2015.css.map */

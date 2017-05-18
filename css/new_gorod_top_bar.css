@@ -118,14 +118,14 @@
         .new_gorod_top_bar_container .new_gorod_top_bar ul li.cont {
           padding: 8px 0;
           position: relative; } }
+
 @media (min-width: 800px) and (max-width: 1124px) {
   .new_gorod_top_bar_container .new_gorod_top_bar ul li a {
     font-size: 12px; } }
+
 @media (min-width: 1170px) and (max-width: 5124px) {
   .new_gorod_top_bar_container {
     padding: 0; }
     .new_gorod_top_bar_container .new_gorod_top_bar {
       width: 1170px;
       margin: 0 auto; } }
-
-/*# sourceMappingURL=new_gorod_top_bar.css.map */
