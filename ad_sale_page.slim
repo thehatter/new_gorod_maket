@@ -1,0 +1,799 @@
+doctype html
+html
+  head
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    meta http-equiv="Content-Type" content="text/html; charset=utf-8"
+    title ВИТЕБСКИЙ ГОРОДСКОЙ ИНТЕРНЕТ-ПОРТАЛ - GorodVitebsk.by - ВСЁ О ГОРОДЕ ВИТЕБСКЕ!Новости Витебска,Каталог организаций,фирмы витебска,Витебск и Витебская область,интересное,события,происшествия,афиша,погода,курсы валют,поиск лекарств,скидки и акции,новости
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/main.css" rel="stylesheet" media="screen">
+    <link href="css/top_bar_2015.css" rel="stylesheet" media="screen">
+    <link href="css/ad_sale_pages.css" rel="stylesheet" media="screen">
+    
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/tob_bar_2015.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wather.js"></script>
+
+
+  body
+
+    a.top_button href="#top"
+
+    .modal.fade id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+      .modal-dialog.modal-lg
+        .modal-content
+          form role="form"
+            .modal-header
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              h4.modal-title#myModalLabel Добавление организации в каталог
+            .modal-body
+              .form-group
+                label Название
+                input.form-control type="text" placeholder="Введите название ораганизации"
+              .form-group
+                label Сфера деятельности
+                select.form-control
+                  option Шоппинг  ---  Косметика и парфюмерия
+                  option Шоппинг  ---  Магазины алкогольных напитков
+                  option Шоппинг  ---  Косметика и парфюмерия
+                  option Шоппинг  ---  Магазины алкогольных напитков
+                  option Шоппинг  ---  Магазины алкогольных напитков
+                  option Шоппинг  ---  Магазины алкогольных напитков
+
+              .form-group
+                label Краткое описание
+                textarea.form-control 
+              .form-group
+                label Контакты (телефон для связи и т.д.)
+                textarea.form-control 
+
+              .form-group
+                label Ссылка на сайт
+                input.form-control type="text"
+              .form-group
+                label Электронная почта
+                input.form-control type="text"
+              .form-group
+                label Контактное лицо
+                input.form-control type="text"
+
+            .modal-footer
+              button type="button" class="btn btn-default" data-dismiss="modal" Закрыть
+              button type="submit" class="btn btn-success" data-dismiss="modal" Отправить
+
+
+    .modal.fade id="reviews_modal" class="reviews_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+      .modal-dialog.modal-lg
+        .modal-content
+          form role="form"
+            .modal-header
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              h4.modal-title#myModalLabel Добавить отзыв
+            .modal-body
+
+              .form-group
+                label Название организации
+                input.form-control type="text" placeholder="Название организации"
+
+
+              .form-group
+                label Ваша оценка
+                .radio
+                  label
+                    input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="true"
+                      .review_stars.radio
+                        span.glyphicon.glyphicon-star.gold
+                        span.glyphicon.glyphicon-star.gold
+                        span.glyphicon.glyphicon-star.gold
+                        span.glyphicon.glyphicon-star.gold
+                        span.glyphicon.glyphicon-star.gold
+                .radio
+                  label
+                    input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"
+                      .review_stars.radio
+                        span.glyphicon.glyphicon-star.gold
+                        span.glyphicon.glyphicon-star.gold
+                        span.glyphicon.glyphicon-star.gold
+                        span.glyphicon.glyphicon-star.gold
+                        span.glyphicon.glyphicon-star
+                .radio
+                  label
+                    input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"
+                      .review_stars.radio
+                        span.glyphicon.glyphicon-star.gold
+                        span.glyphicon.glyphicon-star.gold
+                        span.glyphicon.glyphicon-star.gold
+                        span.glyphicon.glyphicon-star
+                        span.glyphicon.glyphicon-star
+                .radio
+                  label
+                    input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"
+                      .review_stars.radio
+                        span.glyphicon.glyphicon-star.gold
+                        span.glyphicon.glyphicon-star.gold
+                        span.glyphicon.glyphicon-star
+                        span.glyphicon.glyphicon-star
+                        span.glyphicon.glyphicon-star
+                .radio
+                  label
+                    input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"
+                      .review_stars.radio
+                        span.glyphicon.glyphicon-star.gold
+                        span.glyphicon.glyphicon-star
+                        span.glyphicon.glyphicon-star
+                        span.glyphicon.glyphicon-star
+                        span.glyphicon.glyphicon-star
+
+
+
+              .form-group
+                label Ваш отзыв
+                textarea.review_text.form-control 
+
+              br
+
+              .form-group
+                label for="exampleInputFile" Загрузить картинки
+                input type="file" id="exampleInputFile"
+                p class="help-block"Загрузите сюда чек или другие фото.
+
+              .review_images.when_upl.clearfix
+                a href="#"
+                  img.img-thumbnail.img-responsive src="img/review_img_1.jpg" alt="..."
+                  .delete_review_img
+                    .span.glyphicon.glyphicon-remove
+                a href="#"
+                  img.img-thumbnail.img-responsive src="img/review_img_2.jpg" alt="..."
+                  .delete_review_img
+                    .span.glyphicon.glyphicon-remove
+                a href="#"
+                  img.img-thumbnail.img-responsive src="img/review_img_3.jpg" alt="..."
+                  .delete_review_img
+                    .span.glyphicon.glyphicon-remove
+
+              br
+              .form-group
+                label Ваше имя
+                input.form-control type="text"
+              .form-group
+                label Электронная почта
+                input.form-control type="text"
+              .form-group
+                label Телефон
+                input.form-control type="text"
+
+            .modal-footer
+              button type="button" class="btn btn-default" data-dismiss="modal" Закрыть
+              button type="submit" class="btn btn-success" data-dismiss="modal" Отправить отзыв!ы
+
+
+
+    / <===========================================================>
+    /                        TOP_BAR_2015
+    / <===========================================================>
+
+    .top_bar_2015_container
+      .top_bar_2015
+        .logo
+          a href="http://gorodvitebsk.by/"
+            img src="img/g_logo_top_bar.png"
+            span 
+              strong GorodVitebsk.by
+
+        ul.menu_ul
+          li <a target="_blank" href="http://gorod.vitebsk.by/index.html">Новости</a>
+          li <a target="_blank" href="http://gorod.vitebsk.by/jiteli.htm">Каталог</a>
+          li <a target="_blank" href="http://rabotavitebsk.by/">Работа</a>
+          li <a target="_blank" href="http://gorod.vitebsk.by/afisha/index.htm">Афиша</a>
+          li <a href="http://vdv-tv.by/">ТВ</a>
+          li <a href="http://auto.namvam.by/">Авто</a>
+          li <a target="_blank" href="http://naparu.by/">Еда</a>
+          li <a href="http://namvam.by/">Обьявления</a>
+          li <a target="_blank" href="http://gorod.vitebsk.by/skidki/index.html">Скидки</a>
+          li <a target="_blank" href="http://gorodvitebsk.by/priz">Розыгрыши</a>
+          li.cont
+            a.cont_a href="#"
+              .shevron
+              | Все проекты
+            ul.clearfix
+              li <a target="_blank" href="http://m.gorodvitebsk.by/">Мобильный Витебск</a>
+              li <a target="_blank" href="http://gorod.vitebsk.by/made/index.html">Сделано в Витебске</a>
+              li <a target="_blank" href="http://gorod.vitebsk.by/turism.htm">Туризм и отдых</a>
+              li <a target="_blank" href="http://gorod.vitebsk.by/feeriya/index.html">Феерия льна</a>
+              li <a target="_blank" href="http://foto.gorodvitebsk.by/">Фотоальбом</a>
+              li <a target="_blank" href="http://forum.gorodvitebsk.by/">Форум</a>
+              li <a target="_blank" href="http://gorod.vitebsk.by/add-info.htm">Реклама на портале</a>
+              li <a target="_blank" href="http://www.prometei-design.com/rus/CorporativSitesRus.htm">Создание сайтов</a>
+              li <a target="_blank" href="http://gorod.vitebsk.by/prometei/">Компьютерное обучение</a>  
+              li <a target="_blank" href="http://gorod.vitebsk.by/news/index.html">Архив новостей</a>
+          li.enter_button <a target="_blank" href="#">Войти</a>
+
+        .social_bar
+          a href="http://vk.com/gorod_vitebsk"
+            img src="img/social_icons_1.png"
+          a href="http://instagram.com/gorodvitebsk"
+            img src="img/social_icons_2.png"
+          a href="https://www.facebook.com/GorodVitebsk.by"
+            img src="img/social_icons_3.png"
+          a href="http://ok.ru/group/56855124705326"
+            img src="img/social_icons_4.png"
+          a href="https://www.youtube.com/user/gorodvitebskby1"
+            img src="img/social_icons_5.png"
+          a href="https://twitter.com/gorodvitebskby"
+            img src="img/social_icons_6.png"
+          a href="https://plus.google.com/+GorodVitebsk/posts"
+            img src="img/social_icons_7.png"
+          a href="https://www.linkedin.com/company/%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%BB-%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0-%D0%B2%D0%B8%D1%82%D0%B5%D0%B1%D1%81%D0%BA%D0%B0---gorodvitebsk-by"
+            img src="img/social_icons_8.png"
+
+
+
+
+
+
+    / <===========================================================>
+    /                            HEADER 2
+    / <===========================================================>
+    .header_container.gray_container
+      .container
+        .row.big_row
+          .header.clearfix
+            .logo
+              a href="/" <img src="img/logo.png"/>
+            .search_bar_container
+              .search_bar.clearfix
+                form
+                  <input type="text" class="form-control" placeholder="Поиск!">
+                  <button type="submit" class=""> <span class="glyphicon glyphicon-search"></span></button>
+            .informer
+              .curency 
+                a href="#" $ 14 500
+              .wather_widget
+                a href="wather.html"
+
+            .fuel
+              // place for fuel generator
+
+    / <===========================================================>
+    /                            MAIN NAV 2
+    / <===========================================================>
+    .main_nav_container
+      .container
+        .row.big_row
+          .main_nav.col-md-12
+            .main_nav_in.clearfix
+              .item.first.item_1
+                a href="#"
+                  .img
+                    img src="img/main_nav_icon_1.png"
+                  .title Новости
+              .item.item_6
+                a href="#"
+                  .img
+                    img src="img/main_nav_icon_6.png"
+                  .title Афиша
+              .item.item_2
+                a href="#"
+                  .img
+                    img src="img/main_nav_icon_2.png"
+                  .title Работа
+              .item.item_5
+                a href="#"
+                  .img
+                    img src="img/main_nav_icon_5.png"
+                  .title Каталог
+              .item.item_10
+                a href="#"
+                  .img
+                    img src="img/main_nav_icon_10.png"
+                  .title Расписание транспорта
+              .item.last.item_12
+                a.last href="#"
+                  .img
+                    img src="img/main_nav_icon_12.png"
+                  .title Поиск лекарств
+              .item.item_3
+                a.color_vai_1 href="#"
+                  .img
+                    img src="img/main_nav_icon_3.png"
+                  .title Объявления
+              .item.item_9
+                a href="#"
+                  .img
+                    img src="img/main_nav_icon_9.png"
+                  .title Интернет магазины
+              .item.item_11
+                a href="#"
+                  .img
+                    img src="img/main_nav_icon_11.png"
+                  .title Розыгрыши
+              .item.item_4
+                a href="#"
+                  .img
+                    img src="img/main_nav_icon_4.png"
+                  .title Радио
+              .item.item_8
+                a href="#"
+                  .img
+                    img src="img/main_nav_icon_8.png"
+                  .title Online камера
+              .item.item_7
+                a href="#"
+                  .img
+                    img src="img/main_nav_icon_7.png"
+                  .title Интернет TV
+
+ 
+
+
+    / <===========================================================>
+    /                           FIRM_CONTAINER
+    / <===========================================================>
+
+    .standart_container.gray_container
+      .container
+        .row.big_row
+          .main.clearfix
+
+            / <===========================================================>
+            /                         LEFT BAR
+            / <===========================================================>
+
+            .col-md-3.col-xs-12
+              
+              .left_menu_bar
+                .left_menu_bar_title Наши предложения
+                .left_menu_bar_items
+                  a.first.active href="ad_sale_page.html" Размещение рекламы
+                  a href="#" Баннеры
+                  a href="#" Рекламные статьи
+                  a href="#" On-line представительство 
+                  a href="#" Видео реклама
+                  a.last href="#" Создание сайта
+
+
+            / <===========================================================>
+            /                        main part (center column)
+            / <===========================================================>
+            
+            .col-md-9.col-sm-12
+
+              / <===========================================================>
+              /                        STANDART_TITLE
+              / <===========================================================>
+
+              .standart_title.slim
+                h1 Размещение рекламы на GorodVitebsk.by!
+
+              
+              .main_anchors_bar_container.clearfix
+                .main_anchors_bar.clearfix
+                  .main_anchor_item
+                    a href="#section_1"
+                      .img_container
+                        .img
+                          img src="img/anchor_item_img_1.png"
+                      .title Преимущества
+                  .main_anchor_item
+                    a href="#section_2_1"
+                      .img_container
+                        .img
+                          img src="img/anchor_item_img_5.png"
+                      .title Достижения
+                  .main_anchor_item.big
+                    a href="#section_2"
+                      .img_container
+                        .img
+                          img src="img/anchor_item_img_2.png"
+                      .title Наши предложения
+                  .main_anchor_item
+                    a href="#section_4"
+                      .img_container
+                        .img
+                          img src="img/anchor_item_img_4.png"
+                      .title Контакты
+
+
+              .gray_bar
+                p
+                  |Каждый бизнес сталкивается с этими Проблемами и вынужден искать ответы на эти Вопросы:<br>
+                  |- Вы только начали бизнес и не знаете, как привлечь внимание?<br>
+                  |- Не растут продажи и мало новых заказов?<br>
+                  |- Потребители не узнают Вашу торговую марку?<br>
+                  |- Вашими бизнес-предложениями не интересуются?
+
+                span.strong_blue Есть отличное РЕШЕНИЕ! Вам нужна Реклама на портале GorodVitebsk.by!
+
+
+
+              .sale_page_section
+                .section_title
+                  a name="section_1"
+                  img src="img/anchor_item_img_1.png"
+                  h2 Преимущества
+
+                <iframe width="100%"  src="https://www.youtube.com/embed/jMaJUC1kRfs" frameborder="0" allowfullscreen></iframe>
+
+                p.strong Выгоды и преимущества размещения информации о Ваших товарах и услугах на Витебском городском портале GorodVitebsk.by 
+
+                .points_container.clearfix
+                  .row
+                    .point.clearfix
+                      .col-md-3.col-sm-4
+                        .img
+                          img src="img/point_1.png"
+                      .col-md-9.col-sm-8.text
+                         |<strong>GorodVitebsk.by</strong> – это самый посещаемый (официальный, мультимедийный) информационный ресурс по Витебску. Наши посетители – это Ваши потенциальные клиенты, которые ищут товар или услугу!
+                    .point.clearfix
+                      .col-md-3
+                        .img
+                          img src="img/point_2.png"
+                      .col-md-9.text
+                         |У нас <strong>400 000</strong> уникальных пользователей в месяц!  Наша аудитория больше тиража самой популярной городской газеты Витебска. Размещение рекламы у нас гарантирует вам приток клиентов!
+                    .point.clearfix
+                      .col-md-3
+                        .img
+                          img src="img/point_3.png"
+                      .col-md-9.text
+                         |Свыше <strong>2500</strong> организаций уже являются нашими клиентами. Они убедились в исключительной эффективности рекламы на портале <strong>GorodVitebsk.by</strong>. Вы еще медлите?
+
+                p
+                  | Портал постоянно в развитии: сегодня он включает в себя не только информационную составляющую и удобные, востребованные сервисы, типа <a href="/katalog">каталога товаров и услуг</a>, городской <a href="/afisha">афиши</a>, <a href="/trains">расписания транспорта</a> и т.д., но и свое интернет-телевидение <a href="http://vdv-tv.by/">VDV-TV.by</a>, смежные ресурсы (сайт бесплатных объявлений Витебска<a href="http://namvam.by/"> NamVam.by</a>, поиск рабочих вакансий<a href="http://rabotavitebsk.by/"> RabotaVitebsk.by</a>, кулинарный интернет проект <a href="http://naparu.by/">NaParu.by</a>)<br><br>При подготовке рекламы мы ГАРАНТИРУЕМ:<br>- квалифицированную <strong>помощь наших менеджеров</strong> (составление текста, наполнение страницы контентом, фото, видео),<br>- техническую <strong>поддержку и полный доступ</strong> (администрирование) к персональной странице при длительном сотрудничестве (договор на год),<br>- <strong>СКИДКИ</strong> при заказе размещения в нескольких разделах Каталога и заказе одновременно нескольких видов рекламы (от 10 до 50%).<br><br>
+
+
+              .sale_page_section
+                .section_title
+                  a name="section_2_1"
+                  img src="img/anchor_item_img_5.png"
+                  h2 Достижения
+
+                p
+                  <strong>GorodVitebsk.by</strong> стал лучшим информационным ресурсом Витебска по итогам 2013 года. Информационно-консалтинговая ассоциация «Город Витебск и компания» внесена на городскую Доску почета. За 10 лет работы на информационном пространстве деятельность ассоциации по созданию благоприятного имиджа города оценена первым местом в трудовом соревновании среди СМИ <a href="http://gorodvitebsk.by/news/02-05-2014/luchshim_informacionnym_resursom">смотреть подробнее >>></a>
+                br
+
+                p
+                  | Главным проектом ассоциации является портал <strong>GorodVitebsk.by</strong> – информационный и сервисный ресурс Витебска. В нем отражена вся жизнь города, его люди, новости, объекты интереса, как туристического, так и делового.
+                
+                <iframe width="100%" src="https://www.youtube.com/embed/miwiZuJDvIU" frameborder="0" allowfullscreen></iframe>
+
+                br
+                br
+                <span style="font-size: large;"><span>Портал&nbsp;</span><strong>GorodVitebsk.by -&nbsp;</strong>награда за лучшее освещение темы предпринимательства (2016).<br></span><span style="font-size: large;">Награждение состоялось 21 июля в Витебском областном исполнительном комитете.<br></span><em style="font-size: large;">- Мы испытываем гордость за то, что наш портал GorodVitebsk.by оценили на республиканском уровне. Приятно и то, что сами предприниматели оценивали те ресурсы, которые для них важны, -</em><span style="font-size: large;">&nbsp;поясняет директор интернет-портала GorodVitebsk.by.</span> <a href="http://gorodvitebsk.by/news/27-07-2016/lychee_regionalnoe_smi"> смотреть подробнее >>></a>
+
+                br
+                br
+
+                <iframe width="100%" src="https://www.youtube.com/embed/KjpKOL6VdY4" frameborder="0" allowfullscreen></iframe>
+                br
+                br
+
+                | Портал <strong><span lang="EN-US">GorodVitebsk</span>.<span lang="EN-US">by</span></strong><span lang="EN-US">&nbsp;</span>стал победителем республиканского конкурса в номинации&nbsp;<strong>«Лучшее освещение темы предпринимательства в региональных СМИ 2014 » среди&nbsp;85 регионов Беларуси: 5 областей, 3 областных центра, 73 города (района) и 4 района Минска.&nbsp;</strong>&nbsp;Критерием победы стали:<strong>&nbsp;</strong>вклад в развитие и популяризацию предпринимательства региона, активную журналистскую позицию, профессионализм, ответственность, добросовестное отношение к своему делу и творческий подход к работе&nbsp;<a href="http://gorodvitebsk.by/news/01-07-2014/konkurs_lucshie">смотреть подробнее &gt;&gt;&gt;</a>
+
+                br
+                br
+                | Таких результатов можно было достичь только при поддержке Витебска - города, который&nbsp;был признан <strong>"Лучшим городом (районом) и областью для бизнеса Беларуси-2014".
+
+                br
+                br
+                | Конкурс был инициирован&nbsp;Союзом юридических лиц <strong>"Республиканская конфедерация предпринимательства"</strong>&nbsp;и<strong>&nbsp;региональными бизнес-ассоциациями</strong>&nbsp;и проходит ежегодно при поддержке Министерства экономики Республики Беларусь.</strong>
+                br
+                br
+                <iframe width="100%" src="https://www.youtube.com/embed/R04edUQWPEk" frameborder="0" allowfullscreen></iframe>
+
+                br
+                br
+                | Уже третий год подряд портал <strong>GorodVitebsk.by</strong> был единственным аккредитованным интернет-СМИ на Международном фестивале искусств <strong>"Славянский базар в Витебске" </strong><a href="http://vdv-tv.by/razdel/13">смотреть подробнее &gt;&gt;&gt;</a>
+
+
+              .sale_page_section
+                .section_title
+                  a name="section_2"
+                  img src="img/anchor_item_img_2.png"
+                  h2 Наши предложения
+
+                .offers
+                  .offers_item
+                    a href="#" Баннеры
+                  .offers_item
+                    a href="#" Виджеты
+                  .offers_item
+                    a href="#" Рекламные статьи
+                  .offers_item
+                    a href="#" On-line представительство
+                  .offers_item
+                    a href="#" Видео реклама
+                  .offers_item
+                    a href="#" Создание собственного сайта
+
+              
+
+
+              .sale_page_section
+                .section_title
+                  a name="section_4"
+                  img src="img/anchor_item_img_4.png"
+                  h2 Контакты
+
+                .white_bar
+                  a.btn.btn-success.btn-lg.btn_grean href="#" data-toggle="modal" data-target="#myModal" Отправить заявку!
+
+                .gray_bar
+                  p
+                    |Подробную информацию о всех вариантах размещения рекламы, продвижении и создании сайтов вы можете узнать у наших менеджеров:
+
+                .contacts_bar
+                  .row
+                    .col-md-6
+                      .contacts_item
+                        b Офис-менеджер <br>
+                        b Ольга <br>
+                        |Телефон: <a href="tel:+375212655454">+375 212 65-54-54</a><br>
+                        |Телефон МТС: <a href="tel:+375336456340">+375 33 645-63-40</a><br>
+                        |E-mail: <a href="mailto:olga@gorodvitebsk.by">olga@gorodvitebsk.by</a><br>
+                        br
+                        
+                      .contacts_item
+                        b Отдел новостей <br>
+                        b Карина <br>
+                        |Телефон: <a href="tel:+375212655454">+375 212 65-54-54</a><br>
+                        |Телефон МТС: <a href="tel:+375336456340">+375 33 645-63-40</a><br>
+                        |E-mail: <a href="mailto:karina@gorodvitebsk.by">karina@gorodvitebsk.by</a><br>
+                        br
+
+                      .contacts_item
+                        b PR-менеджер <br>
+                        b Татьяна Николаевна <br>
+                        |Телефон: <a href="tel:+375212656463">+375 212 65-64-63</a><br>
+                        |Телефон Velcome: <a href="tel:+375296963526">+375 29 696-35-26</a><br>
+                        |Телефон МТС: <a href="tel:+375336805454">+375 33 680-54-54</a><br>
+                        |E-mail: <a href="mailto:pr@gorodvitebsk.by">pr@gorodvitebsk.by</a><br>
+                        br
+
+                    .col-md-6
+                      .contacts_item
+                        b Техническая поддержка <br>
+                        b Олег <br>
+                        |Телефон: <a href="tel:+375212656463">+375 212 65-64-63</a><br>
+                        |Телефон МТС: <a href="tel:+375336456340">+375 33 645-63-40</a><br>
+                        |E-mail: <a href="mailto:support@gorodvitebsk.by">support@gorodvitebsk.by</a><br>
+                        br
+
+                      .contacts_item
+                        b Техническая поддержка <br>
+                        b Юля <br>
+                        |Телефон: <a href="tel:+375212656463">+375 212 65-64-63</a><br>
+                        |Телефон МТС: <a href="tel:+375336456340">+375 33 645-63-40</a><br>
+                        |E-mail: <a href="mailto:olga@gorodvitebsk.by">olga@gorodvitebsk.by</a><br>
+                        br
+
+                      .contacts_item
+                        b Креативный директор <br>
+                        b Светлана Шинкевич <br>
+                        |Телефон МТС: <a href="tel:+375 29 295-28-42">+375 29 295-28-42</a><br>
+                        |E-mail: <a href="mailto:zakaz@GorodVitebsk.by">zakaz@GorodVitebsk.by</a><br>
+                        br
+
+
+
+              / <===========================================================>
+              /                            slider_baner_oma
+              / <===========================================================>
+              .grean_herder_section
+                a href="#"
+                .title  
+                  a href="#" Компания ОМА - строительные материалы и инструменты
+              .slider_baner_oma.gray_block
+
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+                  <!-- Wrapper for slides -->
+                  .carousel-inner
+                    .item.active
+                      .row
+                        .col-xs-3
+                          a href="#"
+                            img src="img/s_baner_1.jpg"
+                        .col-xs-3
+                          a href="#"
+                            img src="img/s_baner_2.jpg"
+                        .col-xs-3
+                          a href="#"
+                            img src="img/s_baner_3.jpg"
+                        .col-xs-3
+                          a href="#"
+                            img src="img/s_baner_4.jpg"
+                    .item
+                      .row
+                        .col-xs-3
+                          a href="#"
+                            img src="img/s_baner_1.jpg"
+                        .col-xs-3
+                          a href="#"
+                            img src="img/s_baner_2.jpg"
+                        .col-xs-3
+                          a href="#"
+                            img src="img/s_baner_3.jpg"
+                        .col-xs-3
+                          a href="#"
+                            img src="img/s_baner_4.jpg"
+                    .item
+                      .row
+                        .col-xs-3
+                          a href="#"
+                            img src="img/s_baner_1.jpg"
+                        .col-xs-3
+                          a href="#"
+                            img src="img/s_baner_2.jpg"
+                        .col-xs-3
+                          a href="#"
+                            img src="img/s_baner_3.jpg"
+                        .col-xs-3
+                          a href="#"
+                            img src="img/s_baner_4.jpg"
+
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                  </a>
+                </div>
+
+
+              / <===========================================================>
+              /                            ORG_NEWS
+              / <===========================================================>
+
+              .org_news
+                .grean_herder_section
+                  a href="#"
+                  .title  
+                    a href="# "Hовости / акции салонов красоты Витебска
+                .org_news_container.clearfix
+
+                  .org_news_item.clearfix
+                    .img 
+                      a href="#"
+                        img src="img/org_news_1.jpg"
+                    .title 
+                      a href="#" 
+                        | Новый порядок работы ИП в Республике Беларусь 
+                        span.label.label-danger Новинка
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+                      .span.separator |
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+                  .org_news_item.odd.clearfix
+                    .img
+                      a href="#"
+                        img src="img/org_news_2.jpg"
+                    .title 
+                      a href="#" В магазине МАСТЕР ОГРОМНЫЙ выбор бензопил, триммеров. Значительно более длинный текст про бензопилы и тримеры и все такое.
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+                      .span.separator |
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+                  .org_news_item.clearfix
+                    .img
+                      a href="#"
+                        img src="img/org_news_3.jpg"
+                    .title 
+                      a href="#" Новый порядок работы ИП в Республике Беларусь 
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+                      .span.separator |
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+                  .org_news_item.odd.clearfix
+                    .img 
+                      a href="#"
+                        img src="img/org_news_4.jpg"
+                    .title 
+                      a href="#" Новый порядок работы ИП в Республике Беларусь 
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+                      .span.separator |
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+                  .org_news_item.clearfix
+                    .img 
+                      a href="#"
+                        img src="img/org_news_2.jpg"
+                    .title 
+                      a href="#" В магазине МАСТЕР ОГРОМНЫЙ выбор бензопил, триммеров. Значительно более длинный текст про бензопилы и тримеры и все такое. 
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+                      .span.separator |
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+                  .org_news_item.odd.clearfix
+                    .img
+                      a href="#"
+                        img src="img/org_news_5.jpg"
+                    .title 
+                      a href="#" Новый порядок работы ИП в Республике Беларусь 
+                    .body
+                      .span.section
+                        a href="#" Одежда и аксессуары
+                      .span.separator |
+                      .span.name
+                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
+
+
+              / <===========================================================>
+              /                            tags
+              / <===========================================================>
+
+              .tags
+                .grean_herder_section
+                  a href="#"
+                  .title  
+                    | Нас находят по следующим словам:
+                .all_tags.clearfix
+                    a.tag_item href="#" салоны красоты
+                    a.tag_item href="#" тату
+                    a.tag_item href="#" салоны красоты
+                    a.tag_item href="#" парикмахерские телефоны
+                    a.tag_item href="#" визажист
+                    a.tag_item href="#" парикмахерские
+                    a.tag_item href="#" тату
+                    a.tag_item href="#" визажист
+                    a.tag_item href="#" парикмахерские телефоны
+                    a.tag_item href="#" парикмахерские
+                    a.tag_item href="#" визажист
+                    a.tag_item href="#" тату
+                    a.tag_item href="#" салоны красоты
+                    a.tag_item href="#" визажист
+                    a.tag_item href="#" салоны красоты
+                    a.tag_item href="#" парикмахерские
+                    a.tag_item href="#" тату
+                    a.tag_item href="#" парикмахерские
+                    a.tag_item href="#" парикмахерские телефоны
+                    a.tag_item href="#" парикмахерские
+                    a.tag_item href="#" парикмахерские телефоны
+                    a.tag_item href="#" визажист
+                    a.tag_item href="#" парикмахерские
+                    a.tag_item href="#" тату
+
+
+    / <===========================================================>
+    /                            FOOTER
+    / <===========================================================>
+
+
+    .footer
+      .container
+        .row.big_row
+          .logo.col-xs-2
+            a href="/" <img src="img/logo_old.png"/>
+          .footer_nav.col-xs-10
+            .footer_nav_item 
+              a href="#"
+                span.glyphicon.glyphicon-plus-sign
+                | Добавить организацию <br> в каталог 
+            .footer_nav_item 
+              a href="#"
+                span.glyphicon.glyphicon-ok-sign
+                | Размещение <br> рекламы
+            .footer_nav_item.one_line
+              a href="#"
+                span.glyphicon.glyphicon-globe
+                |  Создание сайтов 
+            .footer_nav_item 
+              a href="#"
+                span.glyphicon.glyphicon-film
+                | Заказать <br> видео-рекламу
+            .footer_nav_item.one_line
+              a href="#"
+                span.glyphicon.glyphicon-phone-alt
+                | Контакты  

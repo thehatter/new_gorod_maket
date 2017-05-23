@@ -1,5 +1,4 @@
 /* main.scss */
-
 .row.big_row {
   margin: 0 -60px;
   padding: 0 30px; }
@@ -33,25 +32,6 @@
   .row.big_row {
     margin: 0 -15px;
     padding: 0; } }
-
-.container {
-  width: 1000px; }
-
-@media (min-width: 768px) {
-  .container {
-    width: 1000px; } }
-
-@media (min-width: 992px) {
-  .container {
-    width: 1000px; } }
-
-@media (min-width: 1024px) {
-  .container {
-    width: 1000px; } }
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px; } }
 
 h1 {
   font-weight: bold;
