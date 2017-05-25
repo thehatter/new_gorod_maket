@@ -6,12 +6,15 @@ html
     title ВИТЕБСКИЙ ГОРОДСКОЙ ИНТЕРНЕТ-ПОРТАЛ - GorodVitebsk.by - ВСЁ О ГОРОДЕ ВИТЕБСКЕ!Новости Витебска,Каталог организаций,фирмы витебска,Витебск и Витебская область,интересное,события,происшествия,афиша,погода,курсы валют,поиск лекарств,скидки и акции,новости
 
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/owl_carusel/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="css/owl_carusel/owl.theme.default.css" rel="stylesheet" media="screen">
     <link href="css/main.css" rel="stylesheet" media="screen">
     <link href="css/top_bar_2015.css" rel="stylesheet" media="screen">
     <link href="css/ad_sale_pages.css" rel="stylesheet" media="screen">
     
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
     <script src="js/tob_bar_2015.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wather.js"></script>
@@ -341,17 +344,17 @@ html
             /                         LEFT BAR
             / <===========================================================>
 
-            .col-md-3.col-xs-12
-              
+            .col-md-3              
               .left_menu_bar
                 .left_menu_bar_title Наши предложения
                 .left_menu_bar_items
-                  a.first.active href="ad_sale_page.html" Размещение рекламы
-                  a href="#" Баннеры
-                  a href="#" Рекламные статьи
-                  a href="#" On-line представительство 
-                  a href="#" Видео реклама
-                  a.last href="#" Создание сайта
+                  a.first.active href="./ad_sale_page.html" Размещение рекламы
+                  a href="./ad_sale_page_banners.html" Баннеры
+                  a href="./ad_sale_page_articles.html" Рекламные статьи
+                  a href="./ad_sale_page_online.html" On-line представительство 
+                  a href="./ad_sale_video.html" Видео реклама
+                  a href="./ad_sale_page_site.html" Создание сайта
+                  a.last href="./ad_sale_page_vidjet.html" Виджеты
 
 
             / <===========================================================>
@@ -368,7 +371,7 @@ html
                 h1 Размещение рекламы на GorodVitebsk.by!
 
               
-              .main_anchors_bar_container.clearfix
+              .main_anchors_bar_container
                 .main_anchors_bar.clearfix
                   .main_anchor_item
                     a href="#section_1"
@@ -477,7 +480,7 @@ html
 
                 br
                 br
-                | Конкурс был инициирован&nbsp;Союзом юридических лиц <strong>"Республиканская конфедерация предпринимательства"</strong>&nbsp;и<strong>&nbsp;региональными бизнес-ассоциациями</strong>&nbsp;и проходит ежегодно при поддержке Министерства экономики Республики Беларусь.</strong>
+                | Конкурс был инициирован&nbsp;Союзом юридических лиц <strong>"Республиканская конфедерация предпринимательства"</strong>&nbsp;и<strong>&nbsp; региональными бизнес-ассоциациями</strong>&nbsp;и проходит ежегодно при поддержке Министерства экономики Республики Беларусь.</strong>
                 br
                 br
                 <iframe width="100%" src="https://www.youtube.com/embed/R04edUQWPEk" frameborder="0" allowfullscreen></iframe>
@@ -517,7 +520,7 @@ html
                   h2 Контакты
 
                 .white_bar
-                  a.btn.btn-success.btn-lg.btn_grean href="#" data-toggle="modal" data-target="#myModal" Отправить заявку!
+                  a.btn.btn-success.btn-lg.btn_grean href="#" data-toggle="modal" data-target="#myModal" Отправить заявку !
 
                 .gray_bar
                   p
@@ -586,149 +589,92 @@ html
                   a href="#" Компания ОМА - строительные материалы и инструменты
               .slider_baner_oma.gray_block
 
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                #oma-carusel.owl-carousel.owl-theme
+                  .item
+                    a href="#"
+                      img src="img/s_baner_1.jpg"
+                  .item
+                    a href="#"
+                      img src="img/s_baner_2.jpg"
+                  .item
+                    a href="#"
+                      img src="img/s_baner_3.jpg"
+                  .item
+                    a href="#"
+                      img src="img/s_baner_4.jpg"
+                  .item
+                    a href="#"
+                      img src="img/s_baner_1.jpg"
+                  .item
+                    a href="#"
+                      img src="img/s_baner_2.jpg"
+                  .item
+                    a href="#"
+                      img src="img/s_baner_3.jpg"
+                  .item
+                    a href="#"
+                      img src="img/s_baner_4.jpg"
 
-                  <!-- Wrapper for slides -->
-                  .carousel-inner
-                    .item.active
-                      .row
-                        .col-xs-3
-                          a href="#"
-                            img src="img/s_baner_1.jpg"
-                        .col-xs-3
-                          a href="#"
-                            img src="img/s_baner_2.jpg"
-                        .col-xs-3
-                          a href="#"
-                            img src="img/s_baner_3.jpg"
-                        .col-xs-3
-                          a href="#"
-                            img src="img/s_baner_4.jpg"
-                    .item
-                      .row
-                        .col-xs-3
-                          a href="#"
-                            img src="img/s_baner_1.jpg"
-                        .col-xs-3
-                          a href="#"
-                            img src="img/s_baner_2.jpg"
-                        .col-xs-3
-                          a href="#"
-                            img src="img/s_baner_3.jpg"
-                        .col-xs-3
-                          a href="#"
-                            img src="img/s_baner_4.jpg"
-                    .item
-                      .row
-                        .col-xs-3
-                          a href="#"
-                            img src="img/s_baner_1.jpg"
-                        .col-xs-3
-                          a href="#"
-                            img src="img/s_baner_2.jpg"
-                        .col-xs-3
-                          a href="#"
-                            img src="img/s_baner_3.jpg"
-                        .col-xs-3
-                          a href="#"
-                            img src="img/s_baner_4.jpg"
-
-                  <!-- Controls -->
-                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                  </a>
-                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                  </a>
-                </div>
 
 
               / <===========================================================>
-              /                            ORG_NEWS
+              /                        video vidjet
               / <===========================================================>
 
-              .org_news
-                .grean_herder_section
-                  a href="#"
-                  .title  
-                    a href="# "Hовости / акции салонов красоты Витебска
-                .org_news_container.clearfix
+              .widgets_container
+                .new_video_vidget_cont
+                  .widget_header.clearfix
+                    a href="#"
+                      img src="img/vidget_icon_vdv.png"
+                      .header_title ИНТЕРНЕТ-ТЕЛЕВИДЕНИЕ
+                    .show_more
+                      a href="#" Смотреть архив видеозаписей
 
-                  .org_news_item.clearfix
-                    .img 
-                      a href="#"
-                        img src="img/org_news_1.jpg"
-                    .title 
-                      a href="#" 
-                        | Новый порядок работы ИП в Республике Беларусь 
-                        span.label.label-danger Новинка
-                    .body
-                      .span.section
-                        a href="#" Одежда и аксессуары
-                      .span.separator |
-                      .span.name
-                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
-                  .org_news_item.odd.clearfix
-                    .img
-                      a href="#"
-                        img src="img/org_news_2.jpg"
-                    .title 
-                      a href="#" В магазине МАСТЕР ОГРОМНЫЙ выбор бензопил, триммеров. Значительно более длинный текст про бензопилы и тримеры и все такое.
-                    .body
-                      .span.section
-                        a href="#" Одежда и аксессуары
-                      .span.separator |
-                      .span.name
-                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
-                  .org_news_item.clearfix
-                    .img
-                      a href="#"
-                        img src="img/org_news_3.jpg"
-                    .title 
-                      a href="#" Новый порядок работы ИП в Республике Беларусь 
-                    .body
-                      .span.section
-                        a href="#" Одежда и аксессуары
-                      .span.separator |
-                      .span.name
-                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
-                  .org_news_item.odd.clearfix
-                    .img 
-                      a href="#"
-                        img src="img/org_news_4.jpg"
-                    .title 
-                      a href="#" Новый порядок работы ИП в Республике Беларусь 
-                    .body
-                      .span.section
-                        a href="#" Одежда и аксессуары
-                      .span.separator |
-                      .span.name
-                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
-                  .org_news_item.clearfix
-                    .img 
-                      a href="#"
-                        img src="img/org_news_2.jpg"
-                    .title 
-                      a href="#" В магазине МАСТЕР ОГРОМНЫЙ выбор бензопил, триммеров. Значительно более длинный текст про бензопилы и тримеры и все такое. 
-                    .body
-                      .span.section
-                        a href="#" Одежда и аксессуары
-                      .span.separator |
-                      .span.name
-                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
-                  .org_news_item.odd.clearfix
-                    .img
-                      a href="#"
-                        img src="img/org_news_5.jpg"
-                    .title 
-                      a href="#" Новый порядок работы ИП в Республике Беларусь 
-                    .body
-                      .span.section
-                        a href="#" Одежда и аксессуары
-                      .span.separator |
-                      .span.name
-                        a href="#" Магазин для мам и малышей "Mothercare" 02-06-2014
-
+                  .widget_body
+                    .body_pad
+                        #video-carusel.widget_body_in.owl-carousel.owl-theme
+                          .widget_item_container
+                            a href="#"
+                              .widget_item
+                                .img
+                                  img src="img/vidget_image_1.jpg"
+                                  .play_button
+                                .title День молодежи в рамках дня города Витебска 2014
+                          .widget_item_container
+                            a href="#"
+                              .widget_item
+                                .img
+                                  img src="img/vidget_image_2.jpg"
+                                  .play_button
+                                .title День города Витебска 2014
+                          .widget_item_container
+                            a href="#"
+                              .widget_item
+                                .img
+                                  img src="img/vidget_image_3.jpg"
+                                  .play_button
+                                .title День города Витебска. Открытие памятника Ольгерду
+                          .widget_item_container
+                            a href="#"
+                              .widget_item
+                                .img
+                                  img src="img/vidget_image_1.jpg"
+                                  .play_button
+                                .title День молодежи в рамках дня города Витебска 2014
+                          .widget_item_container
+                            a href="#"
+                              .widget_item
+                                .img
+                                  img src="img/vidget_image_3.jpg"
+                                  .play_button
+                                .title День города Витебска. Открытие памятника Ольгерду
+                          .widget_item_container
+                            a href="#"
+                              .widget_item
+                                .img
+                                  img src="img/vidget_image_1.jpg"
+                                  .play_button
+                                .title День молодежи в рамках дня города Витебска 2014
 
               / <===========================================================>
               /                            tags

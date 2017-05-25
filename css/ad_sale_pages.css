@@ -13,6 +13,11 @@
   .strong_blue {
     font-size: 16px; } }
 
+@media screen and (max-width: 750px) {
+  .main img {
+    max-width: 100%;
+    height: auto; } }
+
 .left_menu_bar {
   margin: 0px 0 30px 0; }
   .left_menu_bar .left_menu_bar_title {
@@ -99,6 +104,9 @@
 
 .sale_page_section {
   font-size: 18px; }
+
+.sale_page_section iframe {
+  min-height: 170px; }
 
 @media screen and (min-width: 750px) {
   .sale_page_section iframe {

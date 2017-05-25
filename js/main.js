@@ -4,6 +4,48 @@
     // $("body").click( function () {
     //     $('body').hide();
     // });
+      
+      // ============================ owl init ============================
+
+      $('#oma-carusel').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:false,
+          dots:true,
+          autoplay: true,
+          
+          responsive:{
+              0:{
+                  items:2
+              },
+              600:{
+                  items:3
+              },
+              1000:{
+                  items:5
+              }
+          }
+      })
+      $('#video-carusel').owlCarousel({
+          loop:true,
+          margin:6,
+          nav:false,
+          dots:true,
+          autoplay: true,
+          
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:3
+              },
+              1000:{
+                  items:4
+              }
+          }
+      })
+
       // ============================ cursor to search in main ============================
       if ($(window).scrollTop() <= 200) {
         $("html, body").animate({ scrollTop: 0 }, 1);

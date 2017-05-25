@@ -1,6 +1,14 @@
 // ad_sale_pages.scss
 
-$mobile: 750px;
+// <===========================================================>
+//                        varibles
+// <===========================================================>
+
+ $mobile: 750px;
+
+// ============================================================>
+
+
 
 
 @media screen and (max-width: $mobile) {
@@ -22,6 +30,17 @@ $mobile: 750px;
 
   .strong_blue {
     font-size: 16px;
+  }
+}
+
+// <===========================================================>
+//                        images on mobile
+// <===========================================================>
+
+@media screen and (max-width: $mobile) {
+  .main img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -161,6 +180,10 @@ $mobile: 750px;
 // <===========================================================>
 .sale_page_section {
   font-size: 18px;
+}
+
+.sale_page_section  iframe {
+  min-height: 170px;
 }
 
 @media screen and (min-width: $mobile) {
