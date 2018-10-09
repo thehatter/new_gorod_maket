@@ -5,8 +5,11 @@ var sass = require('gulp-sass');
 var slim = require("gulp-slim");
 var cached = require('gulp-cached');
 
+var injectSvg = require('gulp-inject-svg');
+var injectSvgOptions = { base: '/' };
+
 gulp.task('sass', function () {
-  return gulp.src('./scss/**/*.scss')
+  return gulp.src('./scss/main.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./css'));
 });
@@ -17,6 +20,7 @@ gulp.task('slim', function(){
     .pipe(slim({
       pretty: true
     }))
+    .pipe(injectSvg(injectSvgOptions))
     .pipe(gulp.dest("./"));
 });
 

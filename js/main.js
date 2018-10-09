@@ -4,7 +4,23 @@
     // $("body").click( function () {
     //     $('body').hide();
     // });
-      
+
+
+      // ============================ on search focus ============================
+            
+      $('.search_bar input').on('focus blur', toggleFocus);
+
+      function toggleFocus(e){
+          console.log(e.type)
+
+          if( e.type == 'focus' ){ 
+            $('body').addClass('serch_focus');
+          }
+          else{
+            $('body').removeClass('serch_focus');
+          }
+      }
+    
       // ============================ owl init ============================
 
       $('#oma-carusel').owlCarousel({
@@ -47,10 +63,10 @@
       })
 
       // ============================ cursor to search in main ============================
-      if ($(window).scrollTop() <= 200) {
-        $("html, body").animate({ scrollTop: 0 }, 1);
-        $('.search_bar input').focus();
-      }
+      //if ($(window).scrollTop() <= 200) {
+        //$("html, body").animate({ scrollTop: 0 }, 1);
+        //$('.search_bar input').focus();
+      //}
 
       // ============================ go_top ============================
 

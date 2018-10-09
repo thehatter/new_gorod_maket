@@ -5,12 +5,14 @@ html
     meta http-equiv="Content-Type" content="text/html; charset=utf-8"
     title ВИТЕБСКИЙ ГОРОДСКОЙ ИНТЕРНЕТ-ПОРТАЛ - GorodVitebsk.by - ВСЁ О ГОРОДЕ ВИТЕБСКЕ!Новости Витебска,Каталог организаций,фирмы витебска,Витебск и Витебская область,интересное,события,происшествия,афиша,погода,курсы валют,поиск лекарств,скидки и акции,новости
 
+    <link rel="shortcut icon" href="http://gorodvitebsk.by/favicon.ico">
+
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/main.css" rel="stylesheet" media="screen">
-    <link href="css/top_bar_2015.css" rel="stylesheet" media="screen">
     
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/tob_bar_2015.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wather.js"></script>
@@ -67,171 +69,216 @@ html
     /                        TOP_BAR_2015
     / <===========================================================>
 
-    .top_bar_2015_container
-      .top_bar_2015
-        .logo
-          a href="http://gorodvitebsk.by/"
-            img src="img/g_logo_top_bar.png"
-            span 
-              strong GorodVitebsk.by
+    /.top_bar_2015_container
+      /.top_bar_2015
+        /.logo
+          /a href="http://gorodvitebsk.by/"
+            /img src="img/g_logo_top_bar.png"
+            /span 
+              /strong GorodVitebsk.by
 
-        ul.menu_ul
-          li <a target="_blank" href="http://gorod.vitebsk.by/index.html">Новости</a>
-          li <a target="_blank" href="http://gorod.vitebsk.by/jiteli.htm">Каталог</a>
-          li <a target="_blank" href="http://rabotavitebsk.by/">Работа</a>
-          li <a target="_blank" href="http://gorod.vitebsk.by/afisha/index.htm">Афиша</a>
-          li <a href="http://vdv-tv.by/">ТВ</a>
-          li <a href="http://auto.namvam.by/">Авто</a>
-          li <a target="_blank" href="http://naparu.by/">Еда</a>
-          li <a href="http://namvam.by/">Обьявления</a>
-          li <a target="_blank" href="http://gorod.vitebsk.by/skidki/index.html">Скидки</a>
-          li <a target="_blank" href="http://gorodvitebsk.by/priz">Розыгрыши</a>
-          li.cont
-            a.cont_a href="#"
-              .shevron
-              | Все проекты
-            ul.clearfix
-              li <a target="_blank" href="http://m.gorodvitebsk.by/">Мобильный Витебск</a>
-              li <a target="_blank" href="http://gorod.vitebsk.by/made/index.html">Сделано в Витебске</a>
-              li <a target="_blank" href="http://gorod.vitebsk.by/turism.htm">Туризм и отдых</a>
-              li <a target="_blank" href="http://gorod.vitebsk.by/feeriya/index.html">Феерия льна</a>
-              li <a target="_blank" href="http://foto.gorodvitebsk.by/">Фотоальбом</a>
-              li <a target="_blank" href="http://forum.gorodvitebsk.by/">Форум</a>
-              li <a target="_blank" href="http://gorod.vitebsk.by/add-info.htm">Реклама на портале</a>
-              li <a target="_blank" href="http://www.prometei-design.com/rus/CorporativSitesRus.htm">Создание сайтов</a>
-              li <a target="_blank" href="http://gorod.vitebsk.by/prometei/">Компьютерное обучение</a>  
-              li <a target="_blank" href="http://gorod.vitebsk.by/news/index.html">Архив новостей</a>
-          li.enter_button <a target="_blank" href="#">Войти</a>
+        /ul.menu_ul
+          /li <a target="_blank" href="http://gorod.vitebsk.by/index.html">Новости</a>
+          /li <a target="_blank" href="http://gorod.vitebsk.by/jiteli.htm">Каталог</a>
+          /li <a target="_blank" href="http://rabotavitebsk.by/">Работа</a>
+          /li <a target="_blank" href="http://gorod.vitebsk.by/afisha/index.htm">Афиша</a>
+          /li <a href="http://vdv-tv.by/">ТВ</a>
+          /li <a href="http://auto.namvam.by/">Авто</a>
+          /li <a target="_blank" href="http://naparu.by/">Еда</a>
+          /li <a href="http://namvam.by/">Обьявления</a>
+          /li <a target="_blank" href="http://gorod.vitebsk.by/skidki/index.html">Скидки</a>
+          /li <a target="_blank" href="http://gorodvitebsk.by/priz">Розыгрыши</a>
+          /li.cont
+            /a.cont_a href="#"
+              /.shevron
+              /| Все проекты
+            /ul.clearfix
+              /li <a target="_blank" href="http://m.gorodvitebsk.by/">Мобильный Витебск</a>
+              /li <a target="_blank" href="http://gorod.vitebsk.by/made/index.html">Сделано в Витебске</a>
+              /li <a target="_blank" href="http://gorod.vitebsk.by/turism.htm">Туризм и отдых</a>
+              /li <a target="_blank" href="http://gorod.vitebsk.by/feeriya/index.html">Феерия льна</a>
+              /li <a target="_blank" href="http://foto.gorodvitebsk.by/">Фотоальбом</a>
+              /li <a target="_blank" href="http://forum.gorodvitebsk.by/">Форум</a>
+              /li <a target="_blank" href="http://gorod.vitebsk.by/add-info.htm">Реклама на портале</a>
+              /li <a target="_blank" href="http://www.prometei-design.com/rus/CorporativSitesRus.htm">Создание сайтов</a>
+              /li <a target="_blank" href="http://gorod.vitebsk.by/prometei/">Компьютерное обучение</a>  
+              /li <a target="_blank" href="http://gorod.vitebsk.by/news/index.html">Архив новостей</a>
+          /li.enter_button <a target="_blank" href="#">Войти</a>
 
-        .social_bar
-          a href="http://vk.com/gorod_vitebsk"
-            img src="img/social_icons_1.png"
-          a href="http://instagram.com/gorodvitebsk"
-            img src="img/social_icons_2.png"
-          a href="https://www.facebook.com/GorodVitebsk.by"
-            img src="img/social_icons_3.png"
-          a href="http://ok.ru/group/56855124705326"
-            img src="img/social_icons_4.png"
-          a href="https://www.youtube.com/user/gorodvitebskby1"
-            img src="img/social_icons_5.png"
-          a href="https://twitter.com/gorodvitebskby"
-            img src="img/social_icons_6.png"
-          a href="https://plus.google.com/+GorodVitebsk/posts"
-            img src="img/social_icons_7.png"
-          a href="https://www.linkedin.com/company/%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%BB-%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0-%D0%B2%D0%B8%D1%82%D0%B5%D0%B1%D1%81%D0%BA%D0%B0---gorodvitebsk-by"
-            img src="img/social_icons_8.png"
+        /.social_bar
+          /a href="http://vk.com/gorod_vitebsk"
+            /img src="img/social_icons_1.png"
+          /a href="http://instagram.com/gorodvitebsk"
+            /img src="img/social_icons_2.png"
+          /a href="https://www.facebook.com/GorodVitebsk.by"
+            /img src="img/social_icons_3.png"
+          /a href="http://ok.ru/group/56855124705326"
+            /img src="img/social_icons_4.png"
+          /a href="https://www.youtube.com/user/gorodvitebskby1"
+            /img src="img/social_icons_5.png"
+          /a href="https://twitter.com/gorodvitebskby"
+            /img src="img/social_icons_6.png"
+          /a href="https://plus.google.com/+GorodVitebsk/posts"
+            /img src="img/social_icons_7.png"
+          /a href="https://www.linkedin.com/company/%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%BB-%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0-%D0%B2%D0%B8%D1%82%D0%B5%D0%B1%D1%81%D0%BA%D0%B0---gorodvitebsk-by"
+            /img src="img/social_icons_8.png"
 
     / <===========================================================>
     /                            TOP_BANER
     / <===========================================================>
 
-    .gray_container
-      .container
-        .row.big_row
-          .col-md-12
-            .baner_horizontal.top_banner
-              img src="img/banner_1170x60.png"
+    /.gray_container
+      /.container
+        /.row.big_row
+          /.col-md-12
+            /.baner_horizontal.top_banner
+              /img src="img/banner_1170x60.png"
+    / <===========================================================>
+    /                            MOBILE HEADER
+    / <===========================================================>
 
+    .m_header.clearfix
+      .logo
+        a href="/" <img src="img/gorod_logo.svg"/>
+      .icons
 
+        <img src="img/search.svg"/>
+        span.menu
+          <img src="img/menu_icon.svg"/>
 
     / <===========================================================>
-    /                            HEADER 2
+    /                            HEADER 3
     / <===========================================================>
     .header_container.gray_container
       .container
         .row.big_row
-          .header.clearfix
-            .logo
-              a href="/" <img src="img/logo.png"/>
-            .search_bar_container
-              .search_bar.clearfix
-                form
-                  <input type="text" class="form-control" placeholder="Поиск!">
-                  <button type="submit" class=""> <span class="glyphicon glyphicon-search"></span></button>
-            .informer
-              .curency 
-                a href="#" $ 14 500
-              .wather_widget
-                a href="wather.html"
+          .col-md-12
+            .header
+              .logo
+                a href="/" <img src="img/gorod_logo.svg"/>
+              .search_bar_container
+                .search_bar.clearfix
+                  form
+                    <input type="text" class="form-control" placeholder="Поиск!">
+                    <button type="submit" class=""><img src="img/search.svg"/></button>
+              .informer
+                .wather_widget
+                  a href="wather.html"
+                .curency
+                  a href="#" <span>$</span>1.99
 
-            .fuel
-              // place for fuel generator
+              .social
+                a href="http://vk.com/gorod_vitebsk"
+                  img src="img/svg_social_vk.svg"
+                a href="http://instagram.com/gorodvitebsk"
+                  img src="img/svg_social_insta.svg"
+                a href="http://ok.ru/group/56855124705326"
+                  img src="img/svg_social_odno.svg"
+                a href="https://www.facebook.com/GorodVitebsk.by"
+                  img src="img/svg_social_fb.svg"
+                a href="https://www.youtube.com/user/gorodvitebskby1"
+                  img src="img/svg_social_you.svg"
+                a href="http://localhost:3000/img/social_icons_6.png"
+                  img src="img/svg_social_twitt.svg"
+                a href="https://plus.google.com/+GorodVitebsk/posts"
+                  img src="img/svg_social_gplus.svg"
+                a href="https://www.linkedin.com/company/%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%BB-%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0-%D0%B2%D0%B8%D1%82%D0%B5%D0%B1%D1%81%D0%BA%D0%B0---gorodvitebsk-by"
+                  img src="img/svg_social_linked.svg"
+              
+              .enter_bar
+                a.enter_button data-toggle="modal" data-target="#Modalin" href="#" Войти
 
 
- 
-    / <===========================================================>
-    /                            MAIN NAV 2
-    / <===========================================================>
-    .main_nav_container
-      .container
-        .row.big_row
-          .main_nav.col-md-12
-            .main_nav_in.clearfix
-              .item.first.item_1
-                a href="#"
-                  .img
-                    img src="img/main_nav_icon_1.png"
-                  .title Новости
-              .item.item_6
-                a href="#"
-                  .img
-                    img src="img/main_nav_icon_6.png"
-                  .title Афиша
-              .item.item_2
-                a href="#"
-                  .img
-                    img src="img/main_nav_icon_2.png"
-                  .title Работа
-              .item.item_5
-                a href="#"
-                  .img
-                    img src="img/main_nav_icon_5.png"
-                  .title Каталог
-                a.reviews href="#" 
-                  .content 
-                    .span.glyphicon.glyphicon-star
-                    | Отзывы
-              .item.item_10
-                a href="#"
-                  .img
-                    img src="img/main_nav_icon_10.png"
-                  .title Расписание транспорта
-              .item.last.item_12
-                a.last href="#"
-                  .img
-                    img src="img/main_nav_icon_12.png"
-                  .title Поиск лекарств
-              .item.item_3
-                a.color_vai_1 href="#"
-                  .img
-                    img src="img/main_nav_icon_3.png"
-                  .title Объявления
-              .item.item_9
-                a href="#"
-                  .img
-                    img src="img/main_nav_icon_9.png"
-                  .title Интернет магазины
-              .item.item_11
-                a href="#"
-                  .img
-                    img src="img/main_nav_icon_11.png"
-                  .title Розыгрыши
-              .item.item_4
-                a#radio href="#"
-                  .img
-                    img src="img/main_nav_icon_4.png"
-                  .title Радио
-              .item.item_8
-                a href="#"
-                  .img
-                    img src="img/main_nav_icon_8.png"
-                  .title Online камера
-              .item.item_7
-                a href="#"
-                  .img
-                    img src="img/main_nav_icon_7.png"
-                  .title Интернет TV
 
+                
+      / <===========================================================>
+      /                            MAIN NAV 3
+      / <===========================================================>
+      .main_nav_container
+        .container
+          .row.big_row
+            .main_nav.col-md-12
+              .main_nav_in.clearfix
+                .item.first
+                  a href="/news"
+                    .img
+                      img src="img/icon_news.svg"
+                    .title Новости
+                .item
+                  a href="/afisha"
+                    .img
+                      img src="img/icon_afisha.svg"
+                    .title Афиша
+                .item
+                  a href="/katalog"
+                    .img
+                      img src="img/icon_catalog.svg"
+                    .title Каталог
+                .item
+                  a href="/reviews"
+                    .img
+                      img src="img/icon_reviews.svg"
+                    .title Отзывы
+                .item
+                  a href="http://rabotavitebsk.by"
+                    .img
+                      img src="img/icon_work.svg"
+                    .title Работа
+                .item.w12
+                  a href="/priz"
+                    .img
+                      img src="img/icon_rozigr.svg"
+                    .title Розыгрыши
+                .item.w12
+                  a href="http://namvam.by"
+                    .img
+                      img src="img/icon_ads.svg"
+                    .title Объявления
+                .item
+                  a href="/katalog/internet_magaziny"
+                    .img
+                      img src="img/icon_shops.svg"
+                    .title Интернет магазины
+                .item
+                  a#radio href="#"
+                    .img
+                      img src="img/icon_radio.svg"
+                    .title Радио
+                .item
+                  a href="/trains"
+                    .img
+                      img src="img/icon_trains.svg"
+                    .title Расписание транспорта
+                .item
+                  a href="/camera"
+                    .img
+                      img src="img/icon_cam.svg"
+                    .title Online камера
+                .item.w12
+                  a href="http://vdv-tv.by"
+                    .img
+                      img src="img/icon_video.svg"
+                    .title Интернет TV
+                .item.w12
+                  a href="/lekarstva"
+                    .img
+                      img src="img/icon_medicines.svg"
+                    .title Поиск лекарств
+                .item.w06.left_right.last
+                  a href="#"
+                    .img
+                      img src="img/icon_more.svg"
+                    .title Все проекты
+                  div.dmenu
+                    <a target="_blank" href="http://gorod.vitebsk.by/made/index.html">Сделано в Витебске</a>
+                    <a target="_blank" href="http://gorod.vitebsk.by/turism.htm">Туризм и отдых</a>
+                    <a target="_blank" href="http://gorod.vitebsk.by/feeriya/index.html">Феерия льна</a>
+                    <a target="_blank" href="http://foto.gorodvitebsk.by/">Фотоальбом</a>
+                    <a target="_blank" href="http://forum.gorodvitebsk.by/">Форум</a>
+                    <a target="_blank" href="http://gorod.vitebsk.by/add-info.htm">Реклама на портале</a>
+                    <a target="_blank" href="http://www.prometei-design.com/rus/CorporativSitesRus.htm">Создание сайтов</a>
+                    <a target="_blank" href="http://gorod.vitebsk.by/prometei/">Компьютерное обучение</a>  
+                    <a target="_blank" href="http://gorod.vitebsk.by/news/index.html">Архив новостей</a>
 
 
 
@@ -581,10 +628,10 @@ html
               .baner_vertical
                 img.img-responsive src="img/banner_270x311.png"
 
-              .catalog_menu_bar.main_catalog.expand
+              .catalog_menu_bar.main_catalog.collapsed
                 .catalog_menu_bar_title
                   | Каталог товаров и услуг 
-                  span.glyphicon.glyphicon-chevron-down
+                  span
                 .catalog_menu_bar_items
                   .catalog_menu_bar_item
                     .catalog_menu_bar_item_title
@@ -798,7 +845,7 @@ html
               .catalog_menu_bar.editional.collapsed
                 .catalog_menu_bar_title.expand
                   | О городе 
-                  span.glyphicon.glyphicon-chevron-down
+                  span
                 .catalog_menu_bar_items
                   .catalog_menu_bar_item
                     .catalog_menu_bar_item_title
@@ -1354,7 +1401,7 @@ html
                     .text 2006, 153 000 км, металик, внедорожник, дизель, 2.2 л. механика, Витебск
                     .price 14 800 $
 
-    .container
+    .container.two_banners_bar_container
       .row
         .two_banners_bar.clearfix
           .two_banners_baner
@@ -1369,7 +1416,7 @@ html
     / <===========================================================>
     /                            partners_baner
     / <===========================================================>
-    .container
+    .container.partners_container
       .row
         .partners_baner.gray_block
 
@@ -1457,37 +1504,61 @@ html
               span.label.label-danger 997 461
               |  просмотров страниц. 
             .statistics_yandex По независимым данным Яндекс.Метрики.
-          .statistics_right_bar.col-xs-6
-            a href="#" © Ассоциация "Город Витебск и Компания" 2004-2014
+
 
     / <===========================================================>
-    /                            FOOTER
+    /                            m_placeholder
     / <===========================================================>
 
+    .m_placeholder
 
-    .footer
+
+    / <===========================================================>
+    /                            UNI FOOTER
+    / <===========================================================>
+
+    .footer_social
+      a href="http://vk.com/gorod_vitebsk"
+        img src="img/svg_social_vk.svg"
+      a href="http://instagram.com/gorodvitebsk"
+        img src="img/svg_social_insta.svg"
+      a href="http://ok.ru/group/56855124705326"
+        img src="img/svg_social_odno.svg"
+      a href="https://www.facebook.com/GorodVitebsk.by"
+        img src="img/svg_social_fb.svg"
+      a href="https://www.youtube.com/user/gorodvitebskby1"
+        img src="img/svg_social_you.svg"
+      a href="http://localhost:3000/img/social_icons_6.png"
+        img src="img/svg_social_twitt.svg"
+      a href="https://plus.google.com/+GorodVitebsk/posts"
+        img src="img/svg_social_gplus.svg"
+      a href="https://www.linkedin.com/company/%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%BB-%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0-%D0%B2%D0%B8%D1%82%D0%B5%D0%B1%D1%81%D0%BA%D0%B0---gorodvitebsk-by"
+        img src="img/svg_social_linked.svg"
+
+    .uni_footer
       .container
         .row.big_row
-          .logo.col-xs-2
-            a href="/" <img src="img/logo_old.png"/>
-          .footer_nav.col-md-10
+          .logo.col-lg-2.col-md-3
+            a href="/" <img src="img/gorod_logo.svg"/>
+          .uni_footer_nav.col-lg-10.col-md-9
             .footer_nav_item 
               a href="#"
-                span.glyphicon.glyphicon-plus-sign
-                | Добавить организацию <br> в каталог 
+                img src='img/f_icons_plus.svg'
+                | Добавить<br> организацию <br> в каталог 
             .footer_nav_item 
               a href="#"
-                span.glyphicon.glyphicon-ok-sign
+                img src='img/f_icons_place_ad.svg'
                 | Размещение <br> рекламы
-            .footer_nav_item.one_line
-              a href="#"
-                span.glyphicon.glyphicon-globe
-                |  Создание сайтов 
             .footer_nav_item 
               a href="#"
-                span.glyphicon.glyphicon-film
+                img src='img/f_icons_video_ad.svg'
                 | Заказать <br> видео-рекламу
-            .footer_nav_item.one_line
-              a href="#"
-                span.glyphicon.glyphicon-phone-alt
+            .footer_nav_item
+              a.last href="#"
+                img src='img/f_icons_contacts.svg'
                 | Контакты  
+    .post_footer
+      .container
+        .row.big_row
+          .col-md-12
+            a href="http://gorodvitebsk.by/ika" © Ассоциация "Город Витебск и Компания" 2004-2018
