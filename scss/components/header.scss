@@ -1,0 +1,213 @@
+// header.scss
+
+// <===========================================================>
+//                            HEADER
+// <===========================================================>
+
+.header_container {
+  position: relative;
+  @extend %standart_font;
+}
+
+.header {
+  background: #F5F5F5;
+  position: relative;
+  padding: 10px 10px 10px 10px;
+  
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+
+}
+
+.header .logo{
+  float: left;
+  padding: 0 10px 0 0px;
+
+  svg {
+    max-width: 180px;
+  }
+}
+
+.header .search_bar_container {
+  flex: 1;
+  max-width: 360px;
+  min-width: 200px;
+  height: 62px;
+  margin: 8px 0 0 0;
+}
+
+.header .search_bar{
+  height: 62px;
+  padding: 0px 0 0 5px;
+
+    .form-control::-moz-placeholder {
+      color: #333;
+      opacity: 1;
+    }
+    .form-control:-ms-input-placeholder {
+      color: #333;
+    }
+    .form-control::-webkit-input-placeholder {
+      color: #333;
+    }
+
+    form {
+      position: relative;
+    }
+
+    input {
+      flex: 1;
+      width: 100%;
+      height: 52px;
+      float: left;
+      border: 1px solid #808080;
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      border-radius: 0px;
+      background:#fff;
+
+      color: #808080;
+      font-size: 16px;
+
+      
+      &::placeholder { /* Most modern browsers support this now. */
+        color: #808080 !important;
+      }
+    }
+    button {
+      position: absolute;
+      top: 6px;
+      right: 12px;
+      height: 37px;
+      background: none;
+      padding:0px 0px 0 5px;
+      margin: 0 0 0 5px;
+      border:none;
+      color: #fff;
+      font-size: 30px;
+
+      svg *{
+        stroke: #808080;
+      }
+    }
+}
+
+
+@media screen and (max-width: $mobile) {
+  .header .search_bar_container {
+    max-width: 100%;
+  }
+}
+
+.serch_focus .header .search_bar {
+  position: absolute;
+  left: 220px;
+  right: 10px;
+  z-index: 200;
+
+}
+
+.header .informer {
+  padding: 0px 16px 0 26px;
+  display: flex;
+}
+
+.header .informer a {
+  text-decoration: none;
+}
+
+.header .informer .curency a {
+  margin-top: 2px;
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+  @extend %standart_font;
+  color: #666;
+
+  span { 
+    color: #222;
+    margin-right: 3px;
+  }
+}
+
+.header .wather_widget {
+  margin-right: 12px;
+  min-width: 83px;
+}
+
+.header .wather_widget .img {
+  float: left;
+  margin: 2px 5px 0 0;
+  position: relative;
+  width: 40px;
+}
+
+.header .wather_widget .img img {
+  width: 35px;
+  position: absolute;
+  top: 2px;
+}
+
+.header .wather_widget .temperature {
+  font-size: 24px;
+  padding: 0px 0 0 5px;
+  text-align:right;
+  font-weight: 300;
+  @extend %standart_font;
+  color: #666;
+}
+
+
+.header .social {
+  margin: 5px 10px 0px 10px;
+  a {
+    margin: 0 2px;
+  }
+
+  a > * {
+    width: 31px;
+  }
+}
+
+.header .enter_bar {
+  a {
+    font-size: 16px;
+    padding: 12px 20px;
+    color: #808080;
+    background: #fff;
+    border: 1px solid #808080;
+    
+    border-radius: 2px;
+  }
+}
+
+// on serch active hide rest
+//
+
+.serch_focus .header .social,
+.serch_focus .header .informer {
+  visibility: hidden;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .header .social {
+    flex: 0.7;
+    
+    a > * {
+      margin: 2px 1px;
+      width: 34px
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .header .social {
+    display: none;
+  }
+}
+
