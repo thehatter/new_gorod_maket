@@ -1,0 +1,51 @@
+// variables.scss
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,700i&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&subset=cyrillic');
+
+$main_color: #7D1CB6;
+$main_color__active: #681896;
+
+$bg_gray: #e6e6e6;
+
+
+%standart_font {
+  font-family: 'Roboto', sans-serif;
+}
+
+%standart_font_2 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+// <===========================================================>
+//                  standart elements and blocks
+// <===========================================================>
+
+.standart_white_block {
+  margin: 30px 0;
+  padding: 30px;
+  background: #fff;
+}
+
+// <===========================================================>
+//                          buttons
+// <===========================================================>
+
+.main_color_button {
+  @extend %standart_font_2;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 16px 0px;
+  background: $main_color;
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    background: $main_color__active;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+// <===========================================================>

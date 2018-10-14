@@ -10,6 +10,9 @@
 // ============================================================>
 
 
+body {
+  background: $bg_gray;
+}
 
 
 .row.big_row {
@@ -4272,22 +4275,22 @@ body.radio {
 //                     mobile transformation
 // <===========================================================>
 
-@media screen and (max-width: 830px) {
-  .header_container,
-  .main_container,
-  .widgets_container,
-  .statistics,
-  .partners_container,
-  .two_banners_bar_container,
-  a.top_button {
-    display: none;
-  }
+//@media screen and (max-width: 830px) {
+  //.header_container,
+  //.main_container,
+  //.widgets_container,
+  //.statistics,
+  //.partners_container,
+  //.two_banners_bar_container,
+  //a.top_button {
+    //display: none;
+  //}
 
-  .m_placeholder {
-    margin: 20px 0;
-    height: 900px;
-    background: #ccc;
-  }
-}
+  //.m_placeholder {
+    //margin: 20px 0;
+    //height: 900px;
+    //background: #ccc;
+  //}
+//}
 
 

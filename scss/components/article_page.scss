@@ -1,0 +1,248 @@
+// news_page.scss
+
+// <===========================================================>
+//                        varibles
+// <===========================================================>
+
+$article_text_padding: 30px;
+
+// <===========================================================>
+
+.article_page {
+  margin: 30px 0 30px 0;
+  @extend %standart_font;
+}
+
+
+
+.article_body img{
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+.article_body .article_content {
+  line-height: 1.3;
+  font-size: 16px;
+
+  p {
+    margin: 1em 0;
+  }
+
+}
+
+.article_page h1.article_title {
+  @extend %standart_font_2;
+  margin: 0 0 $article_text_padding;
+  background: $main_color;
+  color: #fff;
+  padding: 30px $article_text_padding;
+  font-size: 24px;
+}
+
+.article_page h2 {
+  @extend %standart_font_2;
+  font-size: 26px;
+  padding: 0px 0;
+  margin: 20px 0 16px 0;
+  font-weight: bold;
+}
+
+.article_page iframe {
+  margin: 10px 0;
+}
+
+.article_page .article_body {
+  padding: $article_text_padding  $article_text_padding;
+  background: #fff;
+}
+
+.article_gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+  a {
+    width: calc(50% - 10px);
+    border: 0;
+    padding: 0;
+    margin: 0 5px 10px 5px;
+
+    @media screen and (min-width: 992px) {
+      width: calc(33.333333% - 10px);
+    }
+
+    img {
+      width: 100%;
+      margin: 0;
+    }
+
+  }
+}
+
+// <===========================================================>
+//                        social_share_and_info
+// <===========================================================>
+
+.social_share_and_info {
+  padding: 20px 30px 10px;
+  background: #fff;
+}
+
+.social_share_and_info .row > div {
+  margin-bottom: 10px;
+}
+
+.social_share_and_info .social_share a {
+  display: inline-block;
+  margin: 0 2px;
+}
+
+@media screen and (max-width: 1299px) {
+  a:nth-child(2) svg path:nth-child(2) {
+    fill: #000;
+    fill: rgb(152,54,175);
+  }
+}
+
+.social_share_and_info .sign_for_maillist {
+  margin: 0;
+}
+
+// <===========================================================>
+//                        mb_interesting
+// <===========================================================>
+
+.mb_interesting {
+  padding-bottom: 10px;
+}
+
+.mb_interesting_col {
+  margin-bottom: 20px;
+}
+
+.mb_interesting h4 {
+  padding: 0;
+  margin: 0 0 12px 0;
+}
+
+.mb_interesting .interesting {
+  @extend %standart_font;
+  
+  a {
+    display: block;
+  }
+
+  a.catalog_sect  {
+    margin: 0 0 5px 0;
+    font-weight: 500;
+  }
+}
+
+// <===========================================================>
+//                        new_and_pop_articles
+// <===========================================================>
+
+.new_and_pop_articles {
+  margin: 30px 0 0 0;
+}
+
+.new_and_pop_articles .row,
+.new_and_pop_articles .row > div {
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.new_and_pop_articles_section {
+  padding: 20px 20px 0px 20px;
+  margin: 0 0 30px;
+  background: #fff;
+}
+
+.new_and_pop_articles_section .section_header {
+  text-transform: uppercase;
+  @extend %standart_font_2;
+
+  .section_icon {
+    float: left;
+    margin-right: 5px;
+
+    svg {
+      height: 22px;
+    }
+
+    svg path, svg rect, svg line {
+      stroke: #000;
+    }
+  }
+
+  h3 {
+    margin: 0 0 20px;
+    font-weight: 300;
+    
+    span {
+      font-weight: bold;
+    }
+  }
+
+}
+
+.new_and_pop_articles_section .section_header.main_color {
+  .section_icon {
+    svg path, svg rect, svg line {
+      stroke: $main_color;
+    }
+  }
+
+  h3 {
+    color: $main_color;
+  }
+}
+
+.new_and_pop_articles_section h3 {
+  margin: 0 0 20px;
+}
+
+.new_and_pop_articles__item {
+  margin: 0px 0 20px 0;
+  display: block;
+  display: flex;
+}
+
+.new_and_pop_articles__item .item_body a.title{
+  color: #000;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.new_and_pop_articles__item .summary {
+  font-size: 14px;
+  margin-top: 2px;
+  line-height: 1.1;
+}
+
+.new_and_pop_articles__item .img {
+  float: left;
+  margin-right: 10px;
+  
+  //img {
+    //width: 140px;
+    //height: auto;
+  //}
+  @media screen and (max-width: 1299px) {
+    max-width: 32%;
+    min-width: 32%;
+    
+    img {
+      max-width: 100%;
+      min-width: 100%;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    max-width: 26%;
+    min-width: 26%;
+  }
+}
+
+
