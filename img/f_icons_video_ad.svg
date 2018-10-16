@@ -2,42 +2,13 @@
 <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="56.1px" height="56.1px" viewBox="0 0 56.1 56.1" enable-background="new 0 0 56.1 56.1" xml:space="preserve">
-<circle fill="none" stroke="#FFFFFF" stroke-width="1.4173" stroke-miterlimit="10" cx="28" cy="28" r="27.3"/>
+	 width="51px" height="44.2px" viewBox="0 0 51 44.2" enable-background="new 0 0 51 44.2" xml:space="preserve">
 <g>
-	<path fill="#FFFFFF" d="M43,36.7c-0.3,0-0.5,0-0.7,0c-9.4,0-18.8,0-28.2,0c-0.7,0-0.7,0-0.7-0.7c0-6.2,0-12.4,0-18.5
-		c0-0.7,0-0.7,0.7-0.7c9.4,0,18.8,0,28.3,0c0.5,0,0.7,0.1,0.7,0.7c0,6.2,0,12.4,0,18.6C43,36.2,43,36.4,43,36.7z M38.6,34.1
-		c0-4.9,0-9.8,0-14.7c-7,0-13.9,0-20.8,0c0,4.9,0,9.8,0,14.7C24.7,34.1,31.6,34.1,38.6,34.1z"/>
-	<path fill="#FFFFFF" d="M24.9,32c0-3.4,0-6.6,0-10c2.9,1.7,5.7,3.3,8.6,5C30.6,28.6,27.8,30.3,24.9,32z"/>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
+	<g>
+		<text transform="matrix(1.1565 0 0 1 33.0368 36.7755)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="27.4007">+</text>
+	</g>
+	<path fill="none" stroke="#FFFFFF" stroke-width="2.0402" stroke-miterlimit="10" d="M42,16.5c0-4.8,0-9.7,0-14.5
+		c0-0.8-0.2-0.9-0.9-0.9C28.1,1,15,1,2,1C1,1,1,1,1,2c0,8.5,0,17.1,0,25.6c0,1,0,1,1,1c8.9,0,17.8,0,26.8,0 M17.7,7.2
+		c4.2,2.4,8.3,4.8,12.5,7.3c-4.2,2.5-8.3,4.8-12.5,7.3C17.7,16.8,17.7,12.1,17.7,7.2z"/>
 </g>
 </svg>

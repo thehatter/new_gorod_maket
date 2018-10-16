@@ -2,9 +2,38 @@
 <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="56.1px" height="56.1px" viewBox="0 0 56.1 56.1" enable-background="new 0 0 56.1 56.1" xml:space="preserve">
+	 width="40px" height="46px" viewBox="0 0 40 46" enable-background="new 0 0 40 46" xml:space="preserve">
 <g>
-	<path fill="#FFFFFF" d="M25.2,38.8v-8.3h-8.4v-5.8h8.4v-8.3h5.6v8.3h8.4v5.8h-8.4v8.3H25.2z"/>
+	<g>
+		<text transform="matrix(1.1565 0 0 1 22.0092 38.5276)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="27.4007">+</text>
+	</g>
+	<g>
+		<g>
+			<g>
+				<g>
+					<rect x="0" y="0" fill="#FFFFFF" width="7.5" height="6.6"/>
+					<rect x="0" y="11.7" fill="#FFFFFF" width="7.5" height="6.6"/>
+					<rect x="0" y="23.7" fill="#FFFFFF" width="7.5" height="6.6"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			<g>
+				<g>
+					<rect x="12.2" y="0" fill="#FFFFFF" width="7.5" height="6.6"/>
+					<rect x="12.2" y="11.7" fill="#FFFFFF" width="7.5" height="6.6"/>
+					<rect x="12.2" y="23.7" fill="#FFFFFF" width="7.5" height="6.6"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			<g>
+				<g>
+					<rect x="24.4" y="0" fill="#FFFFFF" width="7.5" height="6.6"/>
+					<rect x="24.4" y="11.7" fill="#FFFFFF" width="7.5" height="6.6"/>
+				</g>
+			</g>
+		</g>
+	</g>
 </g>
-<circle fill="none" stroke="#FFFFFF" stroke-width="1.4173" stroke-miterlimit="10" cx="28" cy="28" r="27.3"/>
 </svg>

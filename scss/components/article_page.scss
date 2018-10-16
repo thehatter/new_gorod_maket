@@ -38,6 +38,11 @@ $article_text_padding: 30px;
   color: #fff;
   padding: 30px $article_text_padding;
   font-size: 24px;
+  @media screen and (max-width: 650px) {
+    font-size: 18px;
+    padding: 16px
+    margin-bottom: 10px;
+  }
 }
 
 .article_page h2 {

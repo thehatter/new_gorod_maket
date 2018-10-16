@@ -2,8 +2,19 @@
 <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="56.1px" height="56.1px" viewBox="0 0 56.1 56.1" enable-background="new 0 0 56.1 56.1" xml:space="preserve">
-<circle fill="none" stroke="#FFFFFF" stroke-width="1.4173" stroke-miterlimit="10" cx="28" cy="28" r="27.3"/>
-<path fill="#FFFFFF" d="M40.8,21.8v-5.2H14.7v8.6v7.1v8.9h7.2v-8.5h2.2v8.5H31v-8.5h2.8v5.4h6.9V21.8L40.8,21.8z M37,26.4H17.8v-2.5
-	H37V26.4z M37,22.3H17.8v-2.8H37V22.3z"/>
+	 width="43.8px" height="45.6px" viewBox="0 0 43.8 45.6" enable-background="new 0 0 43.8 45.6" xml:space="preserve">
+<g>
+	<g>
+		<text transform="matrix(1.1565 0 0 1 25.8416 38.1834)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="27.4007">+</text>
+	</g>
+	<g>
+		<g>
+			<line fill="none" stroke="#FFFFFF" stroke-width="2.78" stroke-miterlimit="10" x1="35.6" y1="8.1" x2="0.2" y2="8.1"/>
+			<line fill="none" stroke="#FFFFFF" stroke-width="2.78" stroke-miterlimit="10" x1="35.6" y1="1.4" x2="0.2" y2="1.4"/>
+			<line fill="none" stroke="#FFFFFF" stroke-width="2.78" stroke-miterlimit="10" x1="35.6" y1="15" x2="0.2" y2="15"/>
+			<line fill="none" stroke="#FFFFFF" stroke-width="3.0343" stroke-miterlimit="10" x1="21.9" y1="22.2" x2="0" y2="22.2"/>
+			<line fill="none" stroke="#FFFFFF" stroke-width="3.0343" stroke-miterlimit="10" x1="21.9" y1="29.1" x2="0" y2="29.1"/>
+		</g>
+	</g>
+</g>
 </svg>

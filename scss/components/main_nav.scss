@@ -39,6 +39,9 @@
   &.w06 {
     flex: 0.5;
   }
+  &.w11 {
+    flex: 1.1;
+  }
   &.w12 {
     flex: 1.3;
   }
@@ -64,7 +67,7 @@
   align-items: center;
 
   
-  padding: 20px 0;
+  padding: 22px 0;
 
   color: #000;
   position: relative;
@@ -122,6 +125,7 @@
 .main_nav .item:hover .dmenu {
   display: block;
 }
+
 
 .main_nav .item.last svg {
   -webkit-transition: all 0.3s ease-in-out;

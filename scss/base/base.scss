@@ -222,7 +222,7 @@ a.big_color_button.orange {
     .logo {
       float: left;
       svg {
-        width: 150px !important;
+        width: 130px !important;
         height: auto  !important;
         
         #logo_text {
@@ -238,7 +238,7 @@ a.big_color_button.orange {
 
       svg {
         margin: 5px;
-        height: 50px !important;
+        height: 40px !important;
          circle {stroke: #fff;}
          line {stroke: #fff;}
 
@@ -297,7 +297,7 @@ a.big_color_button.orange {
     // background: #fff;
     // margin: 16px 0 0px 0;
 
-    display: none;
+    display:   none;
   }
 
   a {
@@ -490,24 +490,27 @@ a.big_color_button.orange {
 
 
 .catalog_menu_bar {
-  margin: 0 0px 11px 0;
   position: relative;
 
   .catalog_menu_bar_title {
+    @extend %standart_font;
     padding: 15px 10px 15px 18px;
-    background: #7D1CB6;
-    color: #fff;
+    background: #fff;
+    color: #333;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: normal;
     cursor: pointer;
 
     span {
       display: inline-block;
+      float: right;
+      margin-top: 10px;
+      margin-right: 5px;
       width: 0;
       height: 0;
       border-style: solid;
       border-width: 9px 6px 0 6px;
-      border-color: #ffffff transparent transparent transparent;
+      border-color: #333 transparent transparent transparent;
       
       transform: rotate(0deg) ;
       -webkit-transform: rotate(0deg) ;
@@ -549,25 +552,39 @@ a.big_color_button.orange {
   }
 }
 
-
-.catalog_menu_bar.editional {
-  margin: 0 0px;
-  position: relative;
-  
+.catalog_menu_bar.main_catalog  {
   .catalog_menu_bar_title {
-    padding: 14px 9px 14px 17px;
-    border: solid 1px #7D1CB6;
-    background: #fff;
-    color: #7D1CB6;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    
+    background: $second_color;
+    color: #fff;
     span {
-      border-color: #7D1CB6 transparent transparent transparent;
+      border-color: #fff transparent transparent transparent;
+
     }
   }
 }
+
+.catalog_menu_bar.minus_top {
+  margin-top: -20px;
+}
+
+//.catalog_menu_bar.editional {
+  //margin: 0 0px;
+  //position: relative;
+  
+  //.catalog_menu_bar_title {
+    //padding: 14px 9px 14px 17px;
+    //border: solid 1px #7D1CB6;
+    //background: #fff;
+    //color: #7D1CB6;
+    //font-size: 18px;
+    //font-weight: bold;
+    //cursor: pointer;
+    
+    //span {
+      //border-color: #7D1CB6 transparent transparent transparent;
+    //}
+  //}
+//}
  
 
 
@@ -619,7 +636,6 @@ a.big_color_button.orange {
 }
 
 .catalog_menu_bar.expand {
-  margin: 0 0 16px 0;
 
   .catalog_menu_bar_title {
     span {
@@ -639,9 +655,6 @@ a.big_color_button.orange {
 
 }
 
-.catalog_menu_bar.editional {
-  margin-top: 10px;
-}
 
 .catalog_menu_bar_item:hover .in_tab, .catalog_menu_bar_item .in_tab:hover  {
   visibility: visible;
@@ -755,203 +768,6 @@ a.big_color_button.orange {
 }
 
 
-
-
-
-
-// <===========================================================>
-//                           UNI FOOTER
-// <===========================================================>
-
-.uni_footer {
-  margin:0px 0 0 0;
-  padding: 10px 0;
-  color: #fff;
-  font-weight: bold;
-  font-size: 16px;
-  // padding: 20px 0px;
-  background: #7D1CB6;
-
-
-  .big_row {
-    background: none;
-  }
-
-
-  a {
-    color: #fff;
-  }
-
-  .logo {
-    svg {
-      #logo_text {
-        path {fill: #fff;}
-      }
-    }
-  }
-}
-
-
-.uni_footer_nav {
-  margin-top: 12px;
-  display:flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
-
-  .footer_nav_item {
-    margin: 0px 0 0 20px;
-    font-size: 13px;
-
-    a {
-      text-decoration: none;
-      
-      display:flex;
-      justify-content: space-around;
-      align-content: center;
-      align-items: center;
-      flex-direction: row;
-
-      svg {
-        margin-right: 10px;
-      }
-    }
-  }
-
-
-  .footer_nav_item:hover {
-    a {
-      color: #FFFF00;
-      svg path { fill: #FFFF00;}
-      svg circle { stroke: #FFFF00;}
-    }
-  }
-
-
-}
-
-
-@media screen and (max-width: 1200px) {
-  .uni_footer_nav {
-    padding-left: 0;
-  }
-
-  .uni_footer_nav .footer_nav_item {
-    margin: 0;
-    font-size: 11px;
-    svg {
-      width: 40px;
-      min-width: 40px
-    }
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .uni_footer {
-    padding-bottom: 20px;
-  }
-
-  .uni_footer .logo {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 830px) {
-  .uni_footer {
-    padding: 0;
-  }
-  .uni_footer_nav {
-    display: block;
-    padding: 0;
-
-
-    .footer_nav_item {
-      display: block;
-      position: relative;
-      margin: 0;
-
-      a {
-        display: block;
-        padding: 24px 10px 24px 50px;
-        border-bottom: 1px solid #fff;
-
-        &.last {border-bottom: none;}
-
-        br {display: none;}
-
-      }
-
-      svg {
-        position: absolute;
-        top: 5px;
-        left: 10px;
-        width: 34px;
-        min-width: 20px;
-
-
-        circle { display: none;}
-      }
-    }
-  }
-
-
-}
-  
-
-.footer_social {
-  display: none;
-}
-
-
-@media screen and (max-width: 830px) {
-  .footer_social {
-    display: block;
-    text-align: center;
-    svg {
-      max-width: 35px;
-      margin: 2px;
-      #grad_circle1 {
-        fill: #B30013;
-      }
-    }
-  }
-
-}
-
-
-// <===========================================================>
-//                            POST FOOTER
-// <===========================================================>
-
-.post_footer {
-  background: #CC33CC;
-  padding: 6px 0;
-  text-align: right;
-  
-  a {
-    color: #fff;
-  }
-}
-
-@media screen and (max-width: 398px) {
-  .post_footer {
-    a {
-      font-size: 11px;
-    }
-  }
-
-}
-
-@media screen and (max-width: 314px) {
-  .post_footer {
-    a {
-      font-size: 10px;
-    }
-  }
-
-}
 
 // <====================================================================================>
 //                                      FIRMS
@@ -3881,22 +3697,23 @@ body.radio {
 //                     mobile transformation
 // <===========================================================>
 
-//@media screen and (max-width: 830px) {
-  //.header_container,
-  //.main_container,
-  //.widgets_container,
-  //.statistics,
-  //.partners_container,
-  //.two_banners_bar_container,
-  //a.top_button {
-    //display: none;
-  //}
+@media screen and (max-width: 830px) {
+  .header_container,
+  .widgets_container,
+  .partners_container,
+  .two_banners_bar_container,
+  .on_bot_of_the_page,
+  .second_big_col,
+  a.top_button {
+    display: none;
+  }
 
-  //.m_placeholder {
-    //margin: 20px 0;
-    //height: 900px;
-    //background: #ccc;
-  //}
-//}
+  .m_placeholder {
+    margin: 20px 0;
+    height: 900px;
+    background: #ccc;
+    display: none;
+  }
+}
 
 

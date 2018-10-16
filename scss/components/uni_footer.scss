@@ -4,12 +4,12 @@
 
 .uni_footer {
   margin:0px 0 0 0;
-  padding: 10px 0;
+  padding: 10px 16px 24px;
   color: #fff;
   font-weight: bold;
   font-size: 16px;
   // padding: 20px 0px;
-  background: #7D1CB6;
+  background: $second_color;
 
 
   .big_row {
@@ -33,29 +33,64 @@
 
 .uni_footer_nav {
   margin-top: 12px;
-  display:flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
+  display: block;
+
+  @media screen and (min-width: 650px) {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: stretch;
+  }
 
   .footer_nav_item {
-    margin: 0px 0 0 20px;
+    margin: 0;
     font-size: 13px;
+    padding: 10px 20px 10px 50px;
+    position: relative;
+    min-height: 60px;
+
+    @media screen and (min-width: 1024px) {
+      display: flex;
+    }
+
 
     a {
       text-decoration: none;
-      
-      display:flex;
-      justify-content: space-around;
-      align-content: center;
-      align-items: center;
-      flex-direction: row;
+      @extend %standart_font_2;
+      font-weight: 300;
+
+       @media screen and (min-width: 1024px) { 
+        font-size: 16px;
+        
+
+        display:flex;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
 
       svg {
         margin-right: 10px;
+        position: absolute;
+        top: 2px;
+        left: 10px;
+        width: 32px;
+        min-width: 20px;
+
+        @media screen and (min-width: 1024px) {
+          margin-right: 0;
+          position: relative;
+          top: auto;
+          left: auto;
+          width: 57px;
+        }        
+        
       }
+
+      //br { display: inline; display: none;}
     }
   }
 
@@ -72,73 +107,74 @@
 }
 
 
-@media screen and (max-width: 1200px) {
-  .uni_footer_nav {
-    padding-left: 0;
-  }
+//@media screen and (max-width: 1200px) {
+  //.uni_footer_nav {
+    //padding-left: 0;
+  //}
 
-  .uni_footer_nav .footer_nav_item {
-    margin: 0;
-    font-size: 11px;
-    svg {
-      width: 40px;
-      min-width: 40px
-    }
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .uni_footer {
-    padding-bottom: 20px;
-  }
-
-  .uni_footer .logo {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 830px) {
-  .uni_footer {
-    padding: 0;
-  }
-  .uni_footer_nav {
-    display: block;
-    padding: 0;
-    margin-top: 0;
+  //.uni_footer_nav .footer_nav_item {
+    //margin: 0;
+    //font-size: 11px;
+    //svg {
+      //width: 40px;
+      //min-width: 40px
+    //}
+  //}
+//}
 
 
-    .footer_nav_item {
-      display: block;
-      position: relative;
-      margin: 0;
 
-      a {
-        display: block;
-        font-size: 12px;
-        padding: 24px 10px 24px 50px;
-        border-bottom: 1px solid #fff;
+//@media screen and (max-width: 991px) {
+  //.uni_footer {
+    //padding-bottom: 20px;
+  //}
 
-        &.last {border-bottom: none;}
+  //.uni_footer .logo {
+    //display: none;
+  //}
+//}
 
-        br {display: none;}
-
-      }
-
-      svg {
-        position: absolute;
-        top: 5px;
-        left: 10px;
-        width: 34px;
-        min-width: 20px;
+//@media screen and (max-width: 830px) {
+  //.uni_footer {
+    //padding: 0;
+  //}
+  //.uni_footer_nav {
+    //display: block;
+    //padding: 0;
+    //margin-top: 0;
 
 
-        circle { display: none;}
-      }
-    }
-  }
+    //.footer_nav_item {
+      //display: block;
+      //position: relative;
+      //margin: 0;
 
+      //a {
+        //display: block;
+        //font-size: 12px;
+        //padding: 24px 10px 24px 50px;
+        //border-bottom: 1px solid #fff;
 
-}
+        //&.last {border-bottom: none;}
+
+        //br {display: none;}
+
+      //}
+
+      //svg {
+        //position: absolute;
+        //top: 5px;
+        //left: 10px;
+        //width: 34px;
+        //min-width: 20px;
+
+        //circle {
+          //display: block;
+        //}
+      //}
+    //}
+  //}
+//}
 
 // <===========================================================>
 //                          FOOTER SOCIAL
@@ -152,7 +188,8 @@
 @media screen and (max-width: 830px) {
   .footer_social {
     display: block;
-    margin-bottom: 5px;
+    margin-top: 16px;
+    margin-bottom: 16px;
     text-align: left;
     padding: 0 13px;
     svg {
@@ -171,12 +208,12 @@
 // <===========================================================>
 
 .post_footer {
-  background: #CC33CC;
+  background: #E6E6E6;
   padding: 6px 0;
   text-align: right;
   
   a {
-    color: #fff;
+    color: #333;
   }
 }
 
