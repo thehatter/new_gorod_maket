@@ -1839,6 +1839,10 @@ a.big_color_button.orange {
   .slider_baner_oma .col-xs-3 {
     padding: 0 5px; }
 
+@media screen and (max-width: 1024px) {
+  .slider_baner_oma .carousel-control {
+    display: none; } }
+
 .small_rotation_baner {
   margin: 20px 0 20px 0;
   padding: 0px 0 30px 0;
@@ -3097,7 +3101,8 @@ body.radio {
   @media screen and (max-width: 650px) {
     .article_page h1.article_title {
       font-size: 18px;
-      padding: 16px; } }
+      padding: 16px;
+      margin-bottom: 10px; } }
 
 .article_page h2 {
   font-size: 26px;

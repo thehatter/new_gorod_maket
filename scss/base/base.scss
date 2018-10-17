@@ -2870,8 +2870,11 @@ a.big_color_button.orange {
 
 
 
-@media screen and (max-width: $mobile) {
+@media screen and (max-width: 1024px) {
   .slider_baner_oma {
+    .carousel-control {
+      display: none;
+    }
   }
 }
 
