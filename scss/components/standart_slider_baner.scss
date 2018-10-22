@@ -1,0 +1,22 @@
+// standart_slider_baner.scss
+
+.standart_slider_baner {
+  margin: 0 0 20px;
+}
+
+.standart_slider_baner .carousel-control {
+  width: 40px;
+  background: none;
+}
+
+.standart_slider_baner .item .row {
+  margin: 0 -5px;
+}
+.standart_slider_baner .item .row > div {
+  margin: 0;
+  padding: 0 5px;
+}
+
+.standart_slider_baner .item .row > div img{
+  width: 100%;
+}

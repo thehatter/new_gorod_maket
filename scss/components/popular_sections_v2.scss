@@ -1,0 +1,23 @@
+// popular_sections_v2
+
+.popular_sections_v2_header {
+  background: #FFEE00;
+}
+
+.popular_sections_v2 {
+  background: #F5F5F5;
+  padding: 12px 20px;
+
+  a {
+    float: left;
+    color: #333;
+    text-decoration: underline;
+    margin-right: 16px;
+    line-height: 1.8;
+    font-size: 16px;
+    
+    &:hover {
+      background: #FFEE00;
+    }
+  }
+}

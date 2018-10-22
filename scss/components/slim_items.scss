@@ -1,0 +1,86 @@
+// slim_items
+
+.slim_items {
+  margin: 0px 0 14px 0;
+  background: #fff;
+  a {
+    text-decoration: none;
+  }
+
+  .row {
+    margin: 0 -6px;
+  }
+
+  .row > div {
+    padding-right: 6px;
+    padding-left: 6px;
+  }
+}
+
+.slim_item {
+  @extend %standart_font_2;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.slim_item .img img {
+  width: 100%;
+  height: auto;
+}
+
+.slim_item .link_cont {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.3+0,0.35+100 */
+background: -moz-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.35) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.35) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.35) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#59000000',GradientType=0 ); /* IE6-9 */
+
+}
+
+.slim_item .title {
+  flex:1;
+  color: #fff;
+  text-shadow: 0px 0px 2px black;
+  font-size: 16px;
+  line-height: 1.15;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.slim_item .sub_title {
+  font-size: 14px;
+  color: #FFEE00;
+}
+
+.slim_item .labels {
+  position: absolute;
+  left: 14px;
+  top: 8px;
+  z-index: 20;
+
+  .label_item {
+    margin: 0 4px;
+    color: #FFEE00;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 2px black;
+  }
+}
+
+

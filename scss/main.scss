@@ -1,4 +1,6 @@
 // Third-party
+@import "vendor/owl.carousel.min.scss";
+@import "vendor/owl.theme.default.min.scss";
 
 // Modules and Variables
 @import "variables.scss";
@@ -10,6 +12,10 @@
 // Partials
 @import "components/main_nav.scss";
 @import "components/header.scss";
+@import "components/news_item_v2.scss";
+@import "components/slim_items.scss";
+@import "components/standart_slider_baner.scss";
+@import "components/popular_sections_v2.scss";
 @import "components/ad_sale_pages.scss";
 @import "components/new_video_vidget.scss";
 @import "components/uni_footer.scss";

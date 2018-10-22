@@ -1,0 +1,73 @@
+// news_item_v2
+
+.news_block_v2 {
+  margin: 14px 0 14px 0;
+  background: #fff;
+  a {
+    text-decoration: none;
+  }
+
+  .news_items_row {
+    margin: 0 -6px;
+  }
+
+  .news_items_row > div {
+    padding-right: 6px;
+    padding-left: 6px;
+  }
+}
+
+.news_item_v2 {
+  @extend %standart_font_2;
+  position: relative;
+}
+
+.news_item_v2 .img img {
+  width: 100%;
+  height: auto;
+}
+
+.news_item_v2 .title {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+
+  color: #fff;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  
+  text-shadow: 0px 0px 2px black;
+  font-size: 18px;
+  line-height: 1.15;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+30,0.2+55,0.23+100 */
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0.2) 55%, rgba(0,0,0,0.23) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0.2) 55%,rgba(0,0,0,0.23) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0.2) 55%,rgba(0,0,0,0.23) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#3b000000',GradientType=0 ); /* IE6-9 */
+
+}
+
+.news_item_v2 .labels {
+  position: absolute;
+  left: 4px;
+  top: 8px;
+  z-index: 20;
+
+  a {
+    margin: 0 4px;
+    padding: 1px 4px;
+    background: #FFEE00;
+    color: #000;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+
