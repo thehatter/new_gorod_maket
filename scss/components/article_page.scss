@@ -17,6 +17,7 @@ $article_text_padding: 30px;
 
 .article_body img{
   max-width: 100%;
+  width: 100%;
   height: auto;
   margin: 10px 0;
 }
@@ -41,7 +42,9 @@ $article_text_padding: 30px;
   @media screen and (max-width: 650px) {
     font-size: 18px;
     padding: 16px;
+    margin: -16px;
     margin-bottom: 10px;
+    font-weight: normal;
   }
 }
 
@@ -60,6 +63,10 @@ $article_text_padding: 30px;
 .article_page .article_body {
   padding: $article_text_padding  $article_text_padding;
   background: #fff;
+
+  @media screen and (max-width: 650px) {
+    padding: 16px;
+  }
 }
 
 .article_gallery {
@@ -91,7 +98,12 @@ $article_text_padding: 30px;
 .social_share_and_info {
   padding: 20px 30px 10px;
   background: #fff;
+  
+  @media screen and (max-width: 650px) {
+   padding: 16px 16px 10px;
+  }
 }
+
 
 .social_share_and_info .row > div {
   margin-bottom: 10px;
@@ -103,10 +115,18 @@ $article_text_padding: 30px;
 }
 
 @media screen and (max-width: 1299px) {
-  a:nth-child(2) svg path:nth-child(2) {
+
+  .social_share_and_info  a:nth-child(2) svg path:nth-child(2) {
     fill: #000;
     fill: rgb(152,54,175);
   }
+}
+
+@media screen and (max-width: 650px) {
+  //.social_share_and_info .social_share a {
+    ////width: 23%;
+    ////height: auto;
+  //}
 }
 
 .social_share_and_info .sign_for_maillist {

@@ -21,11 +21,29 @@
   @extend %standart_font_2;
   position: relative;
   margin-bottom: 10px;
+  background: $main_color;
 }
+
+.slim_item.black { background: #333; }
+  .slim_item.black:hover { background: #000; }
+
+.slim_item.gray { background: #666; }
+  .slim_item.gray:hover { background: #333; }
+.slim_item.light_purple { background: $second_color; }
+
+  .slim_item.light_purple:hover { background: $main_color; }
 
 .slim_item .img img {
   width: 100%;
   height: auto;
+}
+
+.slim_item svg {
+  width: 100%;
+  height: auto;
+}
+.slim_item svg * {
+  fill: none;
 }
 
 .slim_item .link_cont {
@@ -40,7 +58,10 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  
+
+  @media screen and (max-width: 1200px) {
+    padding: 8px;
+  } 
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.3+0,0.35+100 */
 background: -moz-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.35) 100%); /* FF3.6-15 */
@@ -48,6 +69,22 @@ background: -webkit-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.35) 100
 background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.35) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#59000000',GradientType=0 ); /* IE6-9 */
 
+}
+
+
+.slim_item:hover .link_cont {
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.6+0,0.65+100 */
+background: -moz-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+
+}
+
+.slim_item.no_image .link_cont {
+  background: none;
+  filter: none;
 }
 
 .slim_item .title {
@@ -60,11 +97,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', e
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.1;
+  }
 }
 
 .slim_item .sub_title {
   font-size: 14px;
   color: #FFEE00;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 12px;
+  }
 }
 
 .slim_item .labels {
@@ -80,6 +126,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', e
     font-weight: bold;
     text-transform: uppercase;
     text-shadow: 0px 0px 2px black;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 12px;
+    }
+
+  }
+
+  @media screen and (max-width: 1200px) {
+    left: 8px;
+    top: 6px;
   }
 }
 

@@ -1,33 +1,37 @@
-// news_item_v2
+// widget_naparu.scss
 
-.news_block_v2 {
-  margin: 14px 0 14px 0;
+
+.widget_naparu {
   background: #fff;
   a {
     text-decoration: none;
   }
 
-  .news_items_row {
+  .widget_naparu_row {
     margin: 0 -6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
-  .news_items_row > div {
-    padding-right: 6px;
-    padding-left: 6px;
+  .widget_naparu_row > a {
+    flex: 1;
+    margin-right: 6px;
+    margin-left: 6px;
   }
 }
 
-.news_item_v2 {
+.widget_naparu_row a {
   @extend %standart_font_2;
   position: relative;
 }
 
-.news_item_v2 .img img {
+.widget_naparu_row img {
   width: 100%;
   height: auto;
 }
 
-.news_item_v2 .title {
+.widget_naparu_row a .title {
   position: absolute;
   width: 100%;
   left: 0;
@@ -53,7 +57,7 @@
 
 }
 
-.news_item_v2:hover .title {
+.widget_naparu_row a:hover .title {
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.4+0,0.43+100 */
 background: -moz-linear-gradient(top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.43) 100%); /* FF3.6-15 */
@@ -62,22 +66,3 @@ background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.43) 100%)
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#6e000000',GradientType=0 ); /* IE6-9 */
 
 }
-
-.news_item_v2 .labels {
-  position: absolute;
-  left: 4px;
-  top: 8px;
-  z-index: 20;
-
-  a {
-    margin: 0 4px;
-    padding: 1px 4px;
-    background: #FFEE00;
-    color: #000;
-    font-size: 11px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-}
-
-

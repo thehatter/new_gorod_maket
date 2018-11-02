@@ -1,0 +1,35 @@
+// widget_discount.scss
+
+.big_sect_discount {
+  padding: 16px 0 10px 0;
+  background: #fff;
+  svg {
+    max-height: 35px;
+    margin-right: 5px;
+    path {
+    }
+  }
+
+  .title {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+  }
+
+  .title h3{
+    color: $main_color;
+    font-size: 20px;
+  }
+
+  .r_links a {
+    color: $main_color;
+  }
+}
+
+.widget_discount {
+  margin: 0 0 20px 0;
+}
+.widget_discount .slim_item {
+  margin-bottom: 0;
+}

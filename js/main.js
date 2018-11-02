@@ -44,7 +44,7 @@
       })
       $('#video-carusel').owlCarousel({
           loop:true,
-          margin:6,
+          margin:0,
           nav:false,
           dots:true,
           autoplay: true,

@@ -1,0 +1,139 @@
+// widget_namvam.scss
+//
+// 
+
+.widget_namvam {
+  background: #F5F5F5;
+}
+
+.widget_namvam .widget_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: $main_color;
+}
+
+
+.widget_namvam .widget_title {
+  display: flex;
+  min-width: 240px;
+}
+
+.widget_namvam .widget_title a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0 10px;
+  padding-right: 16px;
+
+  svg {
+    margin-bottom: 5px;
+    margin-right: 6px;
+    margin-left: 16px;
+    max-width: 35px;
+    height: auto;
+    path, line {
+      stroke: #fff;
+    }
+  }
+}
+
+.widget_namvam .widget_horizontal_menu {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    min-height: 46px;
+    font-size: 18px;
+    padding: 10px 16px;
+    color: #fff;
+    text-decoration: none;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 16px;
+      padding: 10px 2px;
+    }
+
+    &:hover, &.active {
+      background: #FFEE00;
+      color: #000;
+    }
+  }
+}
+
+.widget_namvam .widget_horizontal_menu a:hover, 
+.widget_namvam .widget_horizontal_menu a.active {
+  background: #FFEE00;
+  color: #000;
+}
+
+.widget_namvam .r_links {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+
+  a {
+    @extend %standart_font_2;
+    font-style: italic;
+    color: #fff;
+    margin: 0 16px;
+  }
+}
+
+.widget_namvam .widget_body {
+  display: flex;
+  flex-direction: row;
+
+
+  .left_section {
+    max-width: 240px;
+    min-width: 240px;
+    padding: 20px 26px 10px 26px;
+    
+    a {
+      display: block;
+      color: #808080;
+      text-decoration: none;
+      font-size: 18px;
+      margin: 0 0 5px 0;
+
+      span {
+        margin-left: 8px;
+        color: #fff;
+        background: $main_color;
+        padding: 2px 6px;
+        font-size: 14px;
+        border-radius: 3px;
+      }
+
+      &:hover {
+        color: #333;
+      }
+    }
+    
+  }
+
+  .slim_item .sub_title {
+    text-align: right;
+  }
+}
+
+.widget_namvam .slim_items {
+  margin-bottom: 0;
+}

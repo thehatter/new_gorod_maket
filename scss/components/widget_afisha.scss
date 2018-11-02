@@ -1,0 +1,127 @@
+// widget_afisha.scss
+
+.widget_afisha {
+  @extend %standart_font_2;
+}
+
+.widget_afisha .widget_header {
+  background: $second_color;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.widget_afisha .widget_title {
+  display: flex;
+}
+
+.widget_afisha .widget_title a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0 10px;
+  padding-right: 16px;
+
+  svg {
+    margin-bottom: 5px;
+    margin-right: 6px;
+    margin-left: 16px;
+    max-width: 35px;
+    height: auto;
+    path {
+      stroke: #fff;
+    }
+  }
+}
+
+.widget_afisha .widget_body_in {
+  padding-top: 6px;
+
+  .row {
+    margin: 0 -4px;
+  }
+  .row > div {
+    padding: 0 4px;
+  }
+}
+
+.widget_afisha .widget_body_in {
+  background: #fff;
+}
+
+.widget_afisha .widget_item_container {
+  .img {
+    position: relative;
+
+    .kind {
+        position: absolute;
+        left: 14px;
+        bottom: 15px;
+        z-index: 20;
+
+        background: #FFEE00;
+        color: #333;
+        padding: 2px 5px;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+.widget_afisha .name {
+  color: #000;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.2;
+  font-size: 18px;
+  padding: 0 5px 5px 5px;
+}
+
+.widget_afisha .widget_horizontal_menu {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+
+  a {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    min-height: 46px;
+    font-size: 18px;
+    padding: 10px 5px;
+    color: #fff;
+    text-decoration: none;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 16px;
+      padding: 10px 2px;
+    }
+
+    &:hover, &.active {
+      background: #FFEE00;
+      color: #000;
+    }
+  }
+}
+
+.widget_afisha .widget_horizontal_menu a:hover, 
+.widget_afisha .widget_horizontal_menu a.active {
+  background: #FFEE00;
+  color: #000;
+}
