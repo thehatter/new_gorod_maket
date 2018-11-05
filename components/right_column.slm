@@ -1,0 +1,353 @@
+/ <===========================================================>
+/                        CATALOG_MENU_BAR
+/ <===========================================================>
+
+.col-md-3.col-xs-12.second_big_col
+
+
+  / <===========================================================>
+  /                        main_catalog
+  / <===========================================================>
+
+  .catalog_menu_bar.main_catalog.collapsed.minus_top
+    .catalog_menu_bar_title
+      | Каталог товаров и услуг 
+      span
+    .catalog_menu_bar_items
+      .catalog_menu_bar_item
+        .catalog_menu_bar_item_title
+          .arrow
+          img src="img/catalog_menu_icon_1.png"
+          | Дом и квартира
+        .in_tab
+          .in_tab_header
+            .in_tab_title Отдых и развлечения
+          .in_tab_content.clearfix
+            .col-xs-4
+              .subsection
+                .subsection_title 
+                  | Активный отдых
+                  span.badge 22
+                a.subsection_item Боулинг
+                a.subsection_item Футбол
+                a.subsection_item Лазертаг
+                a.subsection_item Лазертаг
+                a.subsection_item Музеи
+                a.subsection_item Лазертаг
+                a.subsection_item Лазертаг
+                a.subsection_item Музеи
+              .subsection
+                .subsection_title 
+                  | Активный отдых
+                  span.badge 22
+                a.subsection_item Боулинг
+                a.subsection_item Футбол
+                a.subsection_item Лазертаг
+                a.subsection_item Лазертаг
+
+            .col-xs-4
+              .subsection
+                .subsection_title 
+                  | Активный отдых
+                  span.badge 22
+                a.subsection_item Боулинг
+                a.subsection_item Футбол
+                a.subsection_item Лазертаг
+                a.subsection_item Лазертаг
+                a.subsection_item Музеи
+              .subsection
+                .subsection_title 
+                  | Активный отдых
+                  span.badge 22
+                a.subsection_item Боулинг
+                a.subsection_item Футбол
+                a.subsection_item Лазертаг
+                a.subsection_item Лазертаг
+                a.subsection_item Музеи
+                a.subsection_item Лазертаг
+                a.subsection_item Лазертаг
+                a.subsection_item Музеи
+                
+            .col-xs-4
+              .subsection
+                .subsection_title 
+                  | Активный отдых
+                  span.badge 22
+                a.subsection_item Боулинг
+                a.subsection_item Футбол
+                a.subsection_item Лазертаг
+                a.subsection_item Лазертаг
+                a.subsection_item Музеи
+                a.subsection_item Лазертаг
+                a.subsection_item Лазертаг
+                a.subsection_item Музеи
+              .subsection
+                .subsection_title 
+                  | Активный отдых
+                  span.badge 22
+                a.subsection_item Боулинг
+                a.subsection_item Футбол
+                a.subsection_item Лазертаг
+                a.subsection_item Лазертаг
+                a.subsection_item Музеи
+
+
+
+
+
+      .catalog_menu_bar_item
+        .catalog_menu_bar_item_title
+          .arrow
+          img src="img/catalog_menu_icon_2.png"
+          | Строительство и ремонт
+        .in_tab
+          .in_tab_header
+            .in_tab_title Строительство и ремонт
+          .in_tab_content.clearfix
+            .col-xs-4
+              .subsection
+                .subsection_title 
+                  | Активный отдых
+                  span.badge 22
+                a.subsection_item Боулинг
+                a.subsection_item Футбол
+                a.subsection_item Лазертаг
+                a.subsection_item Лазертаг
+                a.subsection_item Музеи
+                a.subsection_item Лазертаг
+                a.subsection_item Лазертаг
+                a.subsection_item Музеи
+              .subsection
+                .subsection_title 
+                  | Активный отдых
+                  span.badge 22
+                a.subsection_item Боулинг
+                a.subsection_item Футбол
+                a.subsection_item Лазертаг
+                a.subsection_item Лазертаг
+
+            .col-xs-4
+              .subsection
+                .subsection_title 
+                  | Активный отдых
+                  span.badge 22
+                a.subsection_item Боулинг
+                a.subsection_item Футбол
+                a.subsection_item Лазертаг
+                a.subsection_item Лазертаг
+                a.subsection_item Музеи
+              .subsection
+                .subsection_title 
+                  | Активный отдых
+                  span.badge 22
+                a.subsection_item Боулинг
+                a.subsection_item Футбол
+                a.subsection_item Лазертаг
+                a.subsection_item Лазертаг
+                a.subsection_item Музеи
+                a.subsection_item Лазертаг
+                a.subsection_item Лазертаг
+                a.subsection_item Музеи
+                
+            .col-xs-4
+              .subsection
+                .subsection_title 
+                  | Активный отдых
+                  span.badge 22
+                a.subsection_item Боулинг
+                a.subsection_item Футбол
+                a.subsection_item Лазертаг
+                a.subsection_item Лазертаг
+                a.subsection_item Музеи
+                a.subsection_item Лазертаг
+                a.subsection_item Лазертаг
+                a.subsection_item Музеи
+              .subsection
+                .subsection_title 
+                  | Активный отдых
+                  span.badge 22
+                a.subsection_item Боулинг
+                a.subsection_item Футбол
+                a.subsection_item Лазертаг
+                a.subsection_item Лазертаг
+                a.subsection_item Музеи
+
+
+      .catalog_menu_bar_item
+        .catalog_menu_bar_item_title
+          .arrow
+          img src="img/catalog_menu_icon_3.png"
+          | Работа и бизнес
+      .catalog_menu_bar_item
+        .catalog_menu_bar_item_title
+          .arrow
+          img src="img/catalog_menu_icon_4.png"
+          | Авто, мото, вело
+      .catalog_menu_bar_item
+        .catalog_menu_bar_item_title
+          .arrow
+          img src="img/catalog_menu_icon_5.png"
+          | Семья и дети
+      .catalog_menu_bar_item
+        .catalog_menu_bar_item_title
+          .arrow
+          img src="img/catalog_menu_icon_6.png"
+          | Шоппинг
+      .catalog_menu_bar_item
+        .catalog_menu_bar_item_title
+          .arrow
+          img src="img/catalog_menu_icon_7.png"
+          | Отдых и развлечение
+      .catalog_menu_bar_item
+        .catalog_menu_bar_item_title
+          .arrow
+          img src="img/catalog_menu_icon_8.png"
+          | Все для праздника
+      .catalog_menu_bar_item
+        .catalog_menu_bar_item_title
+          .arrow
+          img src="img/catalog_menu_icon_9.png"
+          | Здоровье и красота
+      .catalog_menu_bar_item
+        .catalog_menu_bar_item_title
+          .arrow
+          img src="img/catalog_menu_icon_10.png"
+          | Сделано в Витебске
+      .catalog_menu_bar_item
+        .catalog_menu_bar_item_title
+          .arrow
+          img src="img/catalog_menu_icon_11.png"
+          | Услуги в Витебске
+
+
+          
+
+  / <===========================================================>
+  /                        EDITIONAL_MENU_BAR
+  / <===========================================================>
+
+  .catalog_menu_bar.editional.collapsed
+    .catalog_menu_bar_title.expand
+      | Все проекты
+      span
+    .catalog_menu_bar_items
+      .catalog_menu_bar_item
+        .catalog_menu_bar_item_title
+          .arrow
+          img src="img/catalog_menu_icon_16.png"
+          | Славянский базар
+
+  / <===========================================================>
+  /                        EDITIONAL_MENU_BAR
+  / <===========================================================>
+
+  .catalog_menu_bar.editional.collapsed
+    .catalog_menu_bar_title.expand
+      | О городе 
+      span
+    .catalog_menu_bar_items
+      .catalog_menu_bar_item
+        .catalog_menu_bar_item_title
+          .arrow
+          img src="img/catalog_menu_icon_12.png"
+          | Общая информация
+      .catalog_menu_bar_item
+        .catalog_menu_bar_item_title
+          .arrow
+          img src="img/catalog_menu_icon_13.png"
+          | Администрация
+      .catalog_menu_bar_item
+        .catalog_menu_bar_item_title
+          .arrow
+          img src="img/catalog_menu_icon_14.png"
+          | Экономика
+      .catalog_menu_bar_item
+        .catalog_menu_bar_item_title
+          .arrow
+          img src="img/catalog_menu_icon_3.png"
+          | Инвесторам
+      .catalog_menu_bar_item
+        .catalog_menu_bar_item_title
+          .arrow
+          img src="img/catalog_menu_icon_15.png"
+          | Туризм и отдых
+      .catalog_menu_bar_item
+        .catalog_menu_bar_item_title
+          .arrow
+          img src="img/catalog_menu_icon_16.png"
+          | Культура и искуство
+      .catalog_menu_bar_item
+        .catalog_menu_bar_item_title
+          .arrow
+          img src="img/catalog_menu_icon_17.png"
+          | Образование
+      .catalog_menu_bar_item
+        .catalog_menu_bar_item_title
+          .arrow
+          img src="img/catalog_menu_icon_18.png"
+          | Здравоохранение
+      .catalog_menu_bar_item
+        .catalog_menu_bar_item_title
+          .arrow
+          img src="img/catalog_menu_icon_19.png"
+          | Спорт
+      .catalog_menu_bar_item
+        .catalog_menu_bar_item_title
+          .arrow
+          img src="img/catalog_menu_icon_20.png"
+          | СМИ
+
+
+
+
+
+  / <===========================================================>
+  /                      small_rotation_baner
+  / <===========================================================>
+  .small_rotation_baner
+
+    <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      .carousel-inner
+        .item.active
+          a href="#"
+            img src="img/banner_270x311.png"
+        .item
+          a href="#"
+            img src="img/banner_270x311.png"
+        .item
+          a href="#"
+            img src="img/banner_270x311.png"
+
+
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+
+  .baner_vertical
+    img src="img/banner_270x311.png"
+
+  .baner_vertical
+    img src="img/banner_270x311.png"
+
+  .baner_vertical
+    img src="img/banner_270x311.png"
+
+
+
+
+  .baner_vertical
+    img src="img/vk.jpg"

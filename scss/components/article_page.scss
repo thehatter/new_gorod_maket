@@ -130,7 +130,7 @@ $article_text_padding: 30px;
 }
 
 .social_share_and_info .sign_for_maillist {
-  margin: 0;
+  margin: 16px 0 0 0;
 }
 
 // <===========================================================>
@@ -147,11 +147,12 @@ $article_text_padding: 30px;
 
 .mb_interesting h4 {
   padding: 0;
-  margin: 0 0 12px 0;
+  margin: 16px 0 10px 0;
 }
 
 .mb_interesting .interesting {
   @extend %standart_font;
+  font-size: 16px;
   
   a {
     display: block;

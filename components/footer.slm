@@ -78,7 +78,7 @@
             .footer_nav_item
               a.last href="#"
                 img src='img/f_icons_contacts.svg'
-                span Контакты  
+                span Контакты портала
 
 .post_footer
   .container
