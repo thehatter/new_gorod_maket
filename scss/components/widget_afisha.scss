@@ -94,6 +94,10 @@
   display: flex;
   flex-direction: row;
 
+  @media screen and (max-width: 992px) {
+    flex-wrap: wrap;
+  }
+
   a {
     flex-grow: 1;
     display: flex;
@@ -112,6 +116,7 @@
       font-size: 16px;
       padding: 10px 2px;
     }
+
 
     &:hover, &.active {
       background: #FFEE00;

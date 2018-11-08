@@ -721,7 +721,6 @@ html
     .new_widgets_container
       .widget_afisha
         .container
-          .row
             .widget_header
               .widget_title
                   a href="#"
@@ -742,7 +741,6 @@ html
 
         .widget_body
           .container
-            .row
               .widget_body_in
                 .row
                   .widget_item_container.col-xs-2
@@ -795,14 +793,15 @@ html
 
     .container
       .row
-        .new_widgets_container
-          .big_section_header_base.big_section_header_slim.big_sect_reviews
-            .title
-              img src="img/icon_reviews.svg"
-              a href="#" 
-                h3 <span>ОТЗЫВЫ</span> О ОРГАНИЗАЦИЯХ ВИТЕБСКА
-            .r_links
-              a href="#" Смотреть все отзывы»
+        .col-md-12
+          .new_widgets_container
+            .big_section_header_base.big_section_header_slim.big_sect_reviews
+              .title
+                img src="img/icon_reviews.svg"
+                a href="#" 
+                  h3 <span>ОТЗЫВЫ</span> О ОРГАНИЗАЦИЯХ ВИТЕБСКА
+              .r_links
+                a href="#" Смотреть все отзывы»
               
           .widget_reviews
             a.item href="#"
@@ -876,15 +875,16 @@ html
     .new_widgets_container
       .container
         .row
-          .big_section_header_base.big_section_header_slim.big_sect_video
-            .title
-              img src="img/icon_video.svg"
-              a href="#" 
-                h3 <span>ИНТЕРНЕТ-ТВ</span> ГОРОДСКОГО ПОРТАЛА
-            .r_links
-              a href="#" Смотреть все видео»
+          .col-md-12
+            .big_section_header_base.big_section_header_slim.big_sect_video
+              .title
+                img src="img/icon_video.svg"
+                a href="#" 
+                  h3 <span>ИНТЕРНЕТ-ТВ</span> ГОРОДСКОГО ПОРТАЛА
+              .r_links
+                a href="#" Смотреть все видео»
 
-      <div class="new_video_vidget_cont_v2"><div class="widget_body"><div class="container"><div class="row"><div class="body_pad"><div class="widget_body_in owl-carousel owl-theme" id="video-carusel"><div class="widget_item_container"><a href="http://www.youtube.com/watch?v=PKwx6zR6wIw" target="_blank"><div class="widget_item"><div class="img"><img src="https://i.ytimg.com/vi/PKwx6zR6wIw/mqdefault.jpg"/><div class="play_button"></div></div><div class="title">ГОРОД-САД цветочный центр -  Городские открытия</div></div></a></div><div class="widget_item_container"><a href="http://www.youtube.com/watch?v=vKgX6r9P-1I" target="_blank"><div class="widget_item"><div class="img"><img src="https://i.ytimg.com/vi/vKgX6r9P-1I/mqdefault.jpg"/><div class="play_button"></div></div><div class="title">Награждение НАШЕ ТВ. Лучшее освещение темы предпринимательства в региональных СМИ</div></div></a></div><div class="widget_item_container"><a href="http://www.youtube.com/watch?v=dfOFAFg6YWQ" target="_blank"><div class="widget_item"><div class="img"><img src="https://i.ytimg.com/vi/dfOFAFg6YWQ/mqdefault.jpg"/><div class="play_button"></div></div><div class="title">Витебск День города 2017. Что вам обязательно стоит знать и видеть...</div></div></a></div><div class="widget_item_container"><a href="http://www.youtube.com/watch?v=6d9u6ywkyWw" target="_blank"><div class="widget_item"><div class="img"><img src="https://i.ytimg.com/vi/6d9u6ywkyWw/mqdefault.jpg"/><div class="play_button"></div></div><div class="title">Инвест форум -  Инновации Инвестиции Перспективы 2017 в Витебске</div></div></a></div><div class="widget_item_container"><a href="http://www.youtube.com/watch?v=uMauzv0UCVU" target="_blank"><div class="widget_item"><div class="img"><img src="https://i.ytimg.com/vi/uMauzv0UCVU/mqdefault.jpg"/><div class="play_button"></div></div><div class="title">Фестиваль крафтового пива brovar day 2017 в Витебске</div></div></a></div><div class="widget_item_container"><a href="http://www.youtube.com/watch?v=C-MbxuK6r0c" target="_blank"><div class="widget_item"><div class="img"><img src="https://i.ytimg.com/vi/C-MbxuK6r0c/mqdefault.jpg"/><div class="play_button"></div></div><div class="title">День защиты детей 2017 в Витебске: Забег в ползунках и парад детских колясок</div></div></a></div><div class="widget_item_container"><a href="http://www.youtube.com/watch?v=M9GSn2I2WY0" target="_blank"><div class="widget_item"><div class="img"><img src="https://i.ytimg.com/vi/M9GSn2I2WY0/mqdefault.jpg"/><div class="play_button"></div></div><div class="title">Диалог языков и культур в XXI веке. Гимназия № 2 г.Витебска</div></div></a></div><div class="widget_item_container"><a href="http://www.youtube.com/watch?v=sMA_h-Ozj9Y" target="_blank"><div class="widget_item"><div class="img"><img src="https://i.ytimg.com/vi/sMA_h-Ozj9Y/mqdefault.jpg"/><div class="play_button"></div></div><div class="title">Как бездомные животные попадают в новые семьи? Счастливые истории Витебска 2017</div></div></a></div><div class="widget_item_container"><a href="http://www.youtube.com/watch?v=txCkT-mej0c" target="_blank"><div class="widget_item"><div class="img"><img src="https://i.ytimg.com/vi/txCkT-mej0c/mqdefault.jpg"/><div class="play_button"></div></div><div class="title">Сделай шаг вперед. Закрытие 7 международного фестиваля танца  в Витебске(06.04.2017)</div></div></a></div><div class="widget_item_container"><a href="http://www.youtube.com/watch?v=BaB4bJfrqjA" target="_blank"><div class="widget_item"><div class="img"><img src="https://i.ytimg.com/vi/BaB4bJfrqjA/mqdefault.jpg"/><div class="play_button"></div></div><div class="title">Обратный отсчет. Вечер современной хореографии (01.04.2017) В Витебске</div></div></a></div></div></div></div></div></div>></div>
+      <div class="new_video_vidget_cont_v2"><div class="widget_body"><div class="container"><div class="body_pad"><div class="widget_body_in owl-carousel owl-theme" id="video-carusel"><div class="widget_item_container"><a href="http://www.youtube.com/watch?v=PKwx6zR6wIw" target="_blank"><div class="widget_item"><div class="img"><img src="https://i.ytimg.com/vi/PKwx6zR6wIw/mqdefault.jpg"/><div class="play_button"></div></div><div class="title">ГОРОД-САД цветочный центр -  Городские открытия</div></div></a></div><div class="widget_item_container"><a href="http://www.youtube.com/watch?v=vKgX6r9P-1I" target="_blank"><div class="widget_item"><div class="img"><img src="https://i.ytimg.com/vi/vKgX6r9P-1I/mqdefault.jpg"/><div class="play_button"></div></div><div class="title">Награждение НАШЕ ТВ. Лучшее освещение темы предпринимательства в региональных СМИ</div></div></a></div><div class="widget_item_container"><a href="http://www.youtube.com/watch?v=dfOFAFg6YWQ" target="_blank"><div class="widget_item"><div class="img"><img src="https://i.ytimg.com/vi/dfOFAFg6YWQ/mqdefault.jpg"/><div class="play_button"></div></div><div class="title">Витебск День города 2017. Что вам обязательно стоит знать и видеть...</div></div></a></div><div class="widget_item_container"><a href="http://www.youtube.com/watch?v=6d9u6ywkyWw" target="_blank"><div class="widget_item"><div class="img"><img src="https://i.ytimg.com/vi/6d9u6ywkyWw/mqdefault.jpg"/><div class="play_button"></div></div><div class="title">Инвест форум -  Инновации Инвестиции Перспективы 2017 в Витебске</div></div></a></div><div class="widget_item_container"><a href="http://www.youtube.com/watch?v=uMauzv0UCVU" target="_blank"><div class="widget_item"><div class="img"><img src="https://i.ytimg.com/vi/uMauzv0UCVU/mqdefault.jpg"/><div class="play_button"></div></div><div class="title">Фестиваль крафтового пива brovar day 2017 в Витебске</div></div></a></div><div class="widget_item_container"><a href="http://www.youtube.com/watch?v=C-MbxuK6r0c" target="_blank"><div class="widget_item"><div class="img"><img src="https://i.ytimg.com/vi/C-MbxuK6r0c/mqdefault.jpg"/><div class="play_button"></div></div><div class="title">День защиты детей 2017 в Витебске: Забег в ползунках и парад детских колясок</div></div></a></div><div class="widget_item_container"><a href="http://www.youtube.com/watch?v=M9GSn2I2WY0" target="_blank"><div class="widget_item"><div class="img"><img src="https://i.ytimg.com/vi/M9GSn2I2WY0/mqdefault.jpg"/><div class="play_button"></div></div><div class="title">Диалог языков и культур в XXI веке. Гимназия № 2 г.Витебска</div></div></a></div><div class="widget_item_container"><a href="http://www.youtube.com/watch?v=sMA_h-Ozj9Y" target="_blank"><div class="widget_item"><div class="img"><img src="https://i.ytimg.com/vi/sMA_h-Ozj9Y/mqdefault.jpg"/><div class="play_button"></div></div><div class="title">Как бездомные животные попадают в новые семьи? Счастливые истории Витебска 2017</div></div></a></div><div class="widget_item_container"><a href="http://www.youtube.com/watch?v=txCkT-mej0c" target="_blank"><div class="widget_item"><div class="img"><img src="https://i.ytimg.com/vi/txCkT-mej0c/mqdefault.jpg"/><div class="play_button"></div></div><div class="title">Сделай шаг вперед. Закрытие 7 международного фестиваля танца  в Витебске(06.04.2017)</div></div></a></div><div class="widget_item_container"><a href="http://www.youtube.com/watch?v=BaB4bJfrqjA" target="_blank"><div class="widget_item"><div class="img"><img src="https://i.ytimg.com/vi/BaB4bJfrqjA/mqdefault.jpg"/><div class="play_button"></div></div><div class="title">Обратный отсчет. Вечер современной хореографии (01.04.2017) В Витебске</div></div></a></div></div></div></div></div></div>
 
 
 
@@ -894,38 +894,39 @@ html
 
     .container
       .row
-        .new_widgets_container
-          .big_section_header_base.big_section_header_slim.big_sect_work
-            .title
-              img src="img/icon_work.svg"
-              a href="#" 
-                h3 <span>РАБОТА</span> В ВИТЕБСКЕ
-            .r_links
-              a href="#" Найти работу »
-              a href="#" Найти сотрудника »
-              a href="#" Смотреть все вакансии »
-              
-          .widget_work
-            a.item href="#"
-              .title Сборщик корпусной мебели
-              .text ООО ПП Универсал ОКС 
-              .price 600.00 р
-            a.item href="#"
-              .title Cтоляр-станочник на форматно раскроечный станок
-              .text ООО ПП Универсал ОКС 
-              .price 600.00 р
-            a.item href="#"
-              .title Сборщик корпусной мебели
-              .text ООО ПП Универсал ОКС 
-              .price 600.00 р
-            a.item href="#"
-              .title Сборщик корпусной мебели
-              .text ООО ПП Универсал ОКС 
-              .price 600.00 р
-            a.item href="#"
-              .title Сборщик корпусной мебели
-              .text ООО ПП Универсал ОКС 
-              .price 600.00 р
+        .col-md-12
+          .new_widgets_container
+            .big_section_header_base.big_section_header_slim.big_sect_work
+              .title
+                img src="img/icon_work.svg"
+                a href="#" 
+                  h3 <span>РАБОТА</span> В ВИТЕБСКЕ
+              .r_links
+                a href="#" Найти работу »
+                a href="#" Найти сотрудника »
+                a href="#" Смотреть все вакансии »
+                
+            .widget_work
+              a.item href="#"
+                .title Сборщик корпусной мебели
+                .text ООО ПП Универсал ОКС 
+                .price 600.00 р
+              a.item href="#"
+                .title Cтоляр-станочник на форматно раскроечный станок
+                .text ООО ПП Универсал ОКС 
+                .price 600.00 р
+              a.item href="#"
+                .title Сборщик корпусной мебели
+                .text ООО ПП Универсал ОКС 
+                .price 600.00 р
+              a.item href="#"
+                .title Сборщик корпусной мебели
+                .text ООО ПП Универсал ОКС 
+                .price 600.00 р
+              a.item href="#"
+                .title Сборщик корпусной мебели
+                .text ООО ПП Универсал ОКС 
+                .price 600.00 р
 
 
 
@@ -937,66 +938,68 @@ html
 
       .container
         .row
-          .big_section_header_base.big_section_header_slim.big_sect_discount
-            .title
-              img src="img/icon_rozigr.svg"
-              a href="#" 
-                h3 <span>СКИДКИ</span> В ВИТЕБСКЕ ПО ДИСКОНТНОЙ КАРТЕ GORODVITEBSK.BY
-            .r_links
-              a href="#" Смотреть все скидки»
+          .col-md-12
+            .big_section_header_base.big_section_header_slim.big_sect_discount
+              .title
+                img src="img/icon_rozigr.svg"
+                a href="#" 
+                  h3 <span>СКИДКИ</span> В ВИТЕБСКЕ ПО ДИСКОНТНОЙ КАРТЕ GORODVITEBSK.BY
+              .r_links
+                a href="#" Смотреть все скидки»
 
       .container
         .row
-          .widget_discount
-              .slim_items
-                .row
-                  .col-md-3.col-xs-6
-                    .slim_item
-                        .img
-                          img src="img/slim_img_1.jpg"
-                        .labels
-                          .label_item href="#" Скидка 10%
-                        .link_cont
-                          a.title href="#" 
-                            span При заказе ШОУ МЫЛЬНЫХ ПУЗЫРЕЙ на 10 июля - 10 РУБЛЕЙ на телефон
-                          a.sub_title href="#" 
-                            span ООО Мобайл Центр
+          .col-md-12
+            .widget_discount
+                .slim_items
+                  .row
+                    .col-md-3.col-xs-6
+                      .slim_item
+                          .img
+                            img src="img/slim_img_1.jpg"
+                          .labels
+                            .label_item href="#" Скидка 10%
+                          .link_cont
+                            a.title href="#" 
+                              span При заказе ШОУ МЫЛЬНЫХ ПУЗЫРЕЙ на 10 июля - 10 РУБЛЕЙ на телефон
+                            a.sub_title href="#" 
+                              span ООО Мобайл Центр
 
-                  .col-md-3.col-xs-6
-                    .slim_item
-                        .img
-                          img src="img/slim_img_2.jpg"
-                        .labels
-                          .label_item href="#" Скидка 30%
-                        .link_cont
-                          a.title href="#" 
-                            span Новинка от компании SPADA, линейка прикормок и добавок CARP AREA.
-                          a.sub_title href="#" 
-                            span ООО Мобайл Центр
+                    .col-md-3.col-xs-6
+                      .slim_item
+                          .img
+                            img src="img/slim_img_2.jpg"
+                          .labels
+                            .label_item href="#" Скидка 30%
+                          .link_cont
+                            a.title href="#" 
+                              span Новинка от компании SPADA, линейка прикормок и добавок CARP AREA.
+                            a.sub_title href="#" 
+                              span ООО Мобайл Центр
 
-                  .col-md-3.col-xs-6
-                    .slim_item
-                        .img
-                          img src="img/slim_img_1.jpg"
-                        .labels
-                          .label_item href="#" Скидка 10%
-                        .link_cont
-                          a.title href="#" 
-                            span на стоимость работ по ремонту телефонов Ремонт телефонов, планшетов 
-                          a.sub_title href="#" 
-                            span ООО Мобайл Центр
+                    .col-md-3.col-xs-6
+                      .slim_item
+                          .img
+                            img src="img/slim_img_1.jpg"
+                          .labels
+                            .label_item href="#" Скидка 10%
+                          .link_cont
+                            a.title href="#" 
+                              span на стоимость работ по ремонту телефонов Ремонт телефонов, планшетов 
+                            a.sub_title href="#" 
+                              span ООО Мобайл Центр
 
-                  .col-md-3.col-xs-6
-                    .slim_item
-                        .img
-                          img src="img/slim_img_1.jpg"
-                        .labels
-                          .label_item href="#" Скидка 20%
-                        .link_cont
-                          a.title href="#" 
-                            span При заказе ШОУ МЫЛЬНЫХ ПУЗЫРЕЙ на 10 июля - 10 РУБЛЕЙ на телефон
-                          a.sub_title href="#" 
-                            span ООО Мобайл Центр
+                    .col-md-3.col-xs-6
+                      .slim_item
+                          .img
+                            img src="img/slim_img_1.jpg"
+                          .labels
+                            .label_item href="#" Скидка 20%
+                          .link_cont
+                            a.title href="#" 
+                              span При заказе ШОУ МЫЛЬНЫХ ПУЗЫРЕЙ на 10 июля - 10 РУБЛЕЙ на телефон
+                            a.sub_title href="#" 
+                              span ООО Мобайл Центр
 
 
     / <===========================================================>
@@ -1006,113 +1009,114 @@ html
     .new_widgets_container
       .container
         .row
-          .widget_namvam
-                .widget_header
-                  .widget_title
-                      a href="#"
-                        img src="img/icon_ads.svg"
-                        | ОБЪЯВЛЕНИЯ
-                  .widget_horizontal_menu.clearfix
-                    a.active href="#" РАЗМЕСТИТЬ ОБЪЯВЛЕНИЕ
-                  .r_links
-                    a href="#" Смотреть все объявления »
-          .widget_namvam
-            .widget_body
-              .left_section
-                a href="#" 
-                  |Детский мир
-                  span 6
-                a href="#" 
-                  |Недвижимость
-                  span 25
-                a href="#" 
-                  |Транспорт
-                  span 2
-                a href="#" 
-                  |Животные
-                  span 3
-                a href="#" 
-                  |Дом сад
-                  span 4
-                a href="#" 
-                  |Электроника
-                  span 5
-                a href="#" 
-                  |Мода Стиль
-                  span 7
-              .right_section
-                .slim_items
-                  .row
-                    .col-md-4.col-sm-6
-                      .slim_item
-                          .img
-                            img src="img/slim_img_1.jpg"
-                          .labels
-                            .label_item href="#" Сдам
-                          .link_cont
-                            a.title href="#" 
-                              span на стоимость работ по ремонту телефонов Ремонт телефонов, п
-                            a.sub_title href="#" 
-                              span 250.00 р
+          .col-md-12
+            .widget_namvam
+                  .widget_header
+                    .widget_title
+                        a href="#"
+                          img src="img/icon_ads.svg"
+                          | ОБЪЯВЛЕНИЯ
+                    .widget_horizontal_menu.clearfix
+                      a.active href="#" РАЗМЕСТИТЬ ОБЪЯВЛЕНИЕ
+                    .r_links
+                      a href="#" Смотреть все объявления »
+            .widget_namvam
+              .widget_body
+                .left_section
+                  a href="#" 
+                    |Детский мир
+                    span 6
+                  a href="#" 
+                    |Недвижимость
+                    span 25
+                  a href="#" 
+                    |Транспорт
+                    span 2
+                  a href="#" 
+                    |Животные
+                    span 3
+                  a href="#" 
+                    |Дом сад
+                    span 4
+                  a href="#" 
+                    |Электроника
+                    span 5
+                  a href="#" 
+                    |Мода Стиль
+                    span 7
+                .right_section
+                  .slim_items
+                    .row
+                      .col-md-4.col-sm-6
+                        .slim_item
+                            .img
+                              img src="img/slim_img_1.jpg"
+                            .labels
+                              .label_item href="#" Сдам
+                            .link_cont
+                              a.title href="#" 
+                                span на стоимость работ по ремонту телефонов Ремонт телефонов, п
+                              a.sub_title href="#" 
+                                span 250.00 р
 
-                    .col-md-4.col-sm-6
-                      .slim_item
-                          .img
-                            img src="img/slim_img_2.jpg"
-                          .labels
-                            .label_item href="#" Аренда
-                          .link_cont
-                            a.title href="#" 
-                              span на стоимость работ по ремонту телефонов Ремонт телефонов, п
-                            a.sub_title href="#" 
-                              span 250.00 р
+                      .col-md-4.col-sm-6
+                        .slim_item
+                            .img
+                              img src="img/slim_img_2.jpg"
+                            .labels
+                              .label_item href="#" Аренда
+                            .link_cont
+                              a.title href="#" 
+                                span на стоимость работ по ремонту телефонов Ремонт телефонов, п
+                              a.sub_title href="#" 
+                                span 250.00 р
 
-                    .col-md-4.col-sm-6
-                      .slim_item
-                          .img
-                            img src="img/slim_img_1.jpg"
-                          .labels
-                            .label_item href="#" Аренда
-                          .link_cont
-                            a.title href="#" 
-                              span на стоимость работ по ремонту телефонов Ремонт телефонов, п
-                            a.sub_title href="#" 
-                              span 110.00 р
+                      .col-md-4.col-sm-6
+                        .slim_item
+                            .img
+                              img src="img/slim_img_1.jpg"
+                            .labels
+                              .label_item href="#" Аренда
+                            .link_cont
+                              a.title href="#" 
+                                span на стоимость работ по ремонту телефонов Ремонт телефонов, п
+                              a.sub_title href="#" 
+                                span 110.00 р
 
-                    .col-md-4.col-sm-6
-                      .slim_item
-                          .img
-                            img src="img/slim_img_1.jpg"
-                          .labels
-                            .label_item href="#" Сдам
-                          .link_cont
-                            a.title href="#" 
-                              span При заказе ШОУ МЫЛЬНЫХ ПУЗЫРЕЙ на 10 июля - 10 РУБЛЕЙ на телефон
-                            a.sub_title href="#" 
-                              span 250.00р
-                    .col-md-4.col-sm-6
-                      .slim_item
-                          .img
-                            img src="img/slim_img_1.jpg"
-                          .labels
-                            .label_item href="#" Аренда
-                          .link_cont
-                            a.title href="#" 
-                              span При заказе ШОУ МЫЛЬНЫХ ПУЗЫРЕЙ на 10 июля - 10 РУБЛЕЙ на телефон
-                            a.sub_title href="#" 
-                              span 250.00 р
+                      .col-md-4.col-sm-6
+                        .slim_item
+                            .img
+                              img src="img/slim_img_1.jpg"
+                            .labels
+                              .label_item href="#" Сдам
+                            .link_cont
+                              a.title href="#" 
+                                span При заказе ШОУ МЫЛЬНЫХ ПУЗЫРЕЙ на 10 июля - 10 РУБЛЕЙ на телефон
+                              a.sub_title href="#" 
+                                span 250.00р
+                      .col-md-4.col-sm-6
+                        .slim_item
+                            .img
+                              img src="img/slim_img_1.jpg"
+                            .labels
+                              .label_item href="#" Аренда
+                            .link_cont
+                              a.title href="#" 
+                                span При заказе ШОУ МЫЛЬНЫХ ПУЗЫРЕЙ на 10 июля - 10 РУБЛЕЙ на телефон
+                              a.sub_title href="#" 
+                                span 250.00 р
 
-                    .col-md-4.col-sm-6
-                      .slim_item
-                          .img
-                            img src="img/slim_img_2.jpg"
-                          .labels
-                            .label_item href="#" Аренда
-                          .link_cont
-                            a.title href="#" 
-                              span Новинка от компании SPADA, линейка прикормок и добавок CARP AREA.
-                            a.sub_title href="#" 
-                              span 250.00 р
+                      .col-md-4.col-sm-6
+                        .slim_item
+                            .img
+                              img src="img/slim_img_2.jpg"
+                            .labels
+                              .label_item href="#" Аренда
+                            .link_cont
+                              a.title href="#" 
+                                span Новинка от компании SPADA, линейка прикормок и добавок CARP AREA.
+                              a.sub_title href="#" 
+                                span 250.00 р
 
     / <===========================================================>
     / widget_naparu
@@ -1121,31 +1125,33 @@ html
     .new_widgets_container
       .container
         .row
-          .big_section_header_base.big_section_header_slim.big_sect_discount
-            .title
-              img src="img/icon_rozigr.svg"
-              a href="#" 
-                h3 <span>NAPARU.BY</span> - КУЛИНАРНЫЙ ПРОЕКТ
-            .r_links
-              a href="#" Кулинарные рецепты »
-              a href="#" Доставка еды »
-              a href="#" Смотреть все рецепты »
+          .col-md-12
+            .big_section_header_base.big_section_header_slim.big_sect_discount
+              .title
+                img src="img/icon_rozigr.svg"
+                a href="#" 
+                  h3 <span>NAPARU.BY</span> - КУЛИНАРНЫЙ ПРОЕКТ
+              .r_links
+                a href="#" Кулинарные рецепты »
+                a href="#" Доставка еды »
+                a href="#" Смотреть все рецепты »
       .container
         .row
-          .widget_naparu
-            .widget_naparu_row
-              a href="#"
-                img src="img/naparu_1.jpg"
-                .title Чемпионат по поеданию бургеров в Витебске
-              a href="#"
-                img src="img/naparu_2.jpg"
-                .title Чемпионат по поеданию бургеров в Витебске
-              a href="#"
-                img src="img/naparu_3.jpg"
-                .title Чемпионат по поеданию бургеров в Витебске
-              a href="#"
-                img src="img/naparu_4.jpg"
-                .title Чемпионат по поеданию бургеров в Витебске
+          .col-md-12
+            .widget_naparu
+              .widget_naparu_row
+                a href="#"
+                  img src="img/naparu_1.jpg"
+                  .title Чемпионат по поеданию бургеров в Витебске
+                a href="#"
+                  img src="img/naparu_2.jpg"
+                  .title Чемпионат по поеданию бургеров в Витебске
+                a href="#"
+                  img src="img/naparu_3.jpg"
+                  .title Чемпионат по поеданию бургеров в Витебске
+                a href="#"
+                  img src="img/naparu_4.jpg"
+                  .title Чемпионат по поеданию бургеров в Витебске
 
 
 
@@ -1154,66 +1160,67 @@ html
     / <===========================================================>
     .container.partners_container
       .row
-        .partners_baner.gray_block
+        .col-md-12
+          .partners_baner.gray_block
 
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
-            <!-- Wrapper for slides -->
-            .carousel-inner
-              .item.active
-                .row
-                  .col-xs-3
-                    a href="#"
-                      img src="img/partners_baner_1.jpg"
-                  .col-xs-3
-                    a href="#"
-                      img src="img/partners_baner_2.jpg"
-                  .col-xs-3
-                    a href="#"
-                      img src="img/partners_baner_1.jpg"
-                  .col-xs-3
-                    a href="#"
-                      img src="img/partners_baner_2.jpg"
-              .item
-                .row
-                  .col-xs-3
-                    a href="#"
-                      img src="img/partners_baner_2.jpg"
-                  .col-xs-3
-                    a href="#"
-                      img src="img/partners_baner_1.jpg"
-                  .col-xs-3
-                    a href="#"
-                      img src="img/partners_baner_2.jpg"
-                  .col-xs-3
-                    a href="#"
-                      img src="img/partners_baner_1.jpg"
-              .item
-                .row
-                  .col-xs-3
-                    a href="#"
-                      img src="img/partners_baner_1.jpg"
-                  .col-xs-3
-                    a href="#"
-                      img src="img/partners_baner_2.jpg"
-                  .col-xs-3
-                    a href="#"
-                      img src="img/partners_baner_1.jpg"
-                  .col-xs-3
-                    a href="#"
-                      img src="img/partners_baner_2.jpg"
+              <!-- Wrapper for slides -->
+              .carousel-inner
+                .item.active
+                  .row
+                    .col-xs-3
+                      a href="#"
+                        img src="img/partners_baner_1.jpg"
+                    .col-xs-3
+                      a href="#"
+                        img src="img/partners_baner_2.jpg"
+                    .col-xs-3
+                      a href="#"
+                        img src="img/partners_baner_1.jpg"
+                    .col-xs-3
+                      a href="#"
+                        img src="img/partners_baner_2.jpg"
+                .item
+                  .row
+                    .col-xs-3
+                      a href="#"
+                        img src="img/partners_baner_2.jpg"
+                    .col-xs-3
+                      a href="#"
+                        img src="img/partners_baner_1.jpg"
+                    .col-xs-3
+                      a href="#"
+                        img src="img/partners_baner_2.jpg"
+                    .col-xs-3
+                      a href="#"
+                        img src="img/partners_baner_1.jpg"
+                .item
+                  .row
+                    .col-xs-3
+                      a href="#"
+                        img src="img/partners_baner_1.jpg"
+                    .col-xs-3
+                      a href="#"
+                        img src="img/partners_baner_2.jpg"
+                    .col-xs-3
+                      a href="#"
+                        img src="img/partners_baner_1.jpg"
+                    .col-xs-3
+                      a href="#"
+                        img src="img/partners_baner_2.jpg"
 
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-          </div>
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div>
 
-      / <===========================================================>
-      /                            footer
-      / <===========================================================>
+    / <===========================================================>
+    /                            footer
+    / <===========================================================>
 
-      == partial('components/footer')
+    == partial('components/footer')
