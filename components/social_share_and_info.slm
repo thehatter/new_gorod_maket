@@ -5,6 +5,7 @@
 .social_share_and_info
   .row
     .col-lg-6.col-md-6.col-sm-12.col-xs-12
+      p Поделиться в социальных сетях:
       .social_share
         a href="http://vk.com/gorod_vitebsk"
           img src="img/svg_social_vk.svg"
