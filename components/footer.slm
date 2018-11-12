@@ -3,24 +3,25 @@
 / <===========================================================>
 
 .m_placeholder
-
-.footer_social
-  a href="http://vk.com/gorod_vitebsk"
-    img src="img/svg_social_vk.svg"
-  a href="http://instagram.com/gorodvitebsk"
-    img src="img/svg_social_insta.svg"
-  a href="http://ok.ru/group/56855124705326"
-    img src="img/svg_social_odno.svg"
-  a href="https://www.facebook.com/GorodVitebsk.by"
-    img src="img/svg_social_fb.svg"
-  a href="https://www.youtube.com/user/gorodvitebskby1"
-    img src="img/svg_social_you.svg"
-  a href="http://localhost:3000/img/social_icons_6.png"
-    img src="img/svg_social_twitt.svg"
-  a href="https://plus.google.com/+GorodVitebsk/posts"
-    img src="img/svg_social_gplus.svg"
-  a href="https://www.linkedin.com/company/%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%BB-%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0-%D0%B2%D0%B8%D1%82%D0%B5%D0%B1%D1%81%D0%BA%D0%B0---gorodvitebsk-by"
-    img src="img/svg_social_linked.svg"
+.container
+  .footer_social
+    p Подписаться:
+    a href="http://vk.com/gorod_vitebsk"
+      img src="img/svg_social_vk.svg"
+    a href="http://instagram.com/gorodvitebsk"
+      img src="img/svg_social_insta.svg"
+    a href="http://ok.ru/group/56855124705326"
+      img src="img/svg_social_odno.svg"
+    a href="https://www.facebook.com/GorodVitebsk.by"
+      img src="img/svg_social_fb.svg"
+    a href="https://www.youtube.com/user/gorodvitebskby1"
+      img src="img/svg_social_you.svg"
+    a href="http://localhost:3000/img/social_icons_6.png"
+      img src="img/svg_social_twitt.svg"
+    a href="https://plus.google.com/+GorodVitebsk/posts"
+      img src="img/svg_social_gplus.svg"
+    a href="https://www.linkedin.com/company/%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%BB-%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0-%D0%B2%D0%B8%D1%82%D0%B5%D0%B1%D1%81%D0%BA%D0%B0---gorodvitebsk-by"
+      img src="img/svg_social_linked.svg"
 
 
 / <===========================================================>
