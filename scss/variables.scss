@@ -10,6 +10,9 @@ $second_color: #663399;
 
 $bg_gray: #e6e6e6;
 
+.ta_left  { text-align: left; }
+.ta_right { text-align: right;}
+.w_100    { width: 100%; }
 
 %standart_font {
   font-family: 'Roboto', sans-serif;
@@ -131,6 +134,23 @@ $bg_gray: #e6e6e6;
   background: $main_color;
   color: #fff;
   text-decoration: none;
+
+  &:hover {
+    background: $main_color__active;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.ghost_button {
+  @extend %standart_font_2;
+  display: inline-block;
+  padding: 12px 16px;
+  border: solid $main_color;
+  color: $main_color;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
 
   &:hover {
     background: $main_color__active;

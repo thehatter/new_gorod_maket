@@ -314,6 +314,7 @@ html
                         | фото - Ольги Демидовой </br>
                         | фото - Татьяны Близнюк </br>
                         | фото - Ольги Мельниковой </br>
+                        
 
               / <===========================================================>
               /                        social share and info
@@ -335,9 +336,7 @@ html
                 .row
                   .col-lg-6.col-md-6.col-sm-12s.col-xs-12
                      .new_and_pop_articles_section
-                        .section_header
-                          .section_icon
-                            img src="img/icon_news.svg"
+                        .section_header.underlined
                           h3 <span>Свежие</span> новости
 
                         .items
@@ -391,13 +390,21 @@ html
                                 | Как найти проверенного мастера и сэкономить время
                               .summary 
                                 Redsale.by помогает каждому найти то, что ему нужно...
+
+                          .new_and_pop_articles__item
+                            .img
+                              a href="#"
+                               img src="./img/article_img_small_140_4.jpg"
+                            .item_body
+                              a.title href="#"
+                                | Дикие скидки в супермаркете «Домашний»!
+                              .summary 
+                                Redsale.by помогает каждому найти то, что ему нужно..
                                 
 
                   .col-lg-6.col-md-6.col-sm-12.col-xs-12
                      .new_and_pop_articles_section
-                        .section_header.main_color
-                          .section_icon
-                            img src="img/icon_news.svg"
+                        .section_header.underlined
                           h3 <span>Самое</span> популярное
 
                         .items
@@ -451,6 +458,16 @@ html
                                 | Как найти проверенного мастера и сэкономить время
                               .summary 
                                 Redsale.by помогает каждому найти то, что ему нужно...
+
+                          .new_and_pop_articles__item
+                            .img
+                              a href="#"
+                               img src="./img/article_img_small_140_4.jpg"
+                            .item_body
+                              a.title href="#"
+                                | Дикие скидки в супермаркете «Домашний»!
+                              .summary 
+                                Redsale.by помогает каждому найти то, что ему нужно..
 
 
               / <===========================================================>

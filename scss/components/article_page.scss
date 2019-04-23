@@ -96,7 +96,8 @@ $article_text_padding: 30px;
 // <===========================================================>
 
 .social_share_and_info {
-  padding: 20px 30px 10px;
+  padding: 0px 30px 10px;
+  margin: -30px 0 0 0;
   background: #fff;
   
   @media screen and (max-width: 650px) {
@@ -107,6 +108,12 @@ $article_text_padding: 30px;
 
 .social_share_and_info .row > div {
   margin-bottom: 10px;
+}
+
+.social_share_and_info .social_share,
+.social_share_and_info p {
+  text-align: center;
+
 }
 
 .social_share_and_info .social_share a {
@@ -130,7 +137,9 @@ $article_text_padding: 30px;
 }
 
 .social_share_and_info .sign_for_maillist {
-  margin: 0;
+  display: block;
+  margin: 10px -30px -20px -30px;
+  text-align: center;
 }
 
 // <===========================================================>
@@ -176,7 +185,15 @@ $article_text_padding: 30px;
 .new_and_pop_articles .row > div {
   display: block;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width: 992px) {
+  .new_and_pop_articles .row,
+  .new_and_pop_articles .row > div {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .new_and_pop_articles_section {
@@ -226,6 +243,8 @@ $article_text_padding: 30px;
 }
 
 .new_and_pop_articles_section h3 {
+  padding-bottom: 4px;
+  border-bottom: 2px solid $main_color;
   margin: 0 0 20px;
 }
 
