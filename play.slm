@@ -1,0 +1,249 @@
+doctype html
+html
+
+  == partial('components/head')
+
+  body.main.main_page
+
+    a.top_button href="#top"
+
+    / <===========================================================>
+    /                           modal 
+    / <===========================================================>
+    == partial('components/modal')
+
+
+    / <===========================================================>
+    /                            TOP_BANER
+    / <===========================================================>
+
+    /.gray_container
+      /.container
+        /.row.big_row
+          /.col-md-12
+            /.baner_horizontal.top_banner
+              /img src="img/banner_1170x60.png"
+    / <===========================================================>
+    /                            MOBILE HEADER
+    / <===========================================================>
+
+    / .m_header.clearfix
+    /   .logo
+    /     a href="/" <img src="img/gorod_logo.svg"/>
+    /   .icons
+
+    /     <img src="img/search.svg"/>
+    /     span.menu
+    /       <img src="img/menu_icon.svg"/>
+
+    / <===========================================================>
+    /                            HEADER 3
+    / <===========================================================>
+    == partial('components/header')
+
+
+
+
+    / <===========================================================>
+    /                             MAIN
+    / <===========================================================>
+
+    .main_container.gray_container.to_white
+      .container
+        .row.big_row
+          .main.clearfix
+            .col-md-9.col-xs-12
+                
+                / <===========================================================>
+                /                            afisha
+                / <===========================================================>
+
+                .afisha_calendar
+    
+                  .afisha_event_t_holder
+                    a href="#" КИНО
+                    a.active href="#" ВЕЧЕРИНКИ
+                    a href="#" СОБЫТИЯ
+                    a href="#" СПОРТ
+                    a href="#" ОБУЧЕНИЕ
+                    a href="#" КОНЦЕРТЫ
+                    a href="#" СПЕКТАКЛИ
+                    a href="#" ТВ
+                    a href="#" ДЕТЯМ
+                    a href="#" БЕСПЛАТНО
+                    a href="#" ВЫСТАВКИ
+                    a href="#" СЛАВЯНСКИЙ БАЗАР
+
+
+                / <===========================================================>
+                /                        afisha_film_body
+                / <===========================================================>
+                .afisha_film_body
+                  h1.film_title
+                    span Букашки 2, 
+                    | длинное название фильма или события поместится
+                  .film_rl_container
+                    .film_left
+                      .img
+                        img src="https://gorodvitebsk.by/afishaposters/11519_140px.jpg"
+                      .social_links
+                        img src="img/social_icons_line.png"
+
+                    .film_right
+                      .film_r_block
+                        .film_line.sp_btw
+                          .main 
+                            a href="#" Национальный академический драматический театр имени ЯКУБА КОЛАСА >
+                            .date 17.07.2019
+                          .price
+                            | цена: 
+                            span 10.50 р
+                        .film_line.sp_btw
+                          .adress г. Витебск, ул. Замковая, 2,  тел: +375 212 60-32-03
+                          a.scheme href="#" Схема зала >>>
+
+                / <===========================================================>
+                /                        afisha_film_body
+                / <===========================================================>
+
+                .afisha_film_info
+                  .first_text
+                    p
+                     b Мелодрама в 2-х действиях <br>
+                     b Франсуаза Саган
+                    p Над спектаклем работает молодой белорусский режиссёр Дарья Марченко (г.Минск). В прошлом году она стала одним из победителей Республиканского конкурса режиссёрских экспликаций, который проводило Министерство культуры Республики Беларусь, чем и завоевала право постановки на коласовской сцене.
+                    p Перевод пьесы на белорусский язык осуществил поэт, артист, ведущий мастер коласовской сцены Пётр Ламан. Над сценографией и костюмами работает коласовец Андрей Жигур. На его счету художественное оформление таких коласовских спектаклей, как «Похороните меня за плинтусом», «Белый ангел с чёрными крыльями», «Тень мысли нашей…», «Смешные люди» и другие.
+                    p По жанру новый спектакль – мелодрама. Кому-то её сюжет покажется очень близким, отношения главных героев в чём-то напоминают центральную любовную линию Настасьи Филипповны и князя Мышкина из известного романа Фёдора Достоевского «Идиот».
+                    p Много лет Шарлотта, женщина не самого пристойного поведения, живёт со своим любовником Антуаном за счёт её одиноких богатых благодетелей. Вместе мошенники мечтают накопить достаточно денег и  обосноваться в Париже. Но их планы рушатся, когда последний содержатель Шарлотты умирает и лишает её наследства. Всё огромное достояние переходит незнакомому молодому племяннику Леопольду. Шарлотта решает, чего бы это не стоило, обморочить парня и захватить всё имущество. Но близкое знакомство с Леопольдом, который сохранил в себе чистоту и непосредственность ребёнка, меняет Шарлотту, рождает настоящую любовь, пробуждает скрипки её души...
+                    p Но кто знает, что сильнее – искреннее чувство или желание богатства, чем всё окончится..
+                    p В спектакле заняты артисты Ульяна Атясова и Елена Шерепченко (Шарлотта), Георгий Лойко (Антуан), Артём Геряк и Евгений Лукьянов (Леопольд), Анжелика Барковская и Ольга Кулешова (Огюста), Пётр Ламан (Венклер), Зинаида Гурбо (Селия).
+
+                  .video <iframe width="100%" height="500" src="https://www.youtube.com/embed/EnvIOXW_lTE?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+
+                / <===========================================================>
+                /                        afisha_collection_sect
+                / <===========================================================>
+
+                .afisha_collection_sect
+                  .big_section_header_base.big_section_header_white
+                    .title
+                      a href="#" 
+                        h3 <span>ДРУГИЕ ФИЛЬМЫ</span> >
+                    .r_links
+                      a href="#" Смотреть все фильмы»
+                  .afisha_collection_body
+                            .collection_item_container
+                              a href="#"
+                                .img
+                                  span.helper
+                                  img src="img/afisha_img_1.jpg"
+                                .date с 24.01 по 30.01
+                                .name Retro&POP вечеринка в Меге
+                            .collection_item_container
+                              a href="#"
+                                .img
+                                  span.helper
+                                  img src="img/afisha_img_2.jpg"
+                                .date с 24.01 по 30.01
+                                .name Суперкоманда 3D
+                            .collection_item_container
+                              a href="#"
+                                .img
+                                  span.helper
+                                  img src="img/afisha_img_3.jpg"
+                                .date с 24.01 по 30.01
+                                .name Лето. Пушкин. Rock-n-Roll
+                            .collection_item_container
+                              a href="#"
+                                .img
+                                  span.helper
+                                  img src="img/afisha_party_1.jpg"
+                                .date с 24.01 по 30.01
+                                .name Тайна Сухаревой башни. Чародей равновесия, 3D
+                            .collection_item_container
+                              a href="#"
+                                .img
+                                  span.helper
+                                  img src="img/afisha_img_2.jpg"
+                                .date с 24.01 по 30.01
+                                .name Суперкоманда 3D
+
+
+
+
+                / <===========================================================>
+                /                      standart_slider_baner
+                / <===========================================================>
+                .big_section_header_base.big_section_header_slim.big_section_header_fsl_blue
+                  .title
+                    a href="#" 
+                      h3 <span>Корона</span> - МАГАЗИН ПРИЯТНЫХ ПОКУПОК!
+
+
+                #carousel-example-generic_1 class="carousel slide standart_slider_baner" data-ride="carousel"
+                    <!-- Wrapper for slides -->
+                    .carousel-inner
+                      .item.active
+                        .row
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_1.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_2.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_3.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_4.jpg"
+                      .item
+                        .row
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_1.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_2.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_3.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_4.jpg"
+                      .item
+                        .row
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_1.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_2.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_3.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_4.jpg"
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic_1" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic_1" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+
+            / <===========================================================>
+            /                        CATALOG_MENU_BAR
+            / <===========================================================>
+            
+            == partial('components/right_column.slm')
+
+
+    / <===========================================================>
+    /                            footer
+    / <===========================================================>
+
+    == partial('components/footer')

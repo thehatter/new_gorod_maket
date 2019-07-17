@@ -1,0 +1,283 @@
+doctype html
+html
+
+  == partial('components/head')
+
+  body.main.main_page
+
+    a.top_button href="#top"
+
+    / <===========================================================>
+    /                           modal 
+    / <===========================================================>
+    == partial('components/modal')
+
+
+    / <===========================================================>
+    /                            TOP_BANER
+    / <===========================================================>
+
+    /.gray_container
+      /.container
+        /.row.big_row
+          /.col-md-12
+            /.baner_horizontal.top_banner
+              /img src="img/banner_1170x60.png"
+    / <===========================================================>
+    /                            MOBILE HEADER
+    / <===========================================================>
+
+    / .m_header.clearfix
+    /   .logo
+    /     a href="/" <img src="img/gorod_logo.svg"/>
+    /   .icons
+
+    /     <img src="img/search.svg"/>
+    /     span.menu
+    /       <img src="img/menu_icon.svg"/>
+
+    / <===========================================================>
+    /                            HEADER 3
+    / <===========================================================>
+    == partial('components/header')
+
+
+
+
+    / <===========================================================>
+    /                             MAIN
+    / <===========================================================>
+
+    .main_container.gray_container.to_white
+      .container
+        .row.big_row
+          .main.clearfix
+            .col-md-9.col-xs-12
+                
+                / <===========================================================>
+                /                            afisha
+                / <===========================================================>
+
+                .afisha_calendar
+    
+                  .afisha_event_t_holder
+                    a href="#" КИНО
+                    a.active href="#" ВЕЧЕРИНКИ
+                    a href="#" СОБЫТИЯ
+                    a href="#" СПОРТ
+                    a href="#" ОБУЧЕНИЕ
+                    a href="#" КОНЦЕРТЫ
+                    a href="#" СПЕКТАКЛИ
+                    a href="#" ТВ
+                    a href="#" ДЕТЯМ
+                    a href="#" БЕСПЛАТНО
+                    a href="#" ВЫСТАВКИ
+                    a href="#" СЛАВЯНСКИЙ БАЗАР
+
+
+                / <===========================================================>
+                /                        afisha_film_body
+                / <===========================================================>
+                .afisha_film_body
+                  h1.film_title
+                    span Букашки 2, 
+                    | длинное название фильма или события поместится
+                  .film_rl_container
+                    .film_left
+                      .img
+                        img src="img/afisha_film_img.jpg"
+                      .social_links
+                        img src="img/social_icons_line.png"
+
+                    .film_right
+                      .film_r_block
+                        .film_line.sp_btw
+                          .main 
+                            a href="#" Дом Кино >
+                            .date с 14.02 по 20.02.2019
+                          .price
+                            | цена: 
+                            span 5.50 - 6.80 р
+                        .film_line
+                          span ЗАЛ 1: 
+                          | 14-20 (2D); 16-40 (3D); 19-00 (3D кроме 30.05)
+                        .film_line
+                          span ЗАЛ 2: 
+                          | 11-00; 20-50; 19-00 (3D  02-07.05)
+                        .film_line.sp_btw
+                          .adress Витебск, ул.Ленина, 40,  тел: +375 212 60-32-03
+                          a.scheme href="#" Схема зала >>>
+
+                      .film_r_block
+                        .film_line.sp_btw
+                          .main 
+                            a href="#" Кинотеатр Мир >
+                            .date с 14.02 по 20.02.2019
+                          .price
+                            | цена: 
+                            span 5.50 - 6.80 р
+                        .film_line
+                          span ЗАЛ 1: 
+                          | 14-20 (2D); 16-40 (3D); 19-00 (3D кроме 30.05)
+                        .film_line
+                          span ЗАЛ 2: 
+                          | 11-00; 20-50; 19-00 (3D  02-07.05)
+                        .film_line.sp_btw
+                          .adress Витебск, ул.Ленина, 40,  тел: +375 212 60-32-03
+                          a.scheme href="#" Схема зала >>>
+                / <===========================================================>
+                /                        afisha_film_body
+                / <===========================================================>
+
+                .afisha_film_info
+                  .first_text
+                    p Преследуемый призраками беспокойного прошлого, Макс уверен, что лучший способ выжить — скитаться в одиночестве. Несмотря на это, он присоединяется к бунтарям, бегущим через всю пустыню на боевой фуре, под предводительством военачальника Фуриосы.
+                    p Они пытаются сбежать из Цитадели, страдающей от тирании Несмертного Джо, у которого они забрали кое-что очень ценное. Разъярённый военачальник бросает все свои силы на погоню за мятежниками, ступая на дорогу войны — дорогу ярости.
+                  .video <iframe width="100%" height="500" src="https://www.youtube.com/embed/hEJnMQG9ev8?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+                  .last_text
+                    .row
+                      .col-md-4
+                        .standart_info_item
+                          span.prop Год:
+                          span.value  2015
+                        .standart_info_item
+                          span.prop Страна:
+                          span.value Австралия, США
+                        .standart_info_item
+                          span.prop Режиссер:
+                          span.value Джордж Миллер
+                        .standart_info_item
+                          span.prop Время:
+                          span.value 2 часа 10 минут 
+                      .col-md-8
+                        .standart_info_item
+                          span.prop Актеры:
+                          span.value Джош Хелман, Зои Кравиц, Меган Гэйл, Николас Холт, Нэйтан Джонс, Райли Кио, Роузи Хантингтон-Уайтли, Том Харди, Хью Кияс-Бёрн, Шарлиз Терон
+
+                / <===========================================================>
+                /                        afisha_collection_sect
+                / <===========================================================>
+
+                .afisha_collection_sect
+                  .big_section_header_base.big_section_header_white
+                    .title
+                      a href="#" 
+                        h3 <span>ДРУГИЕ ФИЛЬМЫ</span> >
+                    .r_links
+                      a href="#" Смотреть все фильмы»
+                  .afisha_collection_body
+                            .collection_item_container
+                              a href="#"
+                                .img
+                                  span.helper
+                                  img src="img/afisha_img_1.jpg"
+                                .date с 24.01 по 30.01
+                                .name Retro&POP вечеринка в Меге
+                            .collection_item_container
+                              a href="#"
+                                .img
+                                  span.helper
+                                  img src="img/afisha_img_2.jpg"
+                                .date с 24.01 по 30.01
+                                .name Суперкоманда 3D
+                            .collection_item_container
+                              a href="#"
+                                .img
+                                  span.helper
+                                  img src="img/afisha_img_3.jpg"
+                                .date с 24.01 по 30.01
+                                .name Лето. Пушкин. Rock-n-Roll
+                            .collection_item_container
+                              a href="#"
+                                .img
+                                  span.helper
+                                  img src="img/afisha_party_1.jpg"
+                                .date с 24.01 по 30.01
+                                .name Тайна Сухаревой башни. Чародей равновесия, 3D
+                            .collection_item_container
+                              a href="#"
+                                .img
+                                  span.helper
+                                  img src="img/afisha_img_2.jpg"
+                                .date с 24.01 по 30.01
+                                .name Суперкоманда 3D
+
+
+
+
+                / <===========================================================>
+                /                      standart_slider_baner
+                / <===========================================================>
+                .big_section_header_base.big_section_header_slim.big_section_header_fsl_blue
+                  .title
+                    a href="#" 
+                      h3 <span>Корона</span> - МАГАЗИН ПРИЯТНЫХ ПОКУПОК!
+
+
+                #carousel-example-generic_1 class="carousel slide standart_slider_baner" data-ride="carousel"
+                    <!-- Wrapper for slides -->
+                    .carousel-inner
+                      .item.active
+                        .row
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_1.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_2.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_3.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_4.jpg"
+                      .item
+                        .row
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_1.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_2.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_3.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_4.jpg"
+                      .item
+                        .row
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_1.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_2.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_3.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_4.jpg"
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic_1" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic_1" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+
+            / <===========================================================>
+            /                        CATALOG_MENU_BAR
+            / <===========================================================>
+            
+            == partial('components/right_column.slm')
+
+
+    / <===========================================================>
+    /                            footer
+    / <===========================================================>
+
+    == partial('components/footer')

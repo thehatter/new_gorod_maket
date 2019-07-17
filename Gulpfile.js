@@ -23,6 +23,13 @@ gulp.task('slm', function() {
     .pipe(gulp.dest('./'));
 });
 
+function rebuildSlm() {
+  gulp.src('./*.slm')
+    .pipe(slm())
+    .pipe(injectSvg(injectSvgOptions))
+    .pipe(gulp.dest('./'));
+}
+
 // gulp.task('slm_components', function() {
 //   return gulp.src('./*.slm')
 //     .pipe(slm())
@@ -44,11 +51,11 @@ gulp.task('slm', function() {
 
 
 gulp.task('default', function () {
-  gulp.watch('./scss/**/*.scss', ['sass']);
+  // gulp.watch('./scss/**/*.scss', ['sass']);
   //gulp.watch('./*.slim', ['slim']);
   gulp.watch('./*.slm', ['slm']);
   gulp.watch('./components/*.slm', function(){
     console.log('component was chenged');
-    gulp.start('slm');
+    rebuildSlm();
   });
 });

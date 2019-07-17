@@ -62,6 +62,26 @@
           }
       })
 
+      $('.afisha_calendar_header .date_slider').owlCarousel({
+          loop:false,
+          margin: 6,
+          nav:true,
+          dots:false,
+          autoplay: false,
+          navText: ['‹', '›'],
+          
+          responsive:{
+              1000:{
+                  items:4
+              },
+              1180:{
+                  items:6
+              },
+              1400:{
+                  items:7
+              }
+          }
+      })
       // ============================ cursor to search in main ============================
       //if ($(window).scrollTop() <= 200) {
         //$("html, body").animate({ scrollTop: 0 }, 1);

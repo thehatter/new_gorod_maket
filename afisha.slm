@@ -1,0 +1,356 @@
+doctype html
+html
+
+  == partial('components/head')
+
+  body.main.main_page
+
+    a.top_button href="#top"
+
+    / <===========================================================>
+    /                           modal 
+    / <===========================================================>
+    == partial('components/modal')
+
+
+    / <===========================================================>
+    /                            TOP_BANER
+    / <===========================================================>
+
+    /.gray_container
+      /.container
+        /.row.big_row
+          /.col-md-12
+            /.baner_horizontal.top_banner
+              /img src="img/banner_1170x60.png"
+    / <===========================================================>
+    /                            MOBILE HEADER
+    / <===========================================================>
+
+    / .m_header.clearfix
+    /   .logo
+    /     a href="/" <img src="img/gorod_logo.svg"/>
+    /   .icons
+
+    /     <img src="img/search.svg"/>
+    /     span.menu
+    /       <img src="img/menu_icon.svg"/>
+
+    / <===========================================================>
+    /                            HEADER 3
+    / <===========================================================>
+    == partial('components/header')
+
+
+
+
+    / <===========================================================>
+    /                             MAIN
+    / <===========================================================>
+
+    .main_container.gray_container.to_white
+      .container
+        .row.big_row
+          .main.clearfix
+            .col-md-9.col-xs-12
+                
+                / <===========================================================>
+                /                            afisha
+                / <===========================================================>
+
+                .afisha_calendar
+                  .afisha_calendar_header
+                     .left_side
+                       .title 
+                         span АФИША 
+                         | ВИТЕБСКА
+                       .date на 08-05-2019
+                     .right_side
+                       .data_slider_cont
+                        .date_slider.owl-carousel.owl-theme
+                          .date_item.active
+                            a href="#"
+                              .title сегодня
+                              .date 01
+                              .month сентября
+                            .events_types
+                              a.event_type href="#" Кино - <span>3</span>
+                              a.event_type href="#" События - <span>3</span>
+                              a.event_type href="#" Концерты  - <span>3</span>
+                              a.event_type href="#" Детям - <span>3</span>
+                              a.event_type href="#" Спектакли - <span>3</span>
+                          .date_item
+                            a href="#"
+                              .title пн
+                              .date 02
+                              .month сентября
+                            .events_types
+                              a.event_type href="#" Кино - <span>3</span>
+                              a.event_type href="#" События - <span>3</span>
+                              a.event_type href="#" Концерты  - <span>3</span>
+                              a.event_type href="#" Детям - <span>3</span>
+                              a.event_type href="#" Спектакли - <span>3</span>
+                          .date_item
+                            a href="#"
+                              .title вт
+                              .date 03
+                              .month сентября
+                            .events_types
+                              a.event_type href="#" Кино - <span>3</span>
+                              a.event_type href="#" События - <span>3</span>
+                              a.event_type href="#" Концерты  - <span>3</span>
+                              a.event_type href="#" Детям - <span>3</span>
+                              a.event_type href="#" Спектакли - <span>3</span>
+                          .date_item
+                            a href="#"
+                              .title ср
+                              .date 04
+                              .month сентября
+                            .events_types
+                              a.event_type href="#" Кино - <span>3</span>
+                              a.event_type href="#" События - <span>3</span>
+                              a.event_type href="#" Концерты  - <span>3</span>
+                              a.event_type href="#" Детям - <span>3</span>
+                              a.event_type href="#" Спектакли - <span>3</span>
+                          .date_item
+                            a href="#"
+                              .title чт
+                              .date 05
+                              .month сентября
+                            .events_types
+                              a.event_type href="#" Кино - <span>3</span>
+                              a.event_type href="#" События - <span>3</span>
+                              a.event_type href="#" Концерты  - <span>3</span>
+                              a.event_type href="#" Детям - <span>3</span>
+                              a.event_type href="#" Спектакли - <span>3</span>
+                          .date_item
+                            a href="#"
+                              .title сб
+                              .date 06
+                              .month сентября
+                            .events_types
+                              a.event_type href="#" Кино - <span>3</span>
+                              a.event_type href="#" События - <span>3</span>
+                              a.event_type href="#" Концерты  - <span>3</span>
+                              a.event_type href="#" Детям - <span>3</span>
+                              a.event_type href="#" Спектакли - <span>3</span>
+                          .date_item
+                            a href="#"
+                              .title вс
+                              .date 07
+                              .month сентября
+                            .events_types
+                              a.event_type href="#" Кино - <span>3</span>
+                              a.event_type href="#" События - <span>3</span>
+                              a.event_type href="#" Концерты  - <span>3</span>
+                              a.event_type href="#" Детям - <span>3</span>
+                              a.event_type href="#" Спектакли - <span>3</span>
+                          .date_item
+                            a href="#"
+                              .title пн
+                              .date 08
+                              .month сентября
+                            .events_types
+                              a.event_type href="#" Кино - <span>3</span>
+                              a.event_type href="#" События - <span>3</span>
+                              a.event_type href="#" Концерты  - <span>3</span>
+                              a.event_type href="#" Детям - <span>3</span>
+                              a.event_type href="#" Спектакли - <span>3</span>
+                          .date_item
+                            a href="#"
+                              .title вт
+                              .date 09
+                              .month сентября
+                            .events_types
+                              a.event_type href="#" Кино - <span>3</span>
+                              a.event_type href="#" События - <span>3</span>
+                              a.event_type href="#" Концерты  - <span>3</span>
+                              a.event_type href="#" Детям - <span>3</span>
+                              a.event_type href="#" Спектакли - <span>3</span>
+                              
+                  .afisha_event_t_holder
+                    a href="#" КИНО
+                    a.active href="#" ВЕЧЕРИНКИ
+                    a href="#" СОБЫТИЯ
+                    a href="#" СПОРТ
+                    a href="#" ОБУЧЕНИЕ
+                    a href="#" КОНЦЕРТЫ
+                    a href="#" СПЕКТАКЛИ
+                    a href="#" ТВ
+                    a href="#" ДЕТЯМ
+                    a href="#" БЕСПЛАТНО
+                    a href="#" ВЫСТАВКИ
+                    a href="#" СЛАВЯНСКИЙ БАЗАР
+
+                .afisha_collection_sect
+                  .big_section_header_base.big_section_header_white
+                    .title
+                      a href="#" 
+                        h3 <span>КИНО</span> В ВИТЕБСКЕ >
+                    .r_links
+                      a href="#" Смотреть все события»
+                  .afisha_collection_body
+                            .collection_item_container
+                              a href="#"
+                                .img
+                                  span.helper
+                                  img src="img/afisha_img_1.jpg"
+                                .date с 24.01 по 30.01
+                                .name Retro&POP вечеринка в Меге
+                            .collection_item_container
+                              a href="#"
+                                .img
+                                  span.helper
+                                  img src="img/afisha_img_2.jpg"
+                                .date с 24.01 по 30.01
+                                .name Суперкоманда 3D
+                            .collection_item_container
+                              a href="#"
+                                .img
+                                  span.helper
+                                  img src="img/afisha_img_3.jpg"
+                                .date с 24.01 по 30.01
+                                .name Лето. Пушкин. Rock-n-Roll
+                            .collection_item_container
+                              a href="#"
+                                .img
+                                  span.helper
+                                  img src="img/afisha_party_1.jpg"
+                                .date с 24.01 по 30.01
+                                .name Тайна Сухаревой башни. Чародей равновесия, 3D
+                            .collection_item_container
+                              a href="#"
+                                .img
+                                  span.helper
+                                  img src="img/afisha_img_2.jpg"
+                                .date с 24.01 по 30.01
+                                .name Суперкоманда 3D
+
+
+                .afisha_collection_sect
+                  .big_section_header_base.big_section_header_white
+                    .title
+                      a href="#" 
+                        h3 <span>СОБЫТИЯ</span> В ВИТЕБСКЕ >
+                    .r_links
+                      a href="#" Смотреть все события»
+                  .afisha_collection_body
+                            .collection_item_container
+                              a href="#"
+                                .img
+                                  span.helper
+                                  img src="img/afisha_img_1.jpg"
+                                .date с 24.01 по 30.01
+                                .name Retro&POP вечеринка в Меге
+                            .collection_item_container
+                              a href="#"
+                                .img
+                                  span.helper
+                                  img src="img/afisha_img_2.jpg"
+                                .date с 24.01 по 30.01
+                                .name Суперкоманда 3D
+                            .collection_item_container
+                              a href="#"
+                                .img
+                                  span.helper
+                                  img src="img/afisha_img_3.jpg"
+                                .date с 24.01 по 30.01
+                                .name Лето. Пушкин. Rock-n-Roll
+                            .collection_item_container
+                              a href="#"
+                                .img
+                                  span.helper
+                                  img src="img/afisha_party_1.jpg"
+                                .date с 24.01 по 30.01
+                                .name Тайна Сухаревой башни. Чародей равновесия, 3D
+                            .collection_item_container
+                              a href="#"
+                                .img
+                                  span.helper
+                                  img src="img/afisha_img_2.jpg"
+                                .date с 24.01 по 30.01
+                                .name Суперкоманда 3D
+                            .collection_item_container
+                              a href="#"
+                                .img
+                                  span.helper
+                                  img src="img/afisha_party_3.jpg"
+                                .date с 24.01 по 30.01
+                                .name Лето. Пушкин. Rock-n-Roll
+
+
+                / <===========================================================>
+                /                      standart_slider_baner
+                / <===========================================================>
+                .big_section_header_base.big_section_header_slim.big_section_header_fsl_blue
+                  .title
+                    a href="#" 
+                      h3 <span>Корона</span> - МАГАЗИН ПРИЯТНЫХ ПОКУПОК!
+
+
+                #carousel-example-generic_1 class="carousel slide standart_slider_baner" data-ride="carousel"
+                    <!-- Wrapper for slides -->
+                    .carousel-inner
+                      .item.active
+                        .row
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_1.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_2.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_3.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_4.jpg"
+                      .item
+                        .row
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_1.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_2.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_3.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_4.jpg"
+                      .item
+                        .row
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_1.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_2.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_3.jpg"
+                          .col-xs-3
+                            a href="#"
+                              img src="img/s_baner_4.jpg"
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic_1" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic_1" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+
+            / <===========================================================>
+            /                        CATALOG_MENU_BAR
+            / <===========================================================>
+            
+            == partial('components/right_column.slm')
+
+
+    / <===========================================================>
+    /                            footer
+    / <===========================================================>
+
+    == partial('components/footer')

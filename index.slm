@@ -1,68 +1,16 @@
 doctype html
 html
-  head
-    meta name="viewport" content="width=device-width, initial-scale=1.0"
-    meta http-equiv="Content-Type" content="text/html; charset=utf-8"
-    title ВИТЕБСКИЙ ГОРОДСКОЙ ИНТЕРНЕТ-ПОРТАЛ - GorodVitebsk.by - ВСЁ О ГОРОДЕ ВИТЕБСКЕ!Новости Витебска,Каталог организаций,фирмы витебска,Витебск и Витебская область,интересное,события,происшествия,афиша,погода,курсы валют,поиск лекарств,скидки и акции,новости
 
-    <link rel="shortcut icon" href="http://gorodvitebsk.by/favicon.ico">
+  == partial('components/head')
 
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/main.css" rel="stylesheet" media="screen">
-    
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/tob_bar_2015.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/wather.js"></script>
-
-  body.main
+  body.main.main_page
 
     a.top_button href="#top"
 
-    .modal.fade id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
-      .modal-dialog.modal-lg
-        .modal-content
-          form role="form"
-            .modal-header
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              h4.modal-title#myModalLabel Добавление организации в каталог
-            .modal-body
-              .form-group
-                label Название
-                input.form-control type="text" placeholder="Введите название ораганизации"
-              .form-group
-                label Сфера деятельности
-                select.form-control
-                  option Шоппинг  ---  Косметика и парфюмерия
-                  option Шоппинг  ---  Магазины алкогольных напитков
-                  option Шоппинг  ---  Косметика и парфюмерия
-                  option Шоппинг  ---  Магазины алкогольных напитков
-                  option Шоппинг  ---  Магазины алкогольных напитков
-                  option Шоппинг  ---  Магазины алкогольных напитков
-
-              .form-group
-                label Краткое описание
-                textarea.form-control 
-              .form-group
-                label Контакты (телефон для связи и т.д.)
-                textarea.form-control 
-
-              .form-group
-                label Ссылка на сайт
-                input.form-control type="text"
-              .form-group
-                label Электронная почта
-                input.form-control type="text"
-              .form-group
-                label Контактное лицо
-                input.form-control type="text"
-
-            .modal-footer
-              button type="button" class="btn btn-default" data-dismiss="modal" Закрыть
-              button type="submit" class="btn btn-success" data-dismiss="modal" Отправить
-
+    / <===========================================================>
+    /                           modal 
+    / <===========================================================>
+    == partial('components/modal')
 
 
     / <===========================================================>
@@ -79,148 +27,20 @@ html
     /                            MOBILE HEADER
     / <===========================================================>
 
-    .m_header.clearfix
-      .logo
-        a href="/" <img src="img/gorod_logo.svg"/>
-      .icons
+    / .m_header.clearfix
+    /   .logo
+    /     a href="/" <img src="img/gorod_logo.svg"/>
+    /   .icons
 
-        <img src="img/search.svg"/>
-        span.menu
-          <img src="img/menu_icon.svg"/>
+    /     <img src="img/search.svg"/>
+    /     span.menu
+    /       <img src="img/menu_icon.svg"/>
 
     / <===========================================================>
     /                            HEADER 3
     / <===========================================================>
-    .header_container.gray_container
-      .container
-        .row.big_row
-          .col-md-12
-            .header
-              .logo
-                a href="/" <img src="img/gorod_logo.svg"/>
-              .search_bar_container
-                .search_bar.clearfix
-                  form
-                    <input type="text" class="form-control" placeholder="Поиск!">
-                    <button type="submit" class=""><img src="img/search.svg"/></button>
-              .informer
-                .wather_widget
-                  a href="wather.html"
-                .curency
-                  a href="#" <span>$</span>1.99
+    == partial('components/header')
 
-              .social
-                a href="http://vk.com/gorod_vitebsk"
-                  img src="img/svg_social_vk.svg"
-                a href="http://instagram.com/gorodvitebsk"
-                  img src="img/svg_social_insta.svg"
-                a href="http://ok.ru/group/56855124705326"
-                  img src="img/svg_social_odno.svg"
-                a href="https://www.facebook.com/GorodVitebsk.by"
-                  img src="img/svg_social_fb.svg"
-                a href="https://www.youtube.com/user/gorodvitebskby1"
-                  img src="img/svg_social_you.svg"
-                a href="http://localhost:3000/img/social_icons_6.png"
-                  img src="img/svg_social_twitt.svg"
-                a href="https://plus.google.com/+GorodVitebsk/posts"
-                  img src="img/svg_social_gplus.svg"
-                a href="https://www.linkedin.com/company/%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%BB-%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0-%D0%B2%D0%B8%D1%82%D0%B5%D0%B1%D1%81%D0%BA%D0%B0---gorodvitebsk-by"
-                  img src="img/svg_social_linked.svg"
-              
-              .enter_bar
-                a.enter_button data-toggle="modal" data-target="#Modalin" href="#" Войти
-
-
-
-                
-      / <===========================================================>
-      /                            MAIN NAV 3
-      / <===========================================================>
-      .main_nav_container
-        .container
-          .row.big_row
-            .main_nav.col-md-12
-              .main_nav_in.clearfix
-                .item.first
-                  a href="/news"
-                    .img
-                      img src="img/icon_news.svg"
-                    .title Новости
-                .item
-                  a href="/afisha"
-                    .img
-                      img src="img/icon_afisha.svg"
-                    .title Афиша
-                .item
-                  a href="/katalog"
-                    .img
-                      img src="img/icon_catalog.svg"
-                    .title Каталог
-                .item
-                  a href="/reviews"
-                    .img
-                      img src="img/icon_reviews.svg"
-                    .title Отзывы
-                .item
-                  a href="http://rabotavitebsk.by"
-                    .img
-                      img src="img/icon_work.svg"
-                    .title Работа
-                .item.w12
-                  a href="/priz"
-                    .img
-                      img src="img/icon_rozigr.svg"
-                    .title Розыгрыши
-                /.item.w12
-                  /a href="http://namvam.by"
-                    /.img
-                      /img src="img/icon_ads.svg"
-                    /.title Объявления
-                .item
-                  a href="/katalog/internet_magaziny"
-                    .img
-                      img src="img/icon_shops.svg"
-                    .title Магазины
-                .item
-                  a#radio href="#"
-                    .img
-                      img src="img/icon_radio.svg"
-                    .title Радио
-                .item.w11
-                  a href="/trains"
-                    .img
-                      img src="img/icon_trains.svg"
-                    .title Расписание
-                .item
-                  a href="/camera"
-                    .img
-                      img src="img/icon_cam.svg"
-                    .title Web-камера
-                .item.w12
-                  a href="http://vdv-tv.by"
-                    .img
-                      img src="img/icon_video.svg"
-                    .title Интернет TV
-                .item.w11
-                  a href="/lekarstva"
-                    .img
-                      img src="img/icon_medicines.svg"
-                    .title Лекарства
-                /.item.w06.left_right.last
-                  /a href="#"
-                    /.img
-                      /img src="img/icon_more.svg"
-                    /.title Все проекты
-                  /div.dmenu
-                    /<a target="_blank" href="http://gorod.vitebsk.by/made/index.html">Сделано в Витебске</a>
-                    /<a target="_blank" href="http://gorod.vitebsk.by/turism.htm">Туризм и отдых</a>
-                    /<a target="_blank" href="http://gorod.vitebsk.by/feeriya/index.html">Феерия льна</a>
-                    /<a target="_blank" href="http://foto.gorodvitebsk.by/">Фотоальбом</a>
-                    /<a target="_blank" href="http://forum.gorodvitebsk.by/">Форум</a>
-                    /<a target="_blank" href="http://gorod.vitebsk.by/add-info.htm">Реклама на портале</a>
-                    /<a target="_blank" href="http://www.prometei-design.com/rus/CorporativSitesRus.htm">Создание сайтов</a>
-                    /<a target="_blank" href="http://gorod.vitebsk.by/prometei/">Компьютерное обучение</a>  
-                    /<a target="_blank" href="http://gorod.vitebsk.by/news/index.html">Архив новостей</a>
 
 
 

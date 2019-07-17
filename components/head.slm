@@ -1,0 +1,16 @@
+
+  head
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    meta http-equiv="Content-Type" content="text/html; charset=utf-8"
+    title ВИТЕБСКИЙ ГОРОДСКОЙ ИНТЕРНЕТ-ПОРТАЛ - GorodVitebsk.by - ВСЁ О ГОРОДЕ ВИТЕБСКЕ!Новости Витебска,Каталог организаций,фирмы витебска,Витебск и Витебская область,интересное,события,происшествия,афиша,погода,курсы валют,поиск лекарств,скидки и акции,новости
+
+    <link rel="shortcut icon" href="http://gorodvitebsk.by/favicon.ico">
+
+    <link href="/g_front_build/build/adaptive_styles.bundle.css" rel="stylesheet" media="screen">
+    
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/tob_bar_2015.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wather.js"></script>

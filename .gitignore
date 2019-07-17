@@ -2,6 +2,9 @@
 .*
 !/.gitignore
 
+# g_front_build repo
+g_front_build/
+
 # Logs
 logs
 *.log

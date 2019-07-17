@@ -1,0 +1,45 @@
+/ <===========================================================>
+/                           modal 
+/ <===========================================================>
+
+.modal.fade id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+  .modal-dialog.modal-lg
+    .modal-content
+      form role="form"
+        .modal-header
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          h4.modal-title#myModalLabel Добавление организации в каталог
+        .modal-body
+          .form-group
+            label Название
+            input.form-control type="text" placeholder="Введите название ораганизации"
+          .form-group
+            label Сфера деятельности
+            select.form-control
+              option Шоппинг  ---  Косметика и парфюмерия
+              option Шоппинг  ---  Магазины алкогольных напитков
+              option Шоппинг  ---  Косметика и парфюмерия
+              option Шоппинг  ---  Магазины алкогольных напитков
+              option Шоппинг  ---  Магазины алкогольных напитков
+              option Шоппинг  ---  Магазины алкогольных напитков
+
+          .form-group
+            label Краткое описание
+            textarea.form-control 
+          .form-group
+            label Контакты (телефон для связи и т.д.)
+            textarea.form-control 
+
+          .form-group
+            label Ссылка на сайт
+            input.form-control type="text"
+          .form-group
+            label Электронная почта
+            input.form-control type="text"
+          .form-group
+            label Контактное лицо
+            input.form-control type="text"
+
+        .modal-footer
+          button type="button" class="btn btn-default" data-dismiss="modal" Закрыть
+          button type="submit" class="btn btn-success" data-dismiss="modal" Отправить

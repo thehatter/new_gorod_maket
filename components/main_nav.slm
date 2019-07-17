@@ -1,0 +1,73 @@
+/ <===========================================================>
+/                            MAIN NAV 3
+/ <===========================================================>
+.main_nav_container
+  .container
+    .row.big_row
+      .main_nav.col-md-12
+        .main_nav_in.clearfix
+          .item.first
+            a href="/news"
+              .img
+                img src="img/icon_news.svg"
+              .title Новости
+          .item
+            a href="/afisha"
+              .img
+                img src="img/icon_afisha.svg"
+              .title Афиша
+          .item
+            a href="/katalog"
+              .img
+                img src="img/icon_catalog.svg"
+              .title Каталог
+          .item
+            a href="/reviews"
+              .img
+                img src="img/icon_reviews.svg"
+              .title Отзывы
+          .item
+            a href="http://rabotavitebsk.by"
+              .img
+                img src="img/icon_work.svg"
+              .title Работа
+          .item.w12
+            a href="/priz"
+              .img
+                img src="img/icon_rozigr.svg"
+              .title Розыгрыши
+          /.item.w12
+            /a href="http://namvam.by"
+              /.img
+                /img src="img/icon_ads.svg"
+              /.title Объявления
+          .item
+            a href="/katalog/internet_magaziny"
+              .img
+                img src="img/icon_shops.svg"
+              .title Магазины
+          .item
+            a#radio href="#"
+              .img
+                img src="img/icon_radio.svg"
+              .title Радио
+          .item.w11
+            a href="/trains"
+              .img
+                img src="img/icon_trains.svg"
+              .title Расписание
+          .item
+            a href="/camera"
+              .img
+                img src="img/icon_cam.svg"
+              .title Web-камера
+          .item.w12
+            a href="http://vdv-tv.by"
+              .img
+                img src="img/icon_video.svg"
+              .title Интернет TV
+          .item.w11
+            a href="/lekarstva"
+              .img
+                img src="img/icon_medicines.svg"
+              .title Лекарства

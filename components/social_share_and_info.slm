@@ -20,10 +20,6 @@
         a href="http://localhost:3000/img/social_icons_6.png"
           img src="img/svg_social_twitt.svg"
 
-    .col-lg-6.col-md-6.col-sm-12.col-xs-12.ta_right
-      a.ghost_button.w_100 href="#"
-        | Читать подробнее на странице<br> Гимназия № 2 г. Витебска
-
-
-    .col-lg-12.col-md-12.col-sm-12.col-xs-12
+    .col-lg-6.col-md-6s.col-sm-12.col-xs-12
+    .col-lg-6.col-md-6s.col-sm-12.col-xs-12
       a.sign_for_maillist.main_color_button href="#" Подписка на рассылку новостей от GorodVitebsk.by 
